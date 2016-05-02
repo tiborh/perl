@@ -1,0 +1,69 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+my $title = "The pos function and the capital G assertion";
+
+sub main {
+    print <<EOT;
+<h1>$title</h1>
+<p>pos(): the position of the last finds of in the specified or default variable</p>
+<p>\\G assertion: starts pattern match where the last global pattern match stopped</p>
+EOT
+
+my $string = "Monday Tuesday Wednesday Thursday Friday";
+    print "$string\n";
+
+    # capital T location
+    while ($string =~ m/T/g) {
+	my $position = pos($string);
+	print "$position\n";
+    }
+
+    # capital letter positions
+    while ($string =~ m/[A-Z]/g) {
+	my $position = pos($string);
+	print "$position\n";
+    }
+
+    # white space positions
+    while ($string =~ m/[\s]/g) {
+	my $position = pos($string);
+	print "$position\n";
+    }
+
+    $_ = "Cars Trucks Boats Trailers Planes Trains Bicycles";
+    print "$_\n";
+
+    m/T/g;
+    my $position = pos();
+    print "from position $position: ";
+    m/\G(.*)/g;
+    print "$1\n";
+
+    $_ = $1;
+    m/T/g;
+    my $position = pos();
+    print "from position $position: ";
+    m/\G(.*)/g;
+    print "$1\n";
+
+    $_ = $1;
+    m/T/g;
+    my $position = pos();
+    print "from position $position ";
+    m/\G(.*)/g;
+    print "$1\n";
+
+
+
+} # main
+
+require "html.cgi";
+
+&cgi_head("$title");
+&main();
+&printcode($0);
+&cgi_foot();
+exit;

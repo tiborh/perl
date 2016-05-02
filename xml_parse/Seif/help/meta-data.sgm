@@ -1,0 +1,8 @@
+<headA><14-point>meta-data</14-point></headA>
+<par>This tag is a group-tag for the heading.</par>
+<par></par>
+
+<headB>Attributes</headB>
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold> An id can be used to give the particular tag a unique identification to be used for references. </list>
+
+

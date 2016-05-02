@@ -1,0 +1,15 @@
+package mySimple v0.0.1 {
+    sub new {
+	my $class = shift;
+	my @stuff = @_;
+	bless {}, $class;
+    }
+
+    sub printIt {
+	my $self = shift;
+	my @stuff = @_;
+	print "Initialised stuff: ",$self->@stuff,"\n";
+	return $self;
+    }
+}
+1;

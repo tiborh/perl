@@ -1,0 +1,31 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+use CGI;
+
+my %params = ();
+my $cgi = new CGI;
+print $cgi->header,
+    $cgi->start_html(
+	-title=>'CGI.pm Image Map'
+    ),
+
+$cgi->start_form,
+$cgi->image_button(
+    -name=>'beatles',
+    -src=>'http://www.scriptsocket.com/beatles.jpg'
+    -width=>360,
+    -height=>99,
+    ),
+    $cgi->end_form;
+
+if ($cgi->Var()) {
+    $x = $cgi->Var('beatles.x');
+    $y = $cgi->Var('beatles.y');
+}
+
+print $cgi->end_html,"\n";
+
+exit;

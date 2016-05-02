@@ -1,0 +1,13 @@
+
+# Filename of readme: C6085254-healing-script-readme.txt
+# Description: 
+# Remove extraneous xmlns="" namespace attributes from XML instances of doctype XSEIF.dtd.  
+
+# We need to convert instances of this doctype to no longer have xmlns=""
+# attributes.  They will be stripped in the instance.acl, but to avoid error
+# messages from when the instance is first parsed, we turn off the following
+# options.  Once all instances have been converted, these should be removed so
+# we don't miss legitimate complaints.
+
+set initialcontextcheck=off
+set reportinvalidmarkup=off

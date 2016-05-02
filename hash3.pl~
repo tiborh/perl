@@ -1,0 +1,322 @@
+#!/usr/bin/perl -w
+
+use strict;
+use 5.010001;
+
+sub help {
+    print <<EOF;
+A script to practise hash functions.
+Print the (M)enu for available functions.
+EOF
+}
+
+my $fn = $0;
+$fn =~ s/\.pl/\.txt/;
+my %theHash = ();
+
+&printMenu;
+&fromFile(\%theHash,$fn,0);
+
+my $choice = "e";
+my $changed = 0;
+
+while () {
+    $choice = <STDIN>;
+    if (! defined($choice)) {
+	next;
+    } else {
+    chomp($choice);
+    }
+    given($choice) {
+	when (/.*[Aa].*/) {
+	    &add2Hash(\%theHash);
+	    $changed++;
+	}
+	when (/.*[Cc].*/) {
+	    &changeHash(\%theHash);
+	    $changed++;
+	}
+	when (/.*[Dd].*/) {
+	    print("Select item to delete:\n");
+	    &delFromHash(\%theHash,1);
+	    $changed++;
+	}
+	when (/.*[EeQqXx].*/) {
+	    if ($changed) {
+		print("Write to file before exit? (y/n)");
+		if (&yesNo) {
+		    &toFile(\%theHash,$fn,1);
+		}
+	    }
+	    last;
+	}
+	when (/.*[Hh\?].*/) {
+	    &help;
+	}
+	when (/.*[Ll].*/) {
+	    &listHash(\%theHash);
+	}
+	when (/.*[Mm].*/) {
+	    &printMenu;
+	}
+	when (/.*[Rr].*/) {
+	    &fromFile(\%theHash,$fn,1);
+	}
+	when (/.*[Ww].*/) {
+	    &toFile(\%theHash,$fn,1);
+	}
+	default {
+	    print("Wrong key\n");
+	}
+    }
+}
+
+sub printMenu {
+    print <<EOF;
+    (a) Add New Item
+    (c) Change an Item
+    (d) Delete Item
+    (e) Exit
+    (h) Help
+    (l) List
+    (m) Menu
+    (r) Read from File
+    (w) Write to File
+EOF
+}
+
+sub yesNo {
+    my $answer = "";
+    chomp($answer = <STDIN>);
+    if ($answer =~ /[Yy].*/) {
+	return 1;
+    } else {
+	return 0;
+    }
+}
+
+sub listHash {
+    if (!keys %{$_[0]}) {
+	print "No item in hash.\n"; 
+	return;
+    }
+    foreach my $key (sort keys %{$_[0]}) {
+	print("$key => ${$_[0]}{$key}\n");
+    }
+}
+
+sub add2Hash {
+    my $newKey = "";
+    my $newValue = "";
+
+    $newKey = &getNewKey($_[0]);
+    if (! $newKey) {
+	print("(Back to main.)\n");
+	return;
+    }
+    $newValue = &getNewValue($_[0]);
+    ${$_[0]}{$newKey} = $newValue;
+}
+
+sub getNewKey {
+    my $newKey = "";
+    my $canExit = 0;
+
+    while ($canExit == 0) {
+	print("Enter new key: ");
+	$newKey = <STDIN>;
+	if (! $newKey) {
+	    print("\nNo valid key found.");
+	    return "";
+	}
+	chomp($newKey);
+	if (! exists ${$_[0]}{$newKey}) {
+	    $canExit = 1;
+	} else {
+	    print("Overwrite existing key? (y/n) ");
+	    if (&yesNo == 1) {
+		$canExit = 1;
+	    }
+	}
+    }
+    return $newKey;
+}
+
+sub getNewValue {
+    my $newValue = "";
+
+    print("Enter new value: ");
+    $newValue = <STDIN>;
+    if (! $newValue) {
+	print("Empty value field\n");
+	$newValue = "";
+    } else {
+	chomp($newValue);
+    }
+    return $newValue;
+}
+
+sub delFromHash {
+    my $selKey = "";
+
+    $selKey = &selectKey($_[0]);
+    if (!$selKey) { 
+	print("(Back to Main)\n");
+	return;
+    }
+    delete ${$_[0]}{$selKey};
+    if ($_[1]) {
+	print("'$selKey' has been deleted\n");
+    }
+}
+
+sub selectKey {
+    my $selIndex;
+    my @hashArray = sort keys %{$_[0]};
+
+    for(my $i=0;$i<scalar(@hashArray);$i++) {
+	print("[$i] $hashArray[$i] => ${$_[0]}{$hashArray[$i]}\n");
+    }
+    while (! defined($selIndex)) {
+	$selIndex = <STDIN>;
+    }
+    if ($selIndex !~ /\d+/) {
+	print("Only numeric values are accepted\n");
+	$selIndex = "";
+	return;
+    }
+    chomp($selIndex);
+    if (! defined($hashArray[$selIndex])) {
+	print("Wrong value!\n");
+	return;
+    } else {
+	return $hashArray[$selIndex];
+    }
+}
+
+sub toFile {
+    my $fh;		# name of file handler, uninitialised scalar
+    my $fmw = ">"; 				# for writing
+    my @out_array = ();
+    my $outFileName = $_[1];
+    my $strTimeStamp = &timeStamp;
+
+    $outFileName =~ s/(.+)(\..+)$/$1_$strTimeStamp$2~/;
+
+    if (-e $_[1]) {
+	print("Overwrite existing file? (y/n) ");
+	if (&yesNo == 0) {
+	    rename $_[1], $outFileName;
+	}
+    }
+    open($fh,$fmw,$_[1]) or (warn "Unable to open $fn.\n" and return);
+
+    my $key = "";
+    my $value = "";
+
+    select($fh);
+    while(($key, $value) = each %{$_[0]}) {
+	print("$key\t$value\n");
+    }
+    select(STDOUT);
+    close($fh);
+
+    print("Hash has been written to '$_[1]'.\n");
+}
+
+sub fromFile {
+    my $fh;		# name of file handler, uninitialised scalar
+    my $fmr = "<"; 				# for reading
+    
+    my @in_array = ();
+
+    if (-e $_[1]) {
+	open($fh,$fmr,$_[1]) or (warn "Unable to open $fn.\n" and return);
+    } else {
+	print("File '$_[1]' does not exist\n");
+	return;
+    }
+
+    while(<$fh>) {
+	if (/^#/ || /^\s*$/) {next;}
+	chomp;
+	@in_array = split("\t",$_);
+	if (! $in_array[1]) {
+	    $in_array[1] = "";
+	}
+	${$_[0]}{$in_array[0]} = $in_array[1];
+    }
+    close($fh);
+    if (!keys %{$_[0]}) {
+	print "No data could be read into hash.\n"; 
+	return;
+    } elsif ($_[2] == 1) {
+	print("File '$_[1]' has been read into hash.\n");
+	return;
+    } else {
+	return;
+    }
+}
+
+sub changeHash {
+#delFromHash needs to be rewritten to modularise the list and select function.
+    print <<EOF;
+Change: 
+  [0] nothing
+  [1] key
+  [2] value
+EOF
+
+    my $selKey;
+    my $selHashKey = "";
+    my $newKey = "";
+
+    $selKey = <STDIN>;
+    if (! defined($selKey)) {
+	print("Wrong key.\nBack to main.\n");
+	return;
+    } else {
+	chomp($selKey);
+    }
+    given($selKey) {
+	when (/0.*/) {
+	    return;
+	}
+	when (/1.*/) {
+	    print("Key to change? \n");
+	    $selHashKey = &selectKey($_[0]);
+	    if (!$selHashKey) { 
+		print("(Back to Main)\n");
+		return;
+	    }
+	    my $savedValue = ${$_[0]}{$selHashKey};
+	    delete ${$_[0]}{$selHashKey};
+	    until ($newKey) {
+		$newKey = &getNewKey($_[0]);
+		if (! $newKey) {
+		    print("No key, try again.\n");
+		}
+	    }
+	    ${$_[0]}{$newKey} = $savedValue;
+	    print("New 'key => value' pair: '$newKey => ${$_[0]}{$newKey}'\n");
+	}
+	when (/2.*/) {
+	    print("Key the value of which to change? \n");
+	    $selHashKey = &selectKey($_[0]);
+	    if (!$selHashKey) { 
+		print("(Back to Main)\n");
+		return;
+	    }
+	    ${$_[0]}{$selHashKey} = &getNewValue($_[0]);
+	    print("The new value to key $selHashKey: ${$_[0]}{$selHashKey}'\n");
+	}
+    }
+}
+
+sub timeStamp {
+my $timestamp = "";
+my @art = localtime(time);
+
+$timestamp = sprintf("%4d%02d%02d_%02d%02d%02d",$art[5]+1900,++$art[4],$art[3],$art[2],$art[1],$art[0]);
+return $timestamp;
+}

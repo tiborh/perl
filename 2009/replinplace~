@@ -1,0 +1,14 @@
+#!/usr/local/bin/perl -i
+# Author: ethcms
+die "Usage: replinplace \"pattern\" \"replacement\" file ...\n\"\\n\" (newline) " .
+    "can appear both in pattern and replacement.\n" if $#ARGV < 1;
+
+undef $/;
+
+$pattern = shift;
+$replacement = shift;
+$replacement =~ s/\\n/\n/g;
+while (<>) {
+    s/$pattern/$replacement/g;
+    print $_;
+}

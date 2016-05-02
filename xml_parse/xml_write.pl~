@@ -1,0 +1,34 @@
+#!/usr/local/bin/perl -w
+
+use strict;
+use Cwd;
+use Time::Piece;
+use File::Basename;
+use Getopt::Std;
+use v5.14;
+
+my $DEBUG = 0;
+
+{
+    use IO::File;
+    my $output = new IO::File(">output.sgml");
+    
+    use XML::Writer;
+    my $writer = new XML::Writer( OUTPUT => $output );
+    
+    #$writer->xmlDecl( 'UTF-8' );
+    $writer->doctype( 'seif', 'PUBLIC', '-//ERICSSON//DTD SEIF 1/FAD 110 02 R1//EN' );
+    # $writer->comment( 'My happy little HTML page' );
+    # $writer->pi( 'foo', 'bar' );
+    $writer->startTag( 'seif', 'toc-level' => 'toc2','table-caption' => 'tc-no' );
+    # $writer->startTag( 'body' );
+    # $writer->startTag( 'h1' );
+    # $writer->startTag( 'font', 'color' => 'green' );
+    # $writer->characters( "&lt;Hello World!>" );
+    # $writer->endTag(  );
+    # $writer->endTag(  );
+    # $writer->dataElement( "p", "Nice to see you." );
+    # $writer->endTag(  );
+    $writer->endTag(  );
+    $writer->end(  );
+}

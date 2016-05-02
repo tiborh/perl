@@ -1,0 +1,16 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+while(<STDIN>) {
+    print("word length: ");
+    print(&gen_word($_))
+}
+
+sub gen_word {
+    my $gword = "";
+    for (my $i = 0; $i < $_[0]) {
+    $gword .= sprintf("%c",97+int(rand(25)));
+    }
+    return $word;
+}

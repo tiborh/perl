@@ -1,0 +1,18 @@
+<headA><14-point>figure</14-point></headA>
+<par>The figure group-tag is used for graphic figures.</par>
+<par></par>
+
+<headB>Attributes</headB>
+<list><?Pub Lcl MarkerStyle="none"><bold>margin</bold>  Controls the justification of the figure in the current flowing text area. The values are<list><?Pub Lcl MarkerStyle="bulleted">
+<item><sans-serif>left</sans-serif>   Left justified</item>
+<item><sans-serif>center</sans-serif>   Centered</item>
+<item><sans-serif>right</sans-serif>   Right justified</item></list></list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>l-r</bold>  Horizontal indentation of the elements contained by figure. Depending on the attribute value, the element is indented from the flowing text's left margin.
+<list><?Pub Lcl MarkerStyle="bulleted">
+<item><sans-serif>column</sans-serif>   1.8 inches indentation</item>
+<item><sans-serif>half-indent</sans-serif>   0.9 inches indentation</item>
+<item><sans-serif>leftmargin</sans-serif>   0.05 inches indentation</item>
+</list></list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold>  An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>

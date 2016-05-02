@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+  <title>Cookies</title>
+  <!-- <script type="text/javascript" src="scripts/timestamp.js"></script> -->
+<script type="text/javascript">
+  <!--
+      //-->
+</script>
+<!-- 
+     <noscript>
+       Sorry...JavaScript is needed to go ahead.
+     </noscript>
+  -->
+</head>
+<body>
+  <h1>Cookies</h1>
+  <h2>Write Cookie</h2>
+  <form action="/cgi-bin/write_cookie.pl" method="POST"> <!--  target="_blank" -->
+    <p><input type="submit" value="Write"></p>
+  </form>
+  <h2>Read Cookie</h2>
+</body>
+</html>

@@ -1,0 +1,24 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+sub main {
+    print <<EOT;
+<h1>Require</h1>
+<ul>
+    <li>The required item has to return a true value (e.g. 1)</li>
+    <li>Both the required and the requirer script share each other\'s content.</li>
+    <li>The required item does not need to be executable or have the \#! line.</li>
+</ul>
+EOT
+}
+
+require "html.cgi";
+
+&cgi_head("require");
+&main();
+&printcode($0);
+&cgi_foot();
+
+exit;

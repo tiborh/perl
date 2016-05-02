@@ -1,0 +1,44 @@
+#!/usr/bin/env perl
+
+use warnings;
+use v5.14; 			# implies strict
+use Carp;
+use utf8;
+use autodie;
+#the following two needs installation:
+#use Modern::Perl;
+#use Test::More;
+
+binmode(STDOUT, ":utf8");
+
+# create a new image
+my $im = new GD::Image(100,100);
+
+# allocate some colors
+my $white = $im->colorAllocate(255,255,255);
+my $black = $im->colorAllocate(0,0,0);       
+my $red = $im->colorAllocate(255,0,0);      
+my $blue = $im->colorAllocate(0,0,255);
+
+# make the background transparent and interlaced
+$im->transparent($white);
+$im->interlaced('true');
+
+# Put a black frame around the picture
+$im->rectangle(0,0,99,99,$black);
+
+# Draw a blue oval
+$im->arc(50,50,95,75,0,360,$blue);
+
+# And fill it with red
+$im->fill(50,50,$red);
+
+# option b: send to file
+use File::Basename;
+my $bn = (split /\./,basename($0))[0];
+
+local *IMG;
+open(IMG, ">$bn.png");
+binmode IMG;
+print IMG $im->png;
+close IMG;

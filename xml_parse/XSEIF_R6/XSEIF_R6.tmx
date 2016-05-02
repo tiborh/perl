@@ -1,0 +1,21 @@
+%------------------------------------------------------------------
+% File:         document.tmx
+% Description:  This file defines special formatting instructions
+%               for the document doctype. In order to change the 
+%		thickness for all tables in the document change the
+%		the value in "\TableRuleWtAmt=0.5pt".
+%
+% Developed by Ericsson BCT 
+% Version:      1.1 Changed by Niklas.Wellholt@bct.ericsson.se
+%
+% 
+%------------------------------------------------------------------
+
+% change table rule default 
+\def\TableRuleWt{9}
+\TableRuleWtAmt=0.5pt
+
+
+
+%------------------------------------------------------------------
+

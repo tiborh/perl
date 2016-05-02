@@ -1,0 +1,9 @@
+<headA><14-point>preform</14-point></headA>
+<par>Text within the preform tag is formatted with monospaced font. The tag can contain Figedit illustrations.</par>
+<par></par>
+<headB>Attributes</headB>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>boxed</bold>  This attribute  determines whether or not a box is to surround the text in the asis tag. It has the values  <sans-serif>yes</sans-serif>  and  <sans-serif>no</sans-serif>.</list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold> An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>
+

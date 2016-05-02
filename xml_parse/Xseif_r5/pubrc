@@ -1,0 +1,140 @@
+#	<doctype>/pubrc
+#
+#	Executed each time a document of this doctype is opened
+#
+
+if ( require( stdDblClick ) != 1 ) {
+	eriUtil::IntErrMsg( 'Failed to require stdDblClick' )
+}
+
+
+set keymap=system; # create a new map, named after current window name
+
+map double-M1 stdDblClick::DblClick();
+
+$initialcontextcheck=option("initialcontextcheck");
+$reportinvalidmarkup=option("reportinvalidmarkup");
+
+set initialcontextcheck=off;
+set reportinvalidmarkup=off;
+
+#Function used to correct the invalid "xmlns" and add missing "xmlns:atict" in <doc> element while opening
+function modify_namespaces(doc = current_doc())
+{
+	if(!doc_read_only(doc) && (doc_path(doc) != "")){
+		local invalidDefaultNS = 0;
+		local invalidChangeTrackNS = 0;
+		
+		#Check if document has invalid default XML Namespace
+		if (oid_name(oid_root()) == 'doc' && oid_attr(oid_root(), 'xmlns') != 'urn:x-ericsson:r2:reg-doc:1551-fad.110.05:en:*'){
+			invalidDefaultNS = 1;
+		}
+		
+		#Check if document does not have change tracking NS though change tracking markup present
+		local o;	# Temp oid variable for scanning document
+		if(oid_attr(oid_root(), 'xmlns:atict') != 'http://www.arbortext.com/namespace/atict'){
+			for (o = oid_first(); oid_valid(o); o = oid_forward(o)) {
+				if(oid_name(o) == "atict:info" || oid_name(o) == "atict:user"){
+					invalidChangeTrackNS = 1;
+					break;
+				}
+			}
+		}	
+		
+		if(invalidDefaultNS == 1 || invalidChangeTrackNS == 1){
+			local filePath = doc_path(doc);
+			local yesClicked = 0;
+			local isSdif = 0;
+			local tempPath = eriUtil::GetTmpDir();
+			if(index("$filePath", "$tempPath") != 0){
+				yesClicked = 1;
+				isSdif = 1;
+			}else{
+				isSdif = 0;
+				yesClicked = 1;
+			}
+			if(yesClicked == 1){				
+				if(invalidDefaultNS == 1){
+					doc = current_doc();
+					local invalidNS = oid_attr(oid_root(), 'xmlns');
+					local curWin = current_window();			
+					local pythonTempOutFile = eriUtil::GetTmpDir().main::PCS. getpid() . elapsed_time() .'temppython_out.xml';
+					local rootElement = oid_name(oid_root(doc));				
+					local pyout,pyerr;
+
+					#Call python to correct the "xmlns" and save in the original document
+					local returnValue = eriUtil::callPyScript( 'correctDefaultNS.py ',' "'. $filePath .'" "'. $pythonTempOutFile .'" "'. $invalidNS .'"', pyout, pyerr );
+					if ( 0 != returnValue ){
+						eriUtil::IntErrMsg( pyerr );
+						return -1;
+					}
+					doc_close(doc);
+					copy_file "$pythonTempOutFile" "$filePath";
+					doc = doc_open($filePath);
+					current_doc(doc);
+
+					local newTitle = eriMain::get_prod_info();
+
+					#Display the title properly on opening the document
+					if(isSdif == 0){
+						newTitle = newTitle . "  [XML document]  " . basename($filePath);
+					}else{	
+						local fileBaseName = basename($filePath);
+						local dotIndex = rindex("$fileBaseName",'.');
+						local Filenm=  substr("$fileBaseName" ,1, $dotIndex-1);
+						local finalSdifName = $Filenm . ".sdif";
+						newTitle = newTitle . "  [SDIF document]  " . $finalSdifName;
+					}
+					window_set(curWin, 'title', agettext($newTitle));
+					doc_show(doc, curWin);
+					execute("rm \"" . $pythonTempOutFile . "\"");
+				}
+				if(invalidChangeTrackNS == 1){				
+					#Add Atict Namespace to the root element and save
+					doc = current_doc();
+					local cxwarn = option("contextwarnings");
+					set contextwarnings=off;
+					doc_set(doc, "contextrules", "off");	
+					oid_modify_attr(oid_root(), 'xmlns:atict', 'http://www.arbortext.com/namespace/atict');
+					local curdoc = current_doc(doc);
+					doc_remove_callback( 0, 'save',   'eriWorkaround::FixNotationsOnSaveCB' );
+					set initialcontextcheck=on;
+					save;
+					doc_add_callback( 0, 'save',   'eriWorkaround::FixNotationsOnSaveCB' );
+					doc_revert(doc);
+					current_doc(curdoc);
+					set contextwarnings=$cxwarn;					
+				}
+				#Set the status as "modified" for the SDIF document
+				if(isSdif == 1){
+					set modified=on;
+				}
+			}else{
+				#Close the document if "No" selected in the message
+				doc_close(doc);
+				file_close();
+			}
+		}
+	}			
+}
+
+modify_namespaces(current_doc());
+
+# Turn context rules back on
+if (! doc_get(current_doc(), "contextrules")) {
+	doc_set(current_doc(), "contextrules", "on");
+}
+eriCustom::collapseFileReferences();
+set initialcontextcheck=$initialcontextcheck;
+set reportinvalidmarkup=$reportinvalidmarkup;
+
+# link enabled tags should be inserted by toolbar button only
+
+doc_add_callback( current_doc(), 'exclude_tag', 'eriLink::excludeTagCB' );
+
+
+# force link validation when saving
+#doc_add_callback( current_doc(), 'save',   'eriLink::validateLinksSaveCB'   );
+#doc_add_callback( current_doc(), 'saveas', 'eriLink::validateLinksSaveAsCB' );
+add_hook( 'editfilehook', 'stdConvert::ConvertHook');
+# EOF

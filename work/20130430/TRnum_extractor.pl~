@@ -1,0 +1,10 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+for @ARGV {
+    open (my $infile, "<", $_) or die "cannot open '$_': $!";
+    while (<$infile>) {
+	print $_;
+    }
+}

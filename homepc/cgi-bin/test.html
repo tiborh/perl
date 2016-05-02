@@ -1,0 +1,106 @@
+Content-type: text/html
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Closures</title>
+</head>
+<body>
+<h1>Closures</h1>
+<p>Closures make it possible to initialise subroutines with data before they are used.</p>
+<p>They can only be used with lexical variables.</p>
+<p>They are used in the following way:</p>
+<ol>
+  <li>A subroutine has the preconfigurable variables in its body.</li>
+  <li>The non-configurable variables are in an unanimous subroutine inside the return statement of the subroutine.</li>
+  <li>The subroutine is initialised by</li>
+  <ul>
+    <li>setting its configurable variables and</li>
+    <li>binding the result to a reference</li>
+  </ul>
+<li>From then on, the reference is used to invoke the preconfigured subroutine.</li>
+</ol>
+<p>The subroutine of this example is pre-configured with the string 'Perl' and then the reference is called (one by one) with the strings: tutorial script code.</p>
+<pre>
+Perl tutorial
+Perl script
+Perl code
+</pre>
+<p>By reinitialising the subroutine, we can easily replace the preconfigured string:</p><pre>
+Python tutorial
+Python script
+Python code
+</pre>
+<p><hr /></p>
+<p><b>Code listing</b></p>
+<pre>
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+my $title = "Closures";
+
+sub main {
+    my $preconfig_string = "Perl";
+    my @test_strings = qw(tutorial script code);
+    print &lt;&lt;EOT;
+&lt;h1>$title&lt;/h1>
+&lt;p>Closures make it possible to initialise subroutines with data before they are used.&lt;/p>
+&lt;p>They can only be used with lexical variables.&lt;/p>
+&lt;p>They are used in the following way:&lt;/p>
+&lt;ol>
+  &lt;li>A subroutine has the preconfigurable variables in its body.&lt;/li>
+  &lt;li>The non-configurable variables are in an unanimous subroutine inside the return statement of the subroutine.&lt;/li>
+  &lt;li>The subroutine is initialised by&lt;/li>
+  &lt;ul>
+    &lt;li>setting its configurable variables and&lt;/li>
+    &lt;li>binding the result to a reference&lt;/li>
+  &lt;/ul>
+&lt;li>From then on, the reference is used to invoke the preconfigured subroutine.&lt;/li>
+&lt;/ol>
+&lt;p>The subroutine of this example is pre-configured with the string \'$preconfig_string\' and then the reference is called (one by one) with the strings: @test_strings.&lt;/p>
+EOT
+
+    my $reference = printit($preconfig_string);
+    &amp;printthat($reference,\@test_strings);
+
+    print "&lt;p>By reinitialising the subroutine, we can easily replace the preconfigured string:&lt;/p>";
+
+    $preconfig_string = "Python";
+    $reference = printit($preconfig_string);
+    &amp;printthat($reference,\@test_strings);
+
+    &amp;printit("Ruby",\@test_strings);
+
+sub printit {
+    my $string1 = shift;
+    return sub{
+	my $string2 = shift;
+	print "$string1 $string2\n";
+    }
+}
+
+sub printthat {
+    my $reference = $_[0];
+    my @test_strings = @{$_[1]};
+    print "&lt;pre>\n";
+    &amp;$reference($_) foreach (@test_strings);
+    print "&lt;/pre>\n";
+
+}
+
+}
+
+
+require "html.cgi";
+
+&amp;cgi_head("$title");
+&amp;main();
+&amp;printcode($0);
+&amp;cgi_foot();
+exit;
+</pre>
+</body>
+</html>

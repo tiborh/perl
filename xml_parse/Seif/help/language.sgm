@@ -1,0 +1,25 @@
+<headA><14-point>language</14-point></headA>
+<par>This tag is used to indicate the language used in the document. </par>
+
+<headB>Attributes</headB>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>code</bold> is an attribute wherein language may be specified.  Each value of this attribute is a two-characters language code. The values
+and languages they stand for are listed below. Selecting a value will set the document to the corresponding language. This attribute controls language dependant aspects of the FOSI, such as table of contents and the admonition tag. The attribute <bold>does not</bold> define language for spellchecking and hyphenation.<list><?Pub Lcl MarkerStyle="bulleted">
+<item><sans-serif>ae</sans-serif>   American English</item>
+<item><sans-serif>da</sans-serif>   Danish</item>
+<item><sans-serif>de</sans-serif>   German</item>
+<item><sans-serif>en</sans-serif>   British English</item>
+<item><sans-serif>es</sans-serif>   Spanish</item>
+<item><sans-serif>fi</sans-serif>   Finnish</item>
+<item><sans-serif>fr</sans-serif>   French</item>
+<item><sans-serif>is</sans-serif>   Icelandic</item>
+<item><sans-serif>it</sans-serif>   Italian</item>
+<item><sans-serif>nl</sans-serif>   Dutch</item>
+<item><sans-serif>no</sans-serif>   Norwegian</item>
+<item><sans-serif>pb</sans-serif>   Brazilian Portugeese</item>
+<item><sans-serif>pt</sans-serif>   Portugeese</item>
+<item><sans-serif>sl</sans-serif>   South American Spanish</item>
+<item><sans-serif>sv</sans-serif>   Swedish</item>
+<item><sans-serif>x</sans-serif>   Other. If <sans-serif>x</sans-serif> is selected the default value, English, is set</item>
+</list></list>
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold>  An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>

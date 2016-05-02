@@ -1,0 +1,45 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+my $title = "Dereferencing";
+
+sub main {
+    print <<EOT;
+<h1>$title</h1>
+<p></p>
+EOT
+
+    my @array = qw(an array of data);
+    my $reference = \@array;
+    print "@$reference[1]";
+    print "$reference->[1]";	# no need to give the data type at the front
+}
+
+my %hasn = qw(
+North South
+East West
+);
+$reference = \%hash;
+print "$reference->{'North'}\n";
+
+sub code {
+    print shift;
+}
+$reference = \&code;
+$reference->("A subroutine reference\n");
+
+my $anon_array_ref = ["A", "B", "C"];
+print "$anon_array_ref->[2]\n";
+
+$anon_array_ref = [["A", "B", "C"],["D", "E", "F"]];
+print "the second array: @{$anon_array_ref->[1]}\n";
+
+require "html.cgi";
+
+&cgi_head("$title");
+&main();
+&printcode($0);
+&cgi_foot();
+exit;

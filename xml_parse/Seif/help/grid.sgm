@@ -1,0 +1,12 @@
+<headA><14-point>grid</14-point></headA>
+<par>This tag is used to create lists with a number of columns. It functions similarly to the table tag, except that it has no caption, and it does not show the rulers or table frames.</par>
+
+<headB>Attributes</headB>
+
+<list><?Pub Lcl MarkerStyle="none"> <bold>frame</bold>  Set to the value <sans-serif>none</sans-serif></list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold>  An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>
+
+
+
+

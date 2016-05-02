@@ -1,0 +1,14 @@
+<headA><14-point>ecn-code
+</14-point></headA>
+<par>This tag is used for information about the internal number for Ericsson used between different cities or countries.</par>
+<par></par>
+
+<headB>Attributes</headB>
+
+
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold> An id can be used to give the particular tag a unique identification to be used for references. </list>
+
+<par>Example : 850 for Stockholm</par>
+
+
+

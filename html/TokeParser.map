@@ -1,0 +1,8 @@
+["S",  $tag, $attr, $attrseq, $text] # Start tag: 
+       	     	    	      	     # $attr: hash reference
+				     # $attrseq: array ref to hash keys
+["E",  $tag, $text] 	      	     # End tag
+["T",  $text, $is_data]		     # Text tag
+["C",  $text] 			     # Comment
+["D",  $text]			     # Declaration
+["PI", $token0, $text]		     # Process Instruction

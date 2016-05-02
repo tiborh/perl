@@ -1,0 +1,30 @@
+package MysqlConnexion v0.0.1 {
+    use warnings;
+    use v5.14; 			# implies strict
+    use utf8;
+    use DBI;
+    use DBD::mysql;
+
+    binmode(STDOUT, ":utf8");
+
+    sub new {
+	my $class = shift;
+	my $self = {
+	    _db => 'testdb',
+	    _dbhost => '127.0.0.1',
+	    _dbport => '3306',
+	    _dbuser => 'testuser',
+	    _dbuserpass => 'testpass',
+	    @_
+	};
+	bless $self,$class;
+	return $self;
+    };
+
+    sub connect_db {
+	my $self = shift;
+	my $db_str = "dbi:" . "mysql:" . testdb:127.0.0.1:3306'
+    }
+    
+    
+}

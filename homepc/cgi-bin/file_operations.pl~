@@ -1,0 +1,167 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+# checklist:
+# files:
+# ok. flock(fh,id)
+
+# ok. rename(from,to)
+# ok. File::Copy
+# ok. copy(from,to)
+# ok. unlink(what)
+# ok $variable = (stat(filename))[1..13] 7 is size
+
+# directories:
+# ok. opendir(dir_handle,directoryfilename)
+# ok. @ = readdir(dir_handle)
+# ok. closedir(dir_handle)
+
+# ok. chdir(dirfilename)
+# ok. mkdir(dirfilename)
+# ok. rmdir(dirfilename) (only works if empty)
+# ok. chdir('..')
+# ok. opendir(dh,'.')
+
+
+sub main {
+    my $mydebug = (defined($ARGV[0]) and $ARGV[0] eq "debug") ? 1 : 0;
+    my $max_testfiles = 10;
+    {
+	print "<h1>File/Directory operations</h1>\n";
+	print "<p>We are starting in an empty workspace:</p>\n";
+	my $workspace = "workspace" . int(rand(10000));
+	mkdir($workspace) or die "<p>creating $workspace has failed, $!</p>";
+	print "<p>Workspace (<tt>$workspace</tt>) has been created.</p>\n";
+	&olc_dir('.') if ($mydebug);
+	&olc_dir($workspace);
+	chdir($workspace);
+	print "<h2>Creating a directory</h2>\n" if ($mydebug);
+	my $test_dir = "test_dir" . time();
+	mkdir($test_dir);
+	print "<p>Directory <tt>$test_dir</tt> has been created.</p>\n";
+	&olc_dir($test_dir);
+	print "<h2>Changing directory</h2>\n";
+	chdir($test_dir);
+	print "<p>Directory <tt>$test_dir</tt> is now the pwd.</p>\n";
+	sleep 30 if ($mydebug);
+	print "<h2>Creating files</h2>\n";
+	foreach (0..$max_testfiles-1) {
+	    my $fh;
+	    my $fn = "testfile" . $_;
+	    open($fh,">",$fn);
+	    print $fh "x" x int(rand(1000));
+	    close($fh);
+	}
+	#chdir('..');
+	&olc_dir("../$test_dir");
+	#chdir($test_dir);
+	print "<h2>File data</h2>\n";
+	{
+	    my %stat_info = (
+		0 => "dev: device number of filesystem",
+		1 => "ino: inode number",
+		2 => "mode: file mode (type and permissions)",
+		3 => "nlink: number of (hard) links to the file",
+		4 => "uid: numeric user ID of file's owner",
+		5 => "gid: numeric group ID of file's owner",
+		6 => "rdev: the device identifier (special files only)",
+		7 => "size: total size of file, in bytes",
+		8 => "atime: last access time in seconds since the epoch",
+		9 => "mtime: last modify time in seconds since the epoch",
+		10 => "ctime: inode change time in seconds since the epoch (*)",
+		11 => "blksize: preferred I/O size in bytes for interacting with the file (may vary from file to file)",
+		12 => "blocks: actual number of system-specific blocks allocated on disk (often, but not always, 512 bytes each)"
+	    );
+	    my $fh;
+	    my $fn = "mytestfile.txt";
+	    open($fh,">",$fn);
+	    print $fh "x" x int(rand(1000));
+	    close($fh);
+	    my @filedata = stat($fn);
+	    print "<p>File data for $fn:</p>\n";
+	    print "<table>\n";
+	    print "<tr>\n\t<th>index</th>\n\t<th>value</th>\n\t<th>explanation</th>\n</tr>\n";
+	    print "<tr>\n\t<td>$_</td>\n\t<td>$filedata[$_]</td>\n\t<td><i>$stat_info{$_}</i></td>\n</tr>\n" foreach (0..12);
+	    print "</table>\n";
+	    unlink($fn);
+	}
+	#print "<p>Getting the stat info about</p>\n";
+	print "<h2>Renaming files</h2>\n";
+	foreach (0..$max_testfiles-1) {
+	    my $fn = "testfile" . $_;
+	    my $tn = "changed" . $_;
+	    rename($fn,$tn);
+	}
+	&olc_dir("../$test_dir");
+	print "<h2>Copying files</h2>\n";
+	{
+	    use File::Copy;
+	    my $ctd = "copy_target_dir";
+	    mkdir($ctd);
+	    foreach (0..$max_testfiles-1) {
+		my $fn = "changed" . $_;
+		my $tn = "$ctd/copied$_";
+		copy($fn,$tn);
+	    }
+	    &olc_dir($ctd);
+	    unlink("$ctd/copied$_") foreach (0..$max_testfiles-1);
+	    rmdir($ctd);
+	}
+	# for further expansion:
+	#print "<h2></h2>\n";
+	#print "<p></p>\n";
+	print "<h2>Deleting files</h2>\n";
+	unlink("changed" . $_) foreach (0..$max_testfiles-1);
+	chdir('..');
+	&olc_dir($test_dir);
+	print "<h2>Removing the test directory</h2>\n";
+	rmdir($test_dir) or die "Cannot remove $test_dir, $!";
+	print "<p>Directory <tt>$test_dir</tt> has been removed.</p>\n";
+	chdir('..');
+	rmdir($workspace) or die "Cannot remove $workspace, $!";
+	print "<p>Workspace (<tt>$workspace</tt>) has been deleted.</p>\n";
+    }
+}
+
+sub olc_dir {
+    my $dh;
+    my $dn = $_[0];
+    opendir($dh,$dn) or die "opendir() for $dn has failed: $!";
+    my @dir_content = readdir($dh);
+    @dir_content = sort @dir_content;
+    #$" = "<br />\n";
+    print "<p>$dn content:";
+    foreach (@dir_content) {
+	printf("<br />\n%s (%d)",$_,(stat("$dn/$_"))[7]);
+    }
+    print "</p>\n";
+    #$" = " ";
+    close $dh;
+}
+
+&cgi_head("file operations");
+&main();
+&cgi_foot();
+exit;
+
+sub cgi_head {
+print <<"EOT";
+Content-type: text/html\n
+<!doctype html>
+<html lang="en">
+<head>
+\t<meta charset="utf-8">
+\t<title>$_[0]</title>
+</head>
+<body>
+EOT
+}
+
+sub cgi_foot {
+print <<"EOT";
+</body>
+</html>
+EOT
+}

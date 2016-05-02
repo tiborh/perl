@@ -1,0 +1,12 @@
+<headA><14-point>quote</14-point></headA>
+<par>This tag is used for quotations and highlights a piece of tags in two different ways.</par>
+<par></par>
+<headB>Attributes</headB>
+<list><?Pub Lcl MarkerStyle="none"><bold>type</bold> The different types of quotation are:
+<list><?Pub Lcl MarkerStyle="bulleted">
+<item><sans-serif>monospaced</sans-serif>   courier font</item>
+<item><sans-serif>normal</sans-serif>   quotation marks around the text</item> </list></list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>role</bold>  This attribute is only to be used when converting to SEIF-documents from other types. Insert valuable conversion information.</list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold>  An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>

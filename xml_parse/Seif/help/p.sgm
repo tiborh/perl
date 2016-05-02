@@ -1,0 +1,11 @@
+<headA><14-point>p</14-point></headA>
+<par>This is the tag for inserting text into a document. The tag can be inserted by means of
+the <bold>Insert Markup</bold> menu, or by pressing the <bold>Return</bold> key, or by positioning the caret to the right of the heading end tag and start adding text.</par>
+<par></par>
+<headB>Attributes</headB>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>annotation</bold> Any text written in this attribute appears at the left margin, on the same line as the first line of that paragraph.</list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>role</bold>  This attribute is only to be used when converting to SEIF-documents from other types. Insert valuable conversion information.</list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold>  An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>

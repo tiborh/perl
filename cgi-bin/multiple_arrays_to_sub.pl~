@@ -1,0 +1,32 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+my $title = "Subroutines and references";
+
+sub main {
+    print <<EOT;
+<h1>$title</h1>
+<p>If we try to return two arrays from a subroutine, they are merged.</p>
+EOT
+
+my @array = &twoarrays;
+print "<p>The return value of a subroutine: @array</p>\n";
+
+
+sub twoarrays {
+    my @x = (1..10);
+    my @y = (11..20);
+    return @x, @y;
+}
+
+}
+
+require "html.cgi";
+
+&cgi_head("$title");
+&main();
+&printcode($0);
+&cgi_foot();
+exit;

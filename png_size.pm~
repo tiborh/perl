@@ -1,0 +1,18 @@
+package Png::Size 0.0.1{
+    sub png_size
+    {
+	my $file = shift or return;
+	my $buf;
+	local(*IMG);
+	open(IMG, $file) or return;
+	binmode(IMG);
+	read(IMG, $buf, 24);
+	my ($hdr, $l, $ihdr, $w, $h) =
+	    unpack("a8 N a4 N N", $buf);
+	return unless
+	    $hdr eq "\x89PNG\x0d\x0a\x1a\x0a" &&
+	    $ihdr eq 'IHDR';
+	return ($w, $h, 'PNG');
+    }
+}
+1;

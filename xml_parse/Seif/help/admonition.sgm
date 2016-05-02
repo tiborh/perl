@@ -1,0 +1,12 @@
+<headA><14-point>admonition</14-point></headA>
+<par>Use this tag when you want to indicate that certain precautions are to be taken. Inserting this tag will prompt you to select admonition type and a boxed area appeares in which you can fill in the admonition text.</par>
+<par></par>
+<headB>Attributes</headB>
+<list><?Pub Lcl MarkerStyle="none"><bold>type</bold> Three values define the type of admonition you want to insert:
+<list><?Pub Lcl MarkerStyle="bulleted">
+<item><sans-serif>caution</sans-serif>   Inserts admonition with CAUTION headline</item>
+<item><sans-serif>danger</sans-serif>   Inserts admonition with DANGER headline</item>
+<item><sans-serif>warning</sans-serif>   Inserts admonition with WARNING headline</item>
+</list></list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold>  An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>

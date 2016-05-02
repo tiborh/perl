@@ -1,0 +1,35 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+my $title = "Output Record Separator";
+
+sub main {
+    print <<EOT;
+<h1>$title</h1>
+<p> each time the print operation is used.</p>
+EOT
+
+# without the separator
+print "A line of text.\n";
+    &hyphens;
+print "Another line of text.\n";
+    &hyphens;
+print "One more line of text.\n";
+    &hyphens;
+
+sub hyphens {
+    print "------------------------------\n"
+}
+
+
+} # main
+
+require "html.cgi";
+
+&cgi_head("$title");
+&main();
+&printcode($0);
+&cgi_foot();
+exit;

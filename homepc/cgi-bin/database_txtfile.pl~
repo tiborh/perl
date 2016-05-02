@@ -1,0 +1,27 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+my $title = "Text file database";
+
+sub main {
+    print <<EOT;
+<h1>$title</h1>
+<p>Tied to an array.</p>
+EOT
+
+use DB_File;
+    use Fcntl;
+
+    tie(%hash, "DB_File", 'dbfile.txt', O_RDWR|O_CREAT, 0644, $DB_RECNO);
+
+} # main
+
+require "html.cgi";
+
+&cgi_head("$title");
+&main();
+&printcode($0);
+&cgi_foot();
+exit;

@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+
+use POSIX qw(strftime);
+
+my $inseconds = time();
+my $timenow = localtime($inseconds);
+my $expiry_time = localtime($inseconds + 3600);
+my $tzone = strftime("%Z",localtime);
+
+print "Set-Cookie:UserID=XYZ;\n";
+print "Set-Cookie:Password=XYZ123;\n";
+print "Set-Cookie:Expires=Tuesday, 31-Dec-2007 23:12:40 GMT;\n";
+print "Set-Cookie:Domain=www.tutorialspoint.com;\n";
+print "Set-Cookie:Path=/perl;\n";
+print "Content-type:text/html\r\n\r\n";

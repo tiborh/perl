@@ -1,0 +1,20 @@
+#!/usr/bin/env perl
+
+use warnings;
+use v5.14; 			# implies strict
+use Carp;
+use utf8;
+use autodie;
+
+binmode(STDOUT, ":utf8");
+
+use simplest;
+
+my $to = new Simplest;
+
+sub list_package {
+    #no strict 'refs';
+    my $test_pack = shift;
+    print "keys in main:\n";
+    print "\t",$_,"\n" foreach (keys %{$test_pack::});
+}

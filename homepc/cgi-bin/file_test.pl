@@ -1,0 +1,45 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+sub main {
+    {
+	print "<h1>The most useful file test operators</h1>\n";
+	my %fto = (
+	    "-e" => "if the file exists",
+	    "-d" => "if the file is a directory",
+	    "-z" => "if the file has zero length",
+	    "-s" => "returns the size of the file"
+	    );
+	print "<dl>\n";
+	print "\t<dt>$_<dt>\n\t<dd>$fto{$_}</dd>\n" foreach (sort keys %fto);
+	print "</dl>\n";
+	print "<p>When it is an 'if' check, <tt>1</tt> means <tt>true</tt>.</p>\n";
+    }
+}
+
+&cgi_head("file test operators");
+&main();
+&cgi_foot();
+exit;
+
+sub cgi_head {
+print <<"EOT";
+Content-type: text/html\n
+<!doctype html>
+<html lang="en">
+<head>
+\t<meta charset="utf-8">
+\t<title>$_[0]</title>
+</head>
+<body>
+EOT
+}
+
+sub cgi_foot {
+print <<"EOT";
+</body>
+</html>
+EOT
+}

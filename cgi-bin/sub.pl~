@@ -1,0 +1,47 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+sub main {
+    {
+	print "<h1>Basic facts about subroutines</h1>\n";
+	print "<ol>\n";
+	print "<li>When calling a subroutine, it inherits the variables.<br />\n";
+	my $test_variable = "Blame someone else and get on with your life.";
+	&testing;
+	print "<li>The last operation of the </li>\n";
+	print "<li></li>\n";
+	print "</ol>\n";
+    }
+}
+
+sub testing {
+    print "$testing_variable</li>\n";
+    my $result = "There's no point in being grown up if you can't be childish sometimes.";
+}
+
+&cgi_head("subroutines");
+&main();
+&cgi_foot();
+exit;
+
+sub cgi_head {
+print <<"EOT";
+Content-type: text/html\n
+<!doctype html>
+<html lang="en">
+<head>
+\t<meta charset="utf-8">
+\t<title>$_[0]</title>
+</head>
+<body>
+EOT
+}
+
+sub cgi_foot {
+print <<"EOT";
+</body>
+</html>
+EOT
+}

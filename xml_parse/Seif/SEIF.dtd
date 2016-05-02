@@ -1,0 +1,7 @@
+<!DOCTYPE SEIF SYSTEM "../entities/SEIF_1.dtd" [
+<?HyTime VERSION "ISO/IEC 10744:1992" HYQCNT=32>
+<?HyTime base>
+<?HyTime locs multloc>
+<?HyTime links>
+<!ENTITY bull   SDATA "[bull  ]">
+]>

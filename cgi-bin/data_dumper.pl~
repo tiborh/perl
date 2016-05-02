@@ -1,0 +1,31 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+my $title = "Data Dumper Module";
+
+sub main {
+    print <<EOT;
+<h1>$title</h1>
+<p>To print out simple or complex data structures.</p>
+EOT
+
+use Data::Dumper;
+
+    $sum = 1 + 1;
+    print Dumper($sum);
+
+    @array = qw(one two three four five);
+    print Data::Dumper->Dump([\@array], [*array]);
+
+
+} # main
+
+require "html.cgi";
+
+&cgi_head("$title");
+&main();
+&printcode($0);
+&cgi_foot();
+exit;

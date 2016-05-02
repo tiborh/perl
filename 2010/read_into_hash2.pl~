@@ -1,0 +1,14 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+my %states;
+my @linetmp = ();
+
+print("Give me some strings (<enter> separated):\n");
+
+while (<>) {
+    chomp;
+    @linetmp = $_;
+}
+

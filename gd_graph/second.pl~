@@ -1,0 +1,28 @@
+#!/usr/bin/perl
+use GD::Graph::bars;
+
+@A = qw(-5 -4 -3 -2 -1 0 1 2 3 4 5 );
+@B = qw(-6 -4 -2 0 2 4 6);
+#@C = qw(1 2 3 4 5);
+#@D = qw(4 5 6 7);
+#@E = qw(-2 -4 -6 0 2 4 6 8);
+
+#@datacolors = qw(blue green cyan pink yellow);
+
+my @data = ([@A],[@B]);
+#my @data = ([@A],[@B],[@C],[@D],[@E]);
+my $graph = GD::Graph::bars->new(600,400);
+
+$graph->set(
+    transparent => '0',
+    x_label     => 'A',
+    y_label     => 'B',
+    title       => 'A for B',
+#    dclrs => [ @datacolors ]
+ 
+);
+open(IMG, ">$0.png");
+binmode IMG;
+my $gd =  $graph->plot(\@data);
+print IMG $gd->png;
+close IMG;

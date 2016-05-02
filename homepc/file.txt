@@ -1,0 +1,10 @@
+a       b       c       d
+
+       a       b       c       d
+         In the Center
+       ab          c           d
+93.41
+Words
+   as
+   they
+appear.

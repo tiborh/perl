@@ -1,0 +1,7 @@
+#!/usr/bin/perl -w
+
+use strict;
+use HTML::Parser;
+
+my $p = new HTML::Parser;
+$p->parse_file("simple.html");

@@ -1,0 +1,50 @@
+#!/usr/bin/env perl
+
+use warnings;
+use 5.014; 			# implies strict
+use Carp;
+use utf8;
+use autodie;
+#the following two needs installation:
+#use Modern::Perl;
+#use Test::More;
+use DBI;
+use DBD::mysql;
+
+binmode(STDOUT, ":utf8");
+
+# database:
+my $dsn = 'dbi:mysql:testdb:127.0.0.1:3306';
+# user
+my $user = 'tibor';
+my $pass = '';
+
+# connection:
+my $dbh = DBI->connect($dsn, $user, $pass)
+    or die "Can't connect to the DB: $DBI::errstr\n";
+
+# add data
+# step 1
+my $sth = $dbh->prepare('insert ignore into subscribers (username, emailaddr) 
+values("jim", "jim@microsoft.com")');
+# step 2
+$sth->execute();
+
+# show data:
+# step 1
+$sth = $dbh->prepare("select username, emailaddr from subscribers");
+# step 2
+$sth->execute;
+
+# cycling thru data:
+while(my @row = $sth->fetchrow_array()) { 
+    print "$row[0]: $row[1]<br>\n"; 
+}
+
+# another way:
+#while(my($username, $email) = $sth->fetchrow_array()) { 
+#    print "$username: $email<br>\n"; 
+#}
+
+# disconnect:
+$dbh->disconnect();

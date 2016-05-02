@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+  <title>Get Method</title>
+  <!-- <script type="text/javascript" src="scripts/timestamp.js"></script> -->
+<script type="text/javascript">
+  <!--
+      //-->
+</script>
+<!-- 
+     <noscript>
+       Sorry...JavaScript is needed to go ahead.
+     </noscript>
+  -->
+</head>
+<body>
+  <h1>Get Method</h1>
+    <div>
+    <form action="cgi-bin/get.pl">
+      <p>First name: <input type="text" name="first_name" maxlength="15" size="15"></input></p>
+      <p>Surname: <input type="text" name="last_name" maxlength="15" size="15"></input></p>
+      <p><input type="submit" value="Submit" /></p>
+    </form>
+  </div>
+</body>
+</html>

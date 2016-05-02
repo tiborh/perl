@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2007, v.4002-->
+<!DOCTYPE DocumentTypeConfiguration PUBLIC "-//Arbortext//DTD Document Type Configuration 2.0//EN"
+ "dcfdtd.dtd">
+<DocumentTypeConfiguration>
+<Options allowApplicationToolbar="yes" allowComposeStylesheetList="no"
+allowFosiMod="no" allowTouchup="no" dictionaryName="eriDict" protected="no"/>
+<ElementOptions>
+<ElementOption allowCharacterSubstitution="no" element="doc"/>
+<ElementOption allowSpellChecking="no" element="signature"/>
+<ElementOption allowSpellChecking="no" element="date"/>
+<ElementOption allowSpellChecking="no" element="rev"/>
+<ElementOption allowSpellChecking="no" element="person"/>
+<ElementOption allowSpellChecking="no" element="user-info"/>
+<ElementOption allowSpellChecking="no" element="part-of"/>
+<ElementOption allowSpellChecking="no" element="company-id"/>
+<ElementOption allowSpellChecking="no" element="doc-id"/>
+<ElementOption allowSpellChecking="no" element="trademark-list"/>
+<ElementOption allowSpellChecking="no" element="dist-info"/>
+<ElementOption allowSpellChecking="no" element="sups"/>
+<ElementOption allowSpellChecking="no" element="subs"/>
+<ElementOption allowSpellChecking="no" element="eq-inline"/>
+<ElementOption allowSpellChecking="no" element="prod-no"/>
+<ElementOption allowSpellChecking="no" element="term"/>
+<ElementOption allowSpellChecking="no" element="resource-id"/>
+<ElementOption allowSpellChecking="no" element="ulink"/>
+<ElementOption allowSpellChecking="no" element="link"/>
+<ElementOption category="title" element="caption"/>
+<ElementOption category="division" element="chl1"/>
+<ElementOption category="division" element="chl2"/>
+<ElementOption category="division" element="chl3"/>
+<ElementOption category="division" element="chl4"/>
+<ElementOption category="division" element="chl5"/>
+<ElementOption category="division" element="def-list"/>
+<ElementOption allowSpellChecking="no" category="title" element="doc-no"/>
+<ElementOption category="division" element="figure"/>
+<ElementOption category="division" element="glossary"/>
+<ElementOption allowCharacterSubstitution="no" element="input"/>
+<ElementOption category="division" element="list"/>
+<ElementOption allowCharacterSubstitution="no" element="output"/>
+<ElementOption category="division" element="part"/>
+<ElementOption allowCharacterSubstitution="no" element="preform"/>
+<ElementOption category="division" element="reference"/>
+<ElementOption category="division" element="step-list"/>
+<ElementOption category="division" element="table"/>
+<ElementOption allowSpellChecking="no" category="title" element="term"/>
+<ElementOption category="title" element="title"/>
+<ElementOption category="division" element="titled-block"/>
+</ElementOptions>
+<AttributeOptions>
+<AttributeOption attribute="xmlns" dialogHidden="yes" screenHidden="yes"/>
+<AttributeOption attribute="xmlns:xlink" dialogHidden="yes"
+screenHidden="yes"/>
+<AttributeOption attribute="xlink:title" screenHidden="yes"/>
+<AttributeOption attribute="xlink:href" screenHidden="yes"/>
+<AttributeOption attribute="xml:base" screenHidden="yes"/>
+<AttributeOption attribute="xmlns:xi" dialogHidden="yes"
+screenHidden="yes"/>
+<AttributeOption attribute="xlink:type" dialogHidden="yes"
+screenHidden="yes"/>
+<AttributeOption attribute="xlink:show" dialogHidden="yes"
+screenHidden="yes"/>
+<AttributeOption attribute="xlink:actuate" dialogHidden="yes"
+screenHidden="yes"/>
+<AttributeOption attribute="linkend" screenHidden="yes"/>
+</AttributeOptions>
+<Display>
+<Icon characterNumber="16" characterNumberLocal="15"
+characterSet="ati_tag" id="para"/>
+<Icon characterNumber="18" characterNumberLocal="17"
+characterSet="ati_tag" id="endpara"/>
+<ElementDisplay element="abstract" pair="both"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="admonition" partialTagModeDisplay="full"/>
+<ElementDisplay element="approved-by" pair="both"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="back" pair="both" partialTagModeDisplay="full"/>
+<ElementDisplay element="block" partialTagModeDisplay="full"/>
+<ElementDisplay element="body" pair="both" partialTagModeDisplay="full"/>
+<ElementDisplay element="bridge" partialTagModeDisplay="full"/>
+<ElementDisplay element="business-unit" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="copyright" partialTagModeDisplay="full"/>
+<ElementDisplay element="caption" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="checked-by" pair="both"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="chl1" pair="both" partialTagModeDisplay="full"/>
+<ElementDisplay element="chl2" pair="both" partialTagModeDisplay="full"/>
+<ElementDisplay element="chl3" pair="both" partialTagModeDisplay="full"/>
+<ElementDisplay element="chl4" pair="both" partialTagModeDisplay="full"/>
+<ElementDisplay element="chl5" pair="both" partialTagModeDisplay="full"/>
+<ElementDisplay element="colspec" partialTagModeDisplay="full"/>
+<ElementDisplay element="company" fullTagModeDisplay="full" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="company-address" partialTagModeDisplay="full"/>
+<ElementDisplay element="company-id" fullTagModeDisplay="full"
+pair="both" partialTagModeDisplay="full"/>
+<ElementDisplay element="company-name" fullTagModeDisplay="full"
+pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="company-symbol" fullTagModeDisplay="full"
+pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="confidentiality" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="d" fullTagModeDisplay="full" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="date" fullTagModeDisplay="full" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="def" pair="both" partialTagModeDisplay="full"/>
+<ElementDisplay element="default" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="def-list" pair="both"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="department" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="description" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="disclaimer" pair="both"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="dist-info" partialTagModeDisplay="full"/>
+<ElementDisplay element="dl-item" pair="both"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="doc" pair="both" partialTagModeDisplay="full"/>
+<ElementDisplay element="doc-id" fullTagModeDisplay="full" pair="both"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="doc-info" fullTagModeDisplay="full" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="doc-name" fullTagModeDisplay="full" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="doc-no" fullTagModeDisplay="full" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="doc-variants" fullTagModeDisplay="full"
+pair="both" partialTagModeDisplay="full"/>
+<ElementDisplay element="drafted-by" fullTagModeDisplay="full"
+pair="both" partialTagModeDisplay="full"/>
+<ElementDisplay element="ecn-code" fullTagModeDisplay="full" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="emph" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="en-item" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="enclosure-list" pair="both"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="english-title" fullTagModeDisplay="full"
+pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="entry" partialTagModeDisplay="full"/>
+<ElementDisplay element="eq-inline" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="equation" partialTagModeDisplay="full"/>
+<ElementDisplay element="example" partialTagModeDisplay="full"/>
+<ElementDisplay element="ext-addr" fullTagModeDisplay="partial"
+pair="end"/>
+<ElementDisplay element="extension" fullTagModeDisplay="full"
+pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="expansion" pair="both"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="factual-supervisor" pair="both"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="figure" partialTagModeDisplay="full"/>
+<ElementDisplay element="front" pair="both" partialTagModeDisplay="full"/>
+<ElementDisplay element="grid" pair="both" partialTagModeDisplay="full"/>
+<ElementDisplay element="gl-item" partialTagModeDisplay="full"/>
+<ElementDisplay element="glossary" partialTagModeDisplay="full"/>
+<ElementDisplay element="glossary-list" partialTagModeDisplay="full"/>
+<ElementDisplay element="indexterm" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="info-copy" partialTagModeDisplay="full"/>
+<ElementDisplay element="initials" fullTagModeDisplay="full" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="input" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="keystroke" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="language" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="legend" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="legend-item" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="line" newline="yes" pair="both"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="link" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="list" pair="both" partialTagModeDisplay="full"/>
+<ElementDisplay element="list-item" pair="both"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="literal" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="location" fullTagModeDisplay="full" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="m" fullTagModeDisplay="full" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="meaning" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="meta-data" fullTagModeDisplay="full" pair="both"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="name" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="not-present" partialTagModeDisplay="full"/>
+<ElementDisplay element="note" pair="both" partialTagModeDisplay="full"/>
+<ElementDisplay element="object" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="output" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="owner" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="p" fullTagModeIcon="para" pair="start" partialTagModeIcon="para"/>
+<ElementDisplay element="p" fullTagModeIcon="endpara" pair="end" partialTagModeIcon="endpara"/>
+<ElementDisplay element="part" partialTagModeDisplay="full"/>
+<ElementDisplay element="part-of" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="person" pair="both" partialTagModeDisplay="full"/>
+<ElementDisplay element="phone" fullTagModeDisplay="full" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="preform" newline="yes" pair="both"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="present" partialTagModeDisplay="full"/>
+<ElementDisplay element="primary" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="prod-no" fullTagModeDisplay="full" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="public-no" fullTagModeDisplay="partial"
+pair="end"/>
+<ElementDisplay element="quote" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="receivers" partialTagModeDisplay="full"/>
+<ElementDisplay element="resource-id" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="rev" fullTagModeDisplay="full" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="reference" partialTagModeDisplay="full"/>
+<ElementDisplay element="reference-list" partialTagModeDisplay="full"/>
+<ElementDisplay element="rf-item" partialTagModeDisplay="full"/>
+<ElementDisplay element="rf-subsection" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="rf-title" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="rev-info" partialTagModeDisplay="full"/>
+<ElementDisplay element="revision-history" partialTagModeDisplay="full"/>
+<ElementDisplay element="row" partialTagModeDisplay="full"/>
+<ElementDisplay element="secondary" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="see" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="selection-item" partialTagModeDisplay="full"/>
+<ElementDisplay element="selection-list" partialTagModeDisplay="full"/>
+<ElementDisplay element="signature" fullTagModeDisplay="full"
+pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="sl-item" pair="both"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="source" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="span" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="step-list" pair="both"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="stitle" fullTagModeDisplay="full" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="subs" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="subtitle" fullTagModeDisplay="full" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="sups" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="table" pair="both" partialTagModeDisplay="full"/>
+<ElementDisplay element="tbl-item" partialTagModeDisplay="full"/>
+<ElementDisplay element="tbl-list" partialTagModeDisplay="full"/>
+<ElementDisplay element="tp" fullTagModeIcon="para" pair="start" partialTagModeIcon="para"/>
+<ElementDisplay element="tp" fullTagModeIcon="endpara" pair="end" partialTagModeIcon="endpara"/>
+<ElementDisplay element="term" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="tertiary" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="tbody" partialTagModeDisplay="full"/>
+<ElementDisplay element="tgroup" partialTagModeDisplay="full"/>
+<ElementDisplay element="thead" partialTagModeDisplay="full"/>
+<ElementDisplay element="title" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="titled-block" partialTagModeDisplay="full"/>
+<ElementDisplay element="title-page" fullTagModeDisplay="full"
+pair="both" partialTagModeDisplay="full"/>
+<ElementDisplay element="tnote" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="translated-by" pair="both"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="trademark" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="tm-item" pair="start"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="trademark-list" pair="both"
+partialTagModeDisplay="full"/>
+<ElementDisplay element="ulink" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="user-info" fullTagModeDisplay="full"
+pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="var" pair="start" partialTagModeDisplay="full"/><?Pub
+Caret?>
+<ElementDisplay element="wrap" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="xref" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="y" fullTagModeDisplay="full" pair="start"
+partialTagModeDisplay="full"/></Display>
+<Specials>
+<Graphic element="graphics" filename="xlink:href" horizScale="scalepct"
+reproDepth="scaleheight" reproWidth="scalewidth" resolution="resol"
+scaleToFit="scalefit" vertOffsetAmount="vertadjamt" vertScale="scalepct"/>
+<Link element="xref" idref="linkend"/>
+<Link element="link" idref="linkend"/>
+<Link element="ulink" uri="xlink:href"/>
+<Paragraph element="p"/>
+<Paragraph element="tp"/>
+<Paragraph element="def"/>
+<Paragraph element="expansion"/>
+<Paragraph element="tbl-item"/>
+<Paragraph element="owner"/></Specials>
+<ContextTransformations>
+<InsertAroundToFix>
+<ElementListItem element="figure"/>
+<ElementListItem element="p"/>
+<ElementListItem element="tp"/>
+<ElementListItem element="source"/>
+<ElementListItem element="caption"/>
+<ElementListItem element="title"/>
+<ElementListItem element="term"/></InsertAroundToFix>
+<Substitutions element="caption">
+<ElementListItem element="source"/>
+<ElementListItem element="title"/>
+<ElementListItem element="stitle"/>
+<ElementListItem element="term"/>
+<ElementListItem element="p"/></Substitutions>
+<Substitutions element="chl1">
+<ElementListItem element="chl2"/>
+<ElementListItem element="chl3"/>
+<ElementListItem element="chl4"/>
+<ElementListItem element="chl5"/></Substitutions>
+<Substitutions element="chl2">
+<ElementListItem element="chl3"/>
+<ElementListItem element="chl4"/>
+<ElementListItem element="chl5"/>
+<ElementListItem element="chl1"/></Substitutions>
+<Substitutions element="chl3">
+<ElementListItem element="chl2"/>
+<ElementListItem element="chl4"/>
+<ElementListItem element="chl5"/>
+<ElementListItem element="chl1"/></Substitutions>
+<Substitutions element="chl4">
+<ElementListItem element="chl2"/>
+<ElementListItem element="chl3"/>
+<ElementListItem element="chl5"/>
+<ElementListItem element="chl1"/></Substitutions>
+<Substitutions element="chl5">
+<ElementListItem element="chl2"/>
+<ElementListItem element="chl3"/>
+<ElementListItem element="chl4"/>
+<ElementListItem element="chl1"/></Substitutions>
+<Substitutions element="tp">
+<ElementListItem element="p"/></Substitutions>
+<Substitutions element="p">
+<ElementListItem element="tp"/>
+<ElementListItem element="source"/>
+<ElementListItem element="caption"/>
+<ElementListItem element="title"/>
+<ElementListItem element="stitle"/>
+<ElementListItem element="term"/></Substitutions>
+<Substitutions element="source">
+<ElementListItem element="caption"/>
+<ElementListItem element="title"/>
+<ElementListItem element="stitle"/>
+<ElementListItem element="term"/>
+<ElementListItem element="p"/></Substitutions>
+<Substitutions element="stitle">
+<ElementListItem element="source"/>
+<ElementListItem element="caption"/>
+<ElementListItem element="title"/>
+<ElementListItem element="term"/>
+<ElementListItem element="p"/></Substitutions>
+<Substitutions element="term">
+<ElementListItem element="source"/>
+<ElementListItem element="caption"/>
+<ElementListItem element="title"/>
+<ElementListItem element="stitle"/>
+<ElementListItem element="p"/></Substitutions>
+<Substitutions element="title">
+<ElementListItem element="source"/>
+<ElementListItem element="caption"/>
+<ElementListItem element="stitle"/>
+<ElementListItem element="term"/>
+<ElementListItem element="p"/></Substitutions>
+</ContextTransformations>
+<Lists>
+<Numbered>
+<Block attribute="type" attributeValue="numeric" element="list"/>
+<Item element="list-item"/></Numbered>
+<Bulleted>
+<Block attribute="type" attributeValue="unordered" element="list"/>
+<Item element="list-item"/></Bulleted>
+</Lists>
+</DocumentTypeConfiguration>
+<?Pub *0000018423 0?>

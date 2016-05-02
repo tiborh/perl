@@ -1,0 +1,17 @@
+<headA><14-point>confidentiality</14-point></headA>
+<par>This tag is used to describe the security classification  of the document.</par>
+<par></par>
+
+<headB>Attributes</headB>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>class</bold> The class attribute has the following values:<list><?Pub Lcl MarkerStyle="bulleted">
+<item><sans-serif>confidential</sans-serif>   The document is set to confidential and the text CONFIDENTIAL appears in the header of the page</item>
+<item><sans-serif>internal</sans-serif>   The document is set to internal and the text INTERNAL INFORMATION appears in the header of the page</item>
+<item><sans-serif>open</sans-serif>   The document is set to open and the text OPEN INFORMATION appears in the header of the page</item>
+</list></list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold>  An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>
+
+
+
+

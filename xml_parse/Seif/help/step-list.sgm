@@ -1,0 +1,11 @@
+<headA><14-point>step-list</14-point></headA>
+<par>This tag is used to create step instructions.</par>
+<par></par>
+<headB>Attributes</headB>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>reset</bold> Resets the counter of the sl-item tag if it is set to <sans-serif>yes</sans-serif></list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold>  An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>
+
+
+

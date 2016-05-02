@@ -1,0 +1,28 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+my $title = "Template";
+
+sub main {
+    print <<EOT;
+<h1>$title</h1>
+<p>\$, can be set to a char or to a number of chars.</p>
+EOT
+
+$, = ":"
+
+print "avocado","broccoli","carrot","\n";
+    print (1..10);
+
+
+} # main
+
+require "html.cgi";
+
+&cgi_head("$title");
+&main();
+&printcode($0);
+&cgi_foot();
+exit;

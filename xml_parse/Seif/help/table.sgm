@@ -1,0 +1,45 @@
+<headA><14-point>table</14-point></headA>
+<par>This tag pair is used to create tables</par>
+<par></par>
+
+<headB>Attributes</headB>
+<par><bold>Note!</bold> All attributes except frame are set by the Table editor. It is not advisable to change the attributes defined by the Table editor.</par>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>frame</bold> The frame attribute has six attributevalues which are used to remove all or parts of the frame. Default is all.<list><?Pub Lcl MarkerStyle="bulleted">
+<item><sans-serif>top</sans-serif> </item>
+<item><sans-serif>bottom</sans-serif> </item>
+<item><sans-serif>topbot</sans-serif> </item>
+<item><sans-serif>all</sans-serif> </item>
+<item><sans-serif>sides</sans-serif> </item>
+<item><sans-serif>none</sans-serif> </item></list></list>
+
+
+<list><?Pub Lcl MarkerStyle="none"><bold>tabstyle</bold> A unique tablestyle declared in the FOSI</list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>tocentry</bold> If other than zeros, and the title is present, this table title should be included in the list of tables.</list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>shortentry</bold> This value is not implemented in Publisher (the values are yes or no and state if you want the title of the table to be included in a compiled index).
+</list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>colsep</bold> If other than zero, display the internal vertical row ruling below each item. If only zeros, do not display it. Ignored for the last row of the table, where the frame value appeares.</list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>rowsep</bold> Displays the internal vertical row ruling. The values are <sans-serif>yes</sans-serif> or <sans-serif>no</sans-serif>.</list>
+
+
+<list><?Pub Lcl MarkerStyle="none"><bold>orient</bold> Orientation of the entire chart. The options are<list><?Pub Lcl MarkerStyle="bulleted">
+<item><sans-serif>land</sans-serif>   Table writing direction is the same as marginal text.</item>
+<item><sans-serif>port</sans-serif>   Table writing direction, along rows, is the same as marginal text.</item></list> This attribute is not supporte by ADEPT*Publisher</list>
+
+
+<list><?Pub Lcl MarkerStyle="none"><bold>pgwide</bold> If other than zeros the  table runs across the page. If only zeros the table runs acrossor just the current column of the page.</list>
+
+
+<list><?Pub Lcl MarkerStyle="none"><bold>l-r</bold> Horizontal indentation of the elements contained by the example-tag. Depending on the attribute value, the element is indented from the left margin of the flowing text.
+<list><?Pub Lcl MarkerStyle="bulleted">
+<item><sans-serif>column</sans-serif>   1.8 inches indentation</item>
+<item><sans-serif>half-indent</sans-serif>   0.9 inches indentation</item>
+<item><sans-serif>leftmargin</sans-serif>   0.05 inches indentation</item>
+</list></list>
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold>  An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>
+
+

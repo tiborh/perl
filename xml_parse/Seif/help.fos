@@ -1,0 +1,4150 @@
+<!DOCTYPE OUTSPEC PUBLIC "-//ArborText//DTD OUTPUT SPEC MIL-PRF-28001 REV B AMEND 1 19961231//EN" [
+<!--ArborText, Inc., 1988-1998, v.4002-->
+<!ENTITY % math "IGNORE">
+<!ENTITY % foo "IGNORE">
+<!NOTATION eps SYSTEM "EPS">
+<!ENTITY frame8a PUBLIC "-//ERICSSON//NONSGML Header frame 8A 8/FAD 102 8609/1 R1//EN//EPS" NDATA eps>
+<!ENTITY frame8c PUBLIC "-//ERICSSON//NONSGML Header frame 8C 8/FAD 102 8609/2 R1//EN//EPS" NDATA eps>
+<!ENTITY frame8m PUBLIC "-//ERICSSON//NONSGML Header frame 8M 8/FAD 102 8609/3 R1//EN//EPS" NDATA eps>
+<!ENTITY frame8aff PUBLIC "-//ERICSSON//NONSGML Header frame 8A ff 8/FAD 102 8609/11 R1//EN//EPS" NDATA eps>
+<!ENTITY frame8cff PUBLIC "-//ERICSSON//NONSGML Header frame 8C ff 8/FAD 102 8609/12 R1//EN//EPS" NDATA eps>
+<!ENTITY frame8mff PUBLIC "-//ERICSSON//NONSGML Header frame 8M ff 8/FAD 102 8609/13 R1//EN//EPS" NDATA eps>
+<!ENTITY erilogo PUBLIC "-//ERICSSON//NONSGML Ericsson Logo 7/FAD 102 8609 R1//EN//EPS" NDATA eps>
+<!ENTITY % extrule "(0 | 1)">
+]>
+<?Pub Sty _comment TypeSize="14pt">
+<?Pub Sty _comment FontColor="blue">
+<?Pub Sty _comment BackColor="blue">
+<?Pub Inc>
+<outspec><?Pub Lcl _id="257" _label="Adept v8.0">
+<!--This comment contains conversion information. Please do not remove or modify. Version="8.0/Standard Beta 2" Revision="3" SourcePI="-//ArborText//DTD OUTPUT SPEC 040300//EN" ConvPI="-//ArborText//DTD OUTPUT SPEC MIL-PRF-28001 REV B AMEND 1 19961231//EN" AdeptFosi="5.0" Status="Converting" NumConversions="1" NumInstalls="0"-->
+<?Pub Caret>
+<rsrcdesc><?Pub Dtl>
+<!-- - Default characters fills - -->
+<charfill literal=" " cfid="spcfill"><?Pub Lcl _id="f1">
+<!-- - Default page counters - -->
+<counter initial="0" style="arabic" enumid="folioct"><?Pub Lcl _id="f5">
+<counter initial="0" style="arabic" enumid="figct"><?Pub Lcl _id="f6">
+<counter initial="0" style="arabic" enumid="xmpct"><?Pub Lcl _id="f183">
+<counter initial="0" style="arabic" enumid="tblct"><?Pub Lcl _id="f7">
+<counter initial="0" style="arabic" enumid="tblntct"><?Pub Lcl _id="f185"><![ %math; [<counter
+initial="0" style="arabic" enumid="eqtct">]]>
+<counter initial="0" style="arabic" enumid="slct"><?Pub Lcl _id="f185">
+<counter initial="0" style="arabic" enumid="h1ct"><?Pub Lcl _id="f8">
+<counter initial="0" style="arabic" enumid="h2ct"><?Pub Lcl _id="f9">
+<counter initial="0" style="arabic" enumid="h3ct"><?Pub Lcl _id="f10">
+<counter initial="0" style="arabic" enumid="h4ct"><?Pub Lcl _id="f11">
+<counter initial="0" style="arabic" enumid="h5ct"><?Pub Lcl _id="f12">
+<counter initial="0" style="alphalc" seq="1" enumid="list1ct"><?Pub Lcl _id="f13">
+<counter initial="0" style="alphalc" seq="1" enumid="list2ct"><?Pub Lcl _id="f14">
+<counter initial="0" style="alphalc" seq="1" enumid="list3ct"><?Pub Lcl _id="f15">
+<counter initial="0" style="alphalc" seq="1" enumid="list4ct"><?Pub Lcl _id="f16">
+<counter initial="0" style="alphalc" seq="1" enumid="list5ct"><?Pub Lcl _id="f186">
+<!-- - Header fields - -->
+<stringdecl textid="cpylogo" status="1"><?Pub Lcl _id="f34">
+<stringdecl textid="sclass" status="1"><?Pub Lcl _id="f35">
+<stringdecl textid="info" status="1"><?Pub Lcl _id="f36">
+<stringdecl textid="docname" status="1"><?Pub Lcl _id="f37">
+<stringdecl textid="docno" status="1"><?Pub Lcl _id="f38">
+<stringdecl textid="date" status="1"><?Pub Lcl _id="f39">
+<stringdecl textid="rev" status="1"><?Pub Lcl _id="f40">
+<stringdecl textid="ref" status="1"><?Pub Lcl _id="f41">
+<stringdecl textid="prep-ref" status="1"><?Pub Lcl _id="f42">
+<stringdecl textid="prep-reg" status="1"><?Pub Lcl _id="f45">
+<stringdecl textid="appr" status="1"><?Pub Lcl _id="f46">
+<stringdecl textid="check" status="1"><?Pub Lcl _id="f47">
+<stringdecl textid="factresp" status="1"><?Pub Lcl _id="f48">
+<!-- - :+: - -->
+<stringdecl textid="totalpg" status="1"><?Pub Lcl _id="f187">
+<stringdecl textid="toc.str" status="1"><?Pub Lcl _id="f188">
+<stringdecl textid="tot.str" status="1"><?Pub Lcl _id="f189">
+<stringdecl textid="tof.str" status="1"><?Pub Lcl _id="f190">
+<stringdecl textid="presstr" literal=" " status="1"><?Pub Lcl _id="f249">
+<stringdecl textid="rcvrstr" literal=" " status="1"><?Pub Lcl _id="f251">
+<stringdecl textid="ccopstr" literal=" " status="1"><?Pub Lcl _id="f252">
+</rsrcdesc>
+<!-- - Page Description - -->
+<pagedesc>
+<pageset id="A4"><?Pub Lcl _id="f52"><?Pub Dtl>
+<rectopg width="210mm" nomdepth="296.02mm"><?Pub Lcl _convmesg1="2;1;45;58;1;3-1"
+_convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+<pagespec pgid="A4-1">
+<topmarg nomdepth="12pt">
+<botmarg nomdepth="15mm">
+<leftmarg width="66.99mm">
+<rtmarg width="22mm">
+<header nomdepth="35mm" spaflow="0pt"></header>
+<footer nomdepth="10mm" spaflow="0pt"></footer>
+<flowtext numcols="1"><?Pub Lcl _convmesg1="2;1;20;19;1;3-1@2;1;21;20;1;3-2@2;1;23;22;1;3-3@2;1;26;26;1;3-4@2;1;27;27;1;3-5"
+_convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.__S__Thu Oct 22 11:06:11 1998__N__Status changed to Updated.__S__Thu Oct 22 11:06:11 1998__N__Status changed to Updated.__S__Thu Oct 22 11:06:11 1998__N__Status changed to Updated.__S__Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+<column vjprior="comp" width="121.01mm"></flowtext>
+</pagespec>
+</rectopg>
+<rectopg width="210mm" nomdepth="296.02mm"><?Pub Lcl _convmesg1="2;1;45;58;1;3-1"
+_convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+<pagespec pgid="A4-2">
+<topmarg nomdepth="12pt">
+<botmarg nomdepth="25mm">
+<leftmarg width="66.99mm">
+<rtmarg width="22mm">
+<header nomdepth="35mm" spaflow="2pi"></header>
+<footer nomdepth="0pt" spaflow="0pt"></footer>
+<flowtext numcols="1"><?Pub Lcl _convmesg1="2;1;20;19;1;3-1@2;1;21;20;1;3-2@2;1;23;22;1;3-3@2;1;26;26;1;3-4@2;1;27;27;1;3-5"
+_convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.__S__Thu Oct 22 11:06:11 1998__N__Status changed to Updated.__S__Thu Oct 22 11:06:11 1998__N__Status changed to Updated.__S__Thu Oct 22 11:06:11 1998__N__Status changed to Updated.__S__Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+<column vjprior="comp" width="121.01mm"></flowtext>
+</pagespec>
+</rectopg>
+</pageset>
+<pageset id="lzf03228"><?Pub Lcl _id="f53"><?Pub Dtl>
+<rectopg width="8.5in" nomdepth="298.96mm"><?Pub Lcl _convmesg1="2;1;45;58;1;3-1"
+_convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+<pageres>
+<enumerat increm="1" enumid="folioct">
+<savetext textid="folio" conrule="folioct"></pageres>
+<pageref pgidref="A4-1">
+<header nomdepth="108pt">
+<usetext source="3.6in-1.8in,info">
+<subchars>
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="2" nominal="2" maximum="2" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="3.6in-1.8in,sclass">
+<subchars>
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="3.6in-1.8in,docname">
+<subchars>
+<font weight="bold">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="6.3in-1.8in,folioct,\ (\,totalpg,\)\">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-12pt" nominal="-12pt" maximum="-12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="0-1.8in,prep-ref">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="12pt" nominal="12pt" maximum="12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="3.6in-1.8in,date">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-12pt" nominal="-12pt" maximum="-12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="4.7in-1.8in,rev">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-12pt" nominal="-12pt" maximum="-12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="5.4in-1.8in,docno">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-12pt" nominal="-12pt" maximum="-12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="0in-1.8in,appr">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="12pt" nominal="12pt" maximum="12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="2.7in-1.8in,check">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-12pt" nominal="-12pt" maximum="-12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="5.4in-1.8in,ref">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-12pt" nominal="-12pt" maximum="-12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<putgraph graphname="frame8a">
+<subchars>
+<indent leftind="-1.85in" rightind="-26pt" firstln="*">
+<presp minimum="-46pt" nominal="-46pt" maximum="-46pt" condit="discard" priority="force">
+<textbrk startln="1"></subchars>
+</putgraph>
+<usetext source="-1.8in,\Uppgjord &mdash; \,<italic>,\Prepared\,</italic>,@3.6in-1.8in,\Datum &mdash; \,<italic>,\Date\,</italic>,@4.7in-1.8in,\Rev\,@5.4in-1.8in,\Dokumentnr &mdash; \,<italic>,\Document no\,</italic>">
+<subchars>
+<font size="6pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-54pt" nominal="-54pt" maximum="-54pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="-1.8in,\Godk&auml;nd &mdash; \,<italic>,\Approved\,</italic>,@2.7in-1.8in,\Kontr &mdash; \,<italic>,\Checked\,</italic>,@5.4in-1.8in,\Tillh&ouml;r/referens &mdash; \,<italic>,\File/reference\,</italic>">
+<subchars>
+<font size="6pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="12pt" nominal="12pt" maximum="12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="-1.85in,cpylogo">
+<subchars>
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-43pt" nominal="-43pt" maximum="-43pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+</header>
+<footer nomdepth="10mm">
+<usetext source="-1.8in,\SEIF v1.2, \,user">
+<subchars>
+<font size="8pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-43pt" nominal="-43pt" maximum="-43pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+</footer>
+</rectopg>
+<rectopg width="8.5in" nomdepth="298.96mm"><?Pub Lcl _convmesg1="2;1;45;58;1;3-1"
+_convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+<pageres>
+<enumerat increm="1" enumid="folioct">
+<savetext textid="folio" conrule="folioct"></pageres>
+<pageref pgidref="A4-2">
+<header nomdepth="108pt">
+<usetext source="3.6in-1.8in,info">
+<subchars>
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="2" nominal="2" maximum="2" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="3.6in-1.8in,sclass">
+<subchars>
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="3.6in-1.8in,docname">
+<subchars>
+<font size="11pt" weight="bold">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="6.3in-1.8in,folioct,\ (\,totalpg,\)\">
+<subchars>
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-12pt" nominal="-12pt" maximum="-12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="3.6in-1.8in,date">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="12pt" nominal="12pt" maximum="12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="4.7in-1.8in,rev">
+<subchars>
+<font size="10pt">
+<presp minimum="-12pt" nominal="-12pt" maximum="-12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="5.4in-1.8in,docno">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-12pt" nominal="-12pt" maximum="-12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<putgraph graphname="frame8aff">
+<subchars>
+<indent leftind="-1.85in" rightind="-26pt" firstln="*">
+<presp minimum="-22pt" nominal="-22pt" maximum="-22pt" condit="discard" priority="force">
+<textbrk startln="1"></subchars>
+</putgraph>
+<usetext source="@3.6in-1.8in,\Datum &mdash; \,<italic>,\Date\,</italic>,@4.7in-1.8in,\Rev\,@5.4in-1.8in,\Dokumentnr &mdash; \,<italic>,\Document no\,</italic>">
+<subchars>
+<font size="6pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-54pt" nominal="-54pt" maximum="-54pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="\ \">
+<subchars>
+<font size="6pt">
+<indent leftind="1mm" rightind="-50mm" firstln="*">
+<presp minimum="12pt" nominal="12pt" maximum="12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="-1.85in,cpylogo">
+<subchars>
+<indent leftind="0" rightind="-50mm" firstln="*">
+<presp minimum="-43pt" nominal="-43pt" maximum="-43pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+</header>
+<footer nomdepth="0mm"></footer>
+</rectopg>
+</pageset>
+<pageset id="lzf03241"><?Pub Lcl _id="f54"><?Pub Dtl>
+<rectopg width="8.5in" nomdepth="296.02mm"><?Pub Lcl _convmesg1="2;1;45;58;1;3-1"
+_convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+<pageres>
+<enumerat increm="1" enumid="folioct">
+<savetext textid="folio" conrule="folioct"></pageres>
+<pageref pgidref="A4-1">
+<header nomdepth="35mm">
+<usetext source="3.6in-1.8in,info">
+<subchars>
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="2" nominal="2" maximum="2" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="3.6in-1.8in,sclass">
+<subchars>
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="3.6in-1.8in,docname">
+<subchars>
+<font weight="bold">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="6.3in-1.8in,folioct,\ (\,totalpg,\)\">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-12pt" nominal="-12pt" maximum="-12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="0-1.8in,prep-reg">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="12pt" nominal="12pt" maximum="12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="1.8in-1.8in,factresp">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-12pt" nominal="-12pt" maximum="-12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="3.6in-1.8in,docno">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="right">
+<presp minimum="-12pt" nominal="-12pt" maximum="-12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="0in-1.8in,appr">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="12pt" nominal="12pt" maximum="12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="2.7in-1.8in,check">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-12pt" nominal="-12pt" maximum="-12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="3.6in-1.8in,date">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-12pt" nominal="-12pt" maximum="-12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="4.7in-1.8in,rev">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-12pt" nominal="-12pt" maximum="-12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="5.4in-1.8in,ref">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-12pt" nominal="-12pt" maximum="-12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<putgraph graphname="frame8c">
+<subchars>
+<indent leftind="-1.85in" rightind="-26pt" firstln="*">
+<presp minimum="-46pt" nominal="-46pt" maximum="-46pt" condit="discard" priority="force">
+<textbrk startln="1"></subchars>
+</putgraph>
+<usetext source="-1.8in,\Uppgjord &mdash; \,<italic>,\Prepared\,</italic>,@1.8in-1.8in,\Faktaansvarig &mdash; \,<italic>,\Subject responsible\,</italic>,@3.6in-1.8in,\Nr &mdash; \,<italic>,\No.\,</italic>">
+<subchars>
+<font size="6pt">
+<indent leftind="1mm" rightind="-15mm" firstln="*">
+<presp minimum="-54pt" nominal="-54pt" maximum="-54pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="-1.8in,\Dokansv/Godk &mdash; \,<italic>,\Doc respons/Approved\,</italic>,@2.7in-1.8in,\Kontr &mdash; \,<italic>,\Checked\,</italic>,@3.6in-1.8in,\Datum &mdash; \,<italic>,\Date\,</italic>,@4.7in-1.8in,\Rev\,@5.4in-1.8in,\File\">
+<subchars>
+<font size="6pt">
+<indent leftind="1mm" rightind="-50mm" firstln="*">
+<presp minimum="12pt" nominal="12pt" maximum="12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="-1.85in,cpylogo">
+<subchars>
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-43pt" nominal="-43pt" maximum="-43pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+</header>
+<footer nomdepth="10mm">
+<usetext source="-1.8in,\SEIF v1.2, \,user">
+<subchars>
+<font size="7pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-49pt" nominal="-49pt" maximum="-49pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+</footer>
+</rectopg>
+<rectopg width="8.5in" nomdepth="296.02mm"><?Pub Lcl _convmesg1="2;1;45;58;1;3-1"
+_convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+<pageres>
+<enumerat increm="1" enumid="folioct">
+<savetext textid="folio" conrule="folioct"></pageres>
+<pageref pgidref="A4-2">
+<header nomdepth="35mm">
+<usetext source="3.6in-1.8in,info">
+<subchars>
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="2" nominal="2" maximum="2" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="3.6in-1.8in,sclass">
+<subchars>
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="3.6in-1.8in,docname">
+<subchars>
+<font weight="bold">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="6.3in-1.8in,folioct,\ (\,totalpg,\)\">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-12pt" nominal="-12pt" maximum="-12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="3.6in-1.8in,docno">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="right">
+<presp minimum="12pt" nominal="12pt" maximum="12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="3.6in-1.8in,date">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="12pt" nominal="12pt" maximum="12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="4.7in-1.8in,rev">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-12pt" nominal="-12pt" maximum="-12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="5.4in-1.8in,ref">
+<subchars>
+<font size="10pt">
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-12pt" nominal="-12pt" maximum="-12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<putgraph graphname="frame8cff">
+<subchars>
+<indent leftind="-1.85in" rightind="-26pt" firstln="*">
+<presp minimum="-46pt" nominal="-46pt" maximum="-46pt" condit="discard" priority="force">
+<textbrk startln="1"></subchars>
+</putgraph>
+<usetext source="@3.6in-1.8in,\Nr &mdash; \,<italic>,\No.\,</italic>">
+<subchars>
+<font size="6pt">
+<indent leftind="1mm" rightind="-15mm" firstln="*">
+<presp minimum="-54pt" nominal="-54pt" maximum="-54pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="@3.6in-1.8in,\Datum &mdash; \,<italic>,\Date\,</italic>,@4.7in-1.8in,\Rev\,@5.4in-1.8in,\File\">
+<subchars>
+<font size="6pt">
+<indent leftind="1mm" rightind="-50mm" firstln="*">
+<presp minimum="12pt" nominal="12pt" maximum="12pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+<usetext source="-1.85in,cpylogo">
+<subchars>
+<indent leftind="0" firstln="*">
+<quadding quad="asis">
+<presp minimum="-43pt" nominal="-43pt" maximum="-43pt" priority="force">
+<textbrk startln="1"></subchars>
+</usetext>
+</header>
+<footer nomdepth="0mm"></footer>
+</rectopg>
+</pageset>
+</pagedesc>
+<styldesc>
+<docdesc><?Pub Lcl _id="f55">
+<charlist>
+<font inherit="0" style="sanserif" famname="" size="13" posture="upright"
+weight="medium" width="regular" offset="0pt"><?Pub Lcl _convmesg1="3;1;67;147;1;3-1"
+_convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+<leading inherit="0" lead="12pt">
+<hyphen hyph="1">
+<indent leftind="0in" rightind="0pt" firstln="*">
+<quadding inherit="0" quad="left" lastquad="relative">
+<presp minimum="0pt" nominal="0pt" maximum="0pt" condit="discard" priority="none"><?Pub Lcl
+_convmesg1="3;1;19;145;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+<postsp minimum="0pt" nominal="0pt" maximum="0pt" condit="discard" priority="none"><?Pub Lcl
+_convmesg1="3;1;19;145;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+<keeps scope="col" keep="0" widowct="2" orphanct="2" next="0" prev="0"><?Pub Lcl
+_convmesg1="3;1;16;39;1;3-1@3;1;18;41;1;3-2" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.__S__Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+<textbrk startcol="0" startpg="off" newpgmdl="none"></charlist>
+</docdesc>
+<e-i-c gi="SEIF"><?Pub Lcl _id="f56"><?Pub Dtl>
+<charlist>
+<hyphen hyph="1">
+<indent leftind="0" firstln="*"></charlist>
+</e-i-c>
+<!-- - Meta-data - -->
+<e-i-c gi="meta-data"><?Pub Lcl _id="f57"><?Pub Dtl>
+<charlist>
+<textbrk startln="1" endln="1">
+<savetext textid="prep-ref" conrule="prep-tmp,trnslsign,prep-phone" placemnt="after">
+<savetext textid="prep-reg" conrule="draft-init" placemnt="after">
+<usetext source="ccopstr" placemnt="after">
+<subchars>
+<indent leftind="-1.8in" rightind="*+3.55in">
+<algroup refpoint="top"></subchars>
+</usetext>
+<usetext source="rcvrstr" placemnt="after">
+<subchars>
+<indent leftind="1.8in" rightind="*+2.95in">
+<algroup refpoint="top"></subchars>
+</usetext>
+<usetext source="presstr" placemnt="after">
+<subchars>
+<indent leftind="1.8in" rightind="*+2.95in">
+<algroup refpoint="top"></subchars>
+</usetext>
+<usetext source="doctitle" placemnt="after">
+<subchars>
+<font size="14pt" weight="bold">
+<presp minimum="8pi" nominal="8pi" maximum="8pi" condit="keep">
+<postsp minimum="18" nominal="18" maximum="18" priority="med">
+<textbrk startln="1" endln="1"></subchars>
+</usetext>
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="language" context="meta-data"><?Pub Lcl _id="f66"><?Pub Dtl>
+<charlist>
+<font weight="bold">
+<indent inherit="1" leftind="40pt" rightind="0pt" firstln="*">
+<textbrk endln="1">
+<suppress sup="1">
+<savetext textid="enclo.txt" conrule="\Enclosures\">
+<savetext textid="abstr.txt" conrule="\Abstract\">
+<savetext textid="conte.txt" conrule="\Contents\">
+<savetext textid="pageu.txt" conrule="\Page\">
+<savetext textid="pagel.txt" conrule="\page\">
+<savetext textid="figuu.txt" conrule="\Figure\">
+<savetext textid="figul.txt" conrule="\figure\">
+<savetext textid="tablu.txt" conrule="\Table\">
+<savetext textid="tabll.txt" conrule="\table\"><![ %math; [<savetext textid="equau.txt"
+conrule="\Equation\">]]><![ %foo; [<savetext textid="equal.txt" conrule="\equation\">
+]]>
+<savetext textid="cautn.txt" conrule="\CAUTION\">
+<savetext textid="warng.txt" conrule="\WARNING\">
+<savetext textid="dangr.txt" conrule="\DANGER\">
+<savetext textid="noteu.txt" conrule="\NOTE\">
+<savetext textid="prsnt.txt" conrule="\Present\">
+<savetext textid="nopre.txt" conrule="\Not present\">
+<savetext textid="ccopy.txt" conrule="\For information\">
+<savetext textid="xmpll.txt" conrule="\example\">
+<savetext textid="xmplu.txt" conrule="\Example\">
+<savetext textid="sourc.txt" conrule="\Source\">
+<savetext textid="stepl.txt" conrule="\step\">
+<savetext textid="copyr.txt" conrule="\Copyright\">
+<savetext textid="discl.txt" conrule="\Disclaimer\">
+<savetext textid="tmark.txt" conrule="\Trademarks\"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+<att>
+<specval attname="code" attval="#NONE">
+<charsubset>
+<savetext textid="docno" conrule="\ \,#CONTENT" placemnt="before" append="1">
+</charsubset>
+</att>
+<att>
+<specval attname="code" attval="#ANY">
+<charsubset>
+<savetext textid="docno" conrule="\ U\" placemnt="before" append="1"></charsubset>
+</att>
+<att>
+<fillval attname="code" fillcat="savetext" fillchar="conrule">
+<charsubset>
+<savetext textid="docno" placemnt="before" append="1"></charsubset>
+</att>
+<att>
+<specval attname="code" attval="ae">
+<charsubset>
+<savetext textid="enclo.txt" conrule="\Enclosures\">
+<savetext textid="abstr.txt" conrule="\Abstract\">
+<savetext textid="conte.txt" conrule="\Contents\">
+<savetext textid="pageu.txt" conrule="\Page\">
+<savetext textid="pagel.txt" conrule="\page\">
+<savetext textid="figuu.txt" conrule="\Figure\">
+<savetext textid="figul.txt" conrule="\figure\">
+<savetext textid="tablu.txt" conrule="\Table\">
+<savetext textid="tabll.txt" conrule="\table\">
+<savetext textid="cautn.txt" conrule="\CAUTION\">
+<savetext textid="warng.txt" conrule="\WARNING\">
+<savetext textid="dangr.txt" conrule="\DANGER\">
+<savetext textid="noteu.txt" conrule="\Note\">
+<savetext textid="prsnt.txt" conrule="\Present\">
+<savetext textid="nopre.txt" conrule="\Not present\">
+<savetext textid="ccopy.txt" conrule="\For information\">
+<savetext textid="xmpll.txt" conrule="\example\">
+<savetext textid="xmplu.txt" conrule="\Example\">
+<savetext textid="sourc.txt" conrule="\Source\">
+<savetext textid="stepl.txt" conrule="\step\">
+<savetext textid="copyr.txt" conrule="\Copyright\">
+<savetext textid="discl.txt" conrule="\Disclaimer\">
+<savetext textid="tmark.txt" conrule="\Trademarks\"></charsubset>
+</att>
+<att>
+<specval attname="code" attval="da">
+<charsubset>
+<savetext textid="enclo.txt" conrule="\Bilag\">
+<savetext textid="abstr.txt" conrule="\Referat\">
+<savetext textid="conte.txt" conrule="\Indhold\">
+<savetext textid="pageu.txt" conrule="\Side\">
+<savetext textid="pagel.txt" conrule="\side\">
+<savetext textid="figuu.txt" conrule="\Figur\">
+<savetext textid="figul.txt" conrule="\figur\">
+<savetext textid="tablu.txt" conrule="\Tabel\">
+<savetext textid="tabll.txt" conrule="\tabel\">
+<savetext textid="cautn.txt" conrule="\FORSIGTIG\">
+<savetext textid="warng.txt" conrule="\ADVARSEL\">
+<savetext textid="dangr.txt" conrule="\FARE\">
+<savetext textid="noteu.txt" conrule="\Bem&aelig;rk\">
+<savetext textid="prsnt.txt" conrule="\Til stede\">
+<savetext textid="nopre.txt" conrule="\Ikke til stede\">
+<savetext textid="ccopy.txt" conrule="\Til oplysning\">
+<savetext textid="xmpll.txt" conrule="\eksempel\">
+<savetext textid="xmplu.txt" conrule="\Eksempel\">
+<savetext textid="sourc.txt" conrule="\Kilde\">
+<savetext textid="stepl.txt" conrule="\step\">
+<savetext textid="copyr.txt" conrule="\Copyright\">
+<savetext textid="discl.txt" conrule="\Disclaimer\">
+<savetext textid="tmark.txt" conrule="\Trademarks\"></charsubset>
+</att>
+<att>
+<specval attname="code" attval="de">
+<charsubset>
+<savetext textid="enclo.txt" conrule="\Anlage\">
+<savetext textid="abstr.txt" conrule="\Inhaltsangabe\">
+<savetext textid="conte.txt" conrule="\Inhalt\">
+<savetext textid="pageu.txt" conrule="\Seite\">
+<savetext textid="pagel.txt" conrule="\Seite\">
+<savetext textid="figuu.txt" conrule="\Abbildung\">
+<savetext textid="figul.txt" conrule="\Abbildung\">
+<savetext textid="tablu.txt" conrule="\Tabelle\">
+<savetext textid="tabll.txt" conrule="\Tabelle\">
+<savetext textid="cautn.txt" conrule="\VORSICHT\">
+<savetext textid="warng.txt" conrule="\WARNUNG\">
+<savetext textid="dangr.txt" conrule="\GEFAHR\">
+<savetext textid="noteu.txt" conrule="\Notiz\">
+<savetext textid="prsnt.txt" conrule="\Anwesend\">
+<savetext textid="nopre.txt" conrule="\Nicht anwesend\">
+<savetext textid="ccopy.txt" conrule="\Zur Kenntnisnahme\">
+<savetext textid="xmpll.txt" conrule="\Beispiel\">
+<savetext textid="xmplu.txt" conrule="\Beispiel\">
+<savetext textid="sourc.txt" conrule="\Quelle\">
+<savetext textid="stepl.txt" conrule="\step\">
+<savetext textid="copyr.txt" conrule="\Copyright\">
+<savetext textid="discl.txt" conrule="\Disclaimer\">
+<savetext textid="tmark.txt" conrule="\Trademarks\"></charsubset>
+</att>
+<att>
+<specval attname="code" attval="en">
+<charsubset>
+<savetext textid="enclo.txt" conrule="\Enclosures\">
+<savetext textid="abstr.txt" conrule="\Abstract\">
+<savetext textid="conte.txt" conrule="\Contents\">
+<savetext textid="pageu.txt" conrule="\Page\">
+<savetext textid="pagel.txt" conrule="\page\">
+<savetext textid="figuu.txt" conrule="\Figure\">
+<savetext textid="figul.txt" conrule="\figure\">
+<savetext textid="tablu.txt" conrule="\Table\">
+<savetext textid="tabll.txt" conrule="\table\">
+<savetext textid="cautn.txt" conrule="\CAUTION\">
+<savetext textid="warng.txt" conrule="\WARNING\">
+<savetext textid="dangr.txt" conrule="\DANGER\">
+<savetext textid="noteu.txt" conrule="\Note\">
+<savetext textid="prsnt.txt" conrule="\Present\">
+<savetext textid="nopre.txt" conrule="\Not present\">
+<savetext textid="ccopy.txt" conrule="\For information\">
+<savetext textid="xmpll.txt" conrule="\example\">
+<savetext textid="xmplu.txt" conrule="\Example\">
+<savetext textid="sourc.txt" conrule="\Source\">
+<savetext textid="stepl.txt" conrule="\step\">
+<savetext textid="copyr.txt" conrule="\Copyright\">
+<savetext textid="discl.txt" conrule="\Disclaimer\">
+<savetext textid="tmark.txt" conrule="\Trademarks\"></charsubset>
+</att>
+<att>
+<specval attname="code" attval="es">
+<charsubset>
+<savetext textid="enclo.txt" conrule="\Anexos\">
+<savetext textid="abstr.txt" conrule="\Resumen\">
+<savetext textid="conte.txt" conrule="\Contenido\">
+<savetext textid="pageu.txt" conrule="\P&aacute;gina\">
+<savetext textid="pagel.txt" conrule="\p&aacute;gina\">
+<savetext textid="figuu.txt" conrule="\Figura\">
+<savetext textid="figul.txt" conrule="\figura\">
+<savetext textid="tablu.txt" conrule="\Tabla\">
+<savetext textid="tabll.txt" conrule="\tabla\">
+<savetext textid="cautn.txt" conrule="\PRECAUCION\">
+<savetext textid="warng.txt" conrule="\ADVERTENCIA\">
+<savetext textid="dangr.txt" conrule="\PELIGRO\">
+<savetext textid="noteu.txt" conrule="\Nota\">
+<savetext textid="prsnt.txt" conrule="\Presente\">
+<savetext textid="nopre.txt" conrule="\Ausente\">
+<savetext textid="ccopy.txt" conrule="\Para informaci&oacute;n\">
+<savetext textid="xmpll.txt" conrule="\ejemplo\">
+<savetext textid="xmplu.txt" conrule="\Ejemplo\">
+<savetext textid="sourc.txt" conrule="\Fuente\">
+<savetext textid="stepl.txt" conrule="\step\">
+<savetext textid="copyr.txt" conrule="\Copyright\">
+<savetext textid="discl.txt" conrule="\Disclaimer\">
+<savetext textid="tmark.txt" conrule="\Trademarks\"></charsubset>
+</att>
+<att>
+<specval attname="code" attval="fi">
+<charsubset>
+<savetext textid="enclo.txt" conrule="\Liitteet\">
+<savetext textid="abstr.txt" conrule="\Tiivistelm&auml;\">
+<savetext textid="conte.txt" conrule="\Sis&auml;lt&ouml;\">
+<savetext textid="pageu.txt" conrule="\Sivu\">
+<savetext textid="pagel.txt" conrule="\sivu\">
+<savetext textid="figuu.txt" conrule="\Kuva\">
+<savetext textid="figul.txt" conrule="\kuva\">
+<savetext textid="tablu.txt" conrule="\Taulukko\">
+<savetext textid="tabll.txt" conrule="\taulukko\">
+<savetext textid="cautn.txt" conrule="\VAROITUS\">
+<savetext textid="warng.txt" conrule="\VAARA\">
+<savetext textid="dangr.txt" conrule="\HENGENVAARA\">
+<savetext textid="noteu.txt" conrule="\Huomautus\">
+<savetext textid="prsnt.txt" conrule="\L&auml;sn&auml;\">
+<savetext textid="nopre.txt" conrule="\Poissa\">
+<savetext textid="ccopy.txt" conrule="\Tiedoksi\">
+<savetext textid="xmpll.txt" conrule="\esimerkki\">
+<savetext textid="xmplu.txt" conrule="\Esimerkki\">
+<savetext textid="sourc.txt" conrule="\L&auml;hde\">
+<savetext textid="stepl.txt" conrule="\step\">
+<savetext textid="copyr.txt" conrule="\Copyright\">
+<savetext textid="discl.txt" conrule="\Disclaimer\">
+<savetext textid="tmark.txt" conrule="\Trademarks\"></charsubset>
+</att>
+<att>
+<specval attname="code" attval="fr">
+<charsubset>
+<savetext textid="enclo.txt" conrule="\Pi&egrave;ces jointes\">
+<savetext textid="abstr.txt" conrule="\R&eacute;sum&eacute;\">
+<savetext textid="conte.txt" conrule="\Table des mati&egrave;res\">
+<savetext textid="pageu.txt" conrule="\Page\">
+<savetext textid="pagel.txt" conrule="\page\">
+<savetext textid="figuu.txt" conrule="\Figure\">
+<savetext textid="figul.txt" conrule="\figure\">
+<savetext textid="tablu.txt" conrule="\Tableau\">
+<savetext textid="tabll.txt" conrule="\tableau\">
+<savetext textid="cautn.txt" conrule="\AVERTISSEMENT\">
+<savetext textid="warng.txt" conrule="\MISE EN GARDE\">
+<savetext textid="dangr.txt" conrule="\DANGER\">
+<savetext textid="noteu.txt" conrule="\Note\">
+<savetext textid="prsnt.txt" conrule="\Pr&eacute;sent\">
+<savetext textid="nopre.txt" conrule="\Non-pr&eacute;sent\">
+<savetext textid="ccopy.txt" conrule="\Pour information\">
+<savetext textid="xmpll.txt" conrule="\exemple\">
+<savetext textid="xmplu.txt" conrule="\Exemple\">
+<savetext textid="sourc.txt" conrule="\Source\">
+<savetext textid="stepl.txt" conrule="\step\">
+<savetext textid="copyr.txt" conrule="\Copyright\">
+<savetext textid="discl.txt" conrule="\Disclaimer\">
+<savetext textid="tmark.txt" conrule="\Trademarks\"></charsubset>
+</att>
+<att>
+<specval attname="code" attval="is">
+<charsubset>
+<savetext textid="enclo.txt" conrule="\Fylgiskj&ouml;l\">
+<savetext textid="abstr.txt" conrule="\&Aacute;grip\">
+<savetext textid="conte.txt" conrule="\Efnisyfirlit\">
+<savetext textid="pageu.txt" conrule="\Bla&eth;si&eth;a\">
+<savetext textid="pagel.txt" conrule="\bla&eth;si&eth;a\">
+<savetext textid="figuu.txt" conrule="\Mynd\">
+<savetext textid="figul.txt" conrule="\mynd\">
+<savetext textid="tablu.txt" conrule="\Tafla\">
+<savetext textid="tabll.txt" conrule="\tafla\">
+<savetext textid="cautn.txt" conrule="\CAUTION\">
+<savetext textid="warng.txt" conrule="\WARNING\">
+<savetext textid="dangr.txt" conrule="\DANGER\">
+<savetext textid="noteu.txt" conrule="\Note\">
+<savetext textid="prsnt.txt" conrule="\Present\">
+<savetext textid="nopre.txt" conrule="\Not present\">
+<savetext textid="ccopy.txt" conrule="\For information\">
+<savetext textid="xmpll.txt" conrule="\example\">
+<savetext textid="xmplu.txt" conrule="\Example\">
+<savetext textid="sourc.txt" conrule="\Source\">
+<savetext textid="stepl.txt" conrule="\step\">
+<savetext textid="copyr.txt" conrule="\Copyright\">
+<savetext textid="discl.txt" conrule="\Disclaimer\">
+<savetext textid="tmark.txt" conrule="\Trademarks\"></charsubset>
+</att>
+<att>
+<specval attname="code" attval="it">
+<charsubset>
+<savetext textid="enclo.txt" conrule="\Allegati\">
+<savetext textid="abstr.txt" conrule="\Riassunto\">
+<savetext textid="conte.txt" conrule="\Sommario\">
+<savetext textid="pageu.txt" conrule="\Pagina\">
+<savetext textid="pagel.txt" conrule="\pagina\">
+<savetext textid="figuu.txt" conrule="\Figura\">
+<savetext textid="figul.txt" conrule="\figura\">
+<savetext textid="tablu.txt" conrule="\Tabella\">
+<savetext textid="tabll.txt" conrule="\tabella\">
+<savetext textid="cautn.txt" conrule="\PRUDENZA\">
+<savetext textid="warng.txt" conrule="\ATTENZIONE\">
+<savetext textid="dangr.txt" conrule="\PERICOLO\">
+<savetext textid="noteu.txt" conrule="\Nota\">
+<savetext textid="prsnt.txt" conrule="\Presente\">
+<savetext textid="nopre.txt" conrule="\Assente\">
+<savetext textid="ccopy.txt" conrule="\Per informazione\">
+<savetext textid="xmpll.txt" conrule="\esempio\">
+<savetext textid="xmplu.txt" conrule="\Esempio\">
+<savetext textid="sourc.txt" conrule="\Fonte\">
+<savetext textid="stepl.txt" conrule="\step\">
+<savetext textid="copyr.txt" conrule="\Copyright\">
+<savetext textid="discl.txt" conrule="\Disclaimer\">
+<savetext textid="tmark.txt" conrule="\Trademarks\"></charsubset>
+</att>
+<att>
+<specval attname="code" attval="nl">
+<charsubset>
+<savetext textid="enclo.txt" conrule="\Bijlagen\">
+<savetext textid="abstr.txt" conrule="\Samenvatting\">
+<savetext textid="conte.txt" conrule="\Inhoud\">
+<savetext textid="pageu.txt" conrule="\Pagina\">
+<savetext textid="pagel.txt" conrule="\pagina\">
+<savetext textid="figuu.txt" conrule="\Beeld\">
+<savetext textid="figul.txt" conrule="\beeld\">
+<savetext textid="tablu.txt" conrule="\Tabel\">
+<savetext textid="tabll.txt" conrule="\tabel\">
+<savetext textid="cautn.txt" conrule="\LET OP\">
+<savetext textid="warng.txt" conrule="\WAARSCHUWING\">
+<savetext textid="dangr.txt" conrule="\GEVAAR\">
+<savetext textid="noteu.txt" conrule="\Nota Bene\">
+<savetext textid="prsnt.txt" conrule="\Aanwezig\">
+<savetext textid="nopre.txt" conrule="\Niet aanwezig\">
+<savetext textid="ccopy.txt" conrule="\Voor informatie\">
+<savetext textid="xmpll.txt" conrule="\voorbeeld\">
+<savetext textid="xmplu.txt" conrule="\Voorbeeld\">
+<savetext textid="sourc.txt" conrule="\Bron\">
+<savetext textid="stepl.txt" conrule="\step\">
+<savetext textid="copyr.txt" conrule="\Copyright\">
+<savetext textid="discl.txt" conrule="\Disclaimer\">
+<savetext textid="tmark.txt" conrule="\Trademarks\"></charsubset>
+</att>
+<att>
+<specval attname="code" attval="no">
+<charsubset>
+<savetext textid="enclo.txt" conrule="\Vedlegg\">
+<savetext textid="abstr.txt" conrule="\Referat\">
+<savetext textid="conte.txt" conrule="\Innhold\">
+<savetext textid="pageu.txt" conrule="\Side\">
+<savetext textid="pagel.txt" conrule="\side\">
+<savetext textid="figuu.txt" conrule="\Figur\">
+<savetext textid="figul.txt" conrule="\figur\">
+<savetext textid="tablu.txt" conrule="\Tabell\">
+<savetext textid="tabll.txt" conrule="\tabell\">
+<savetext textid="cautn.txt" conrule="\OBS\">
+<savetext textid="warng.txt" conrule="\ADVARSEL\">
+<savetext textid="dangr.txt" conrule="\FARE\">
+<savetext textid="noteu.txt" conrule="\NB\">
+<savetext textid="prsnt.txt" conrule="\Til stede\">
+<savetext textid="nopre.txt" conrule="\Ikke til stede\">
+<savetext textid="ccopy.txt" conrule="\For informasjon\">
+<savetext textid="xmpll.txt" conrule="\eksempel\">
+<savetext textid="xmplu.txt" conrule="\Eksempel\">
+<savetext textid="sourc.txt" conrule="\Kilde\">
+<savetext textid="stepl.txt" conrule="\step\">
+<savetext textid="copyr.txt" conrule="\Copyright\">
+<savetext textid="discl.txt" conrule="\Disclaimer\">
+<savetext textid="tmark.txt" conrule="\Trademarks\"></charsubset>
+</att>
+<att>
+<specval attname="code" attval="pb">
+<charsubset>
+<savetext textid="enclo.txt" conrule="\Anexos\">
+<savetext textid="abstr.txt" conrule="\Resumo\">
+<savetext textid="conte.txt" conrule="\&Iacute;ndice\">
+<savetext textid="pageu.txt" conrule="\P&aacute;gina\">
+<savetext textid="pagel.txt" conrule="\p&aacute;gina\">
+<savetext textid="figuu.txt" conrule="\Figura\">
+<savetext textid="figul.txt" conrule="\figura\">
+<savetext textid="tablu.txt" conrule="\Tabela\">
+<savetext textid="tabll.txt" conrule="\tabela\">
+<savetext textid="cautn.txt" conrule="\ATEN&Ccedil;&Atilde;O\">
+<savetext textid="warng.txt" conrule="\ADVERT&Ecirc;NCIA\">
+<savetext textid="dangr.txt" conrule="\PERIGO\">
+<savetext textid="noteu.txt" conrule="\Nota\">
+<savetext textid="prsnt.txt" conrule="\Presente\">
+<savetext textid="nopre.txt" conrule="\N&atilde;o presente\">
+<savetext textid="ccopy.txt" conrule="\Para informa&ccedil;&atilde;o\">
+<savetext textid="xmpll.txt" conrule="\exemplo\">
+<savetext textid="xmplu.txt" conrule="\Exemplo\">
+<savetext textid="sourc.txt" conrule="\Fonte\">
+<savetext textid="stepl.txt" conrule="\step\">
+<savetext textid="copyr.txt" conrule="\Copyright\">
+<savetext textid="discl.txt" conrule="\Disclaimer\">
+<savetext textid="tmark.txt" conrule="\Trademarks\"></charsubset>
+</att>
+<att>
+<specval attname="code" attval="pt">
+<charsubset>
+<savetext textid="enclo.txt" conrule="\Anexos\">
+<savetext textid="abstr.txt" conrule="\Resumo\">
+<savetext textid="conte.txt" conrule="\&Iacute;ndice\">
+<savetext textid="pageu.txt" conrule="\P&aacute;gina\">
+<savetext textid="pagel.txt" conrule="\p&aacute;gina\">
+<savetext textid="figuu.txt" conrule="\Figura\">
+<savetext textid="figul.txt" conrule="\figura\">
+<savetext textid="tablu.txt" conrule="\Tabela\">
+<savetext textid="tabll.txt" conrule="\tabela\">
+<savetext textid="cautn.txt" conrule="\ATEN&Ccedil;&Atilde;O\">
+<savetext textid="warng.txt" conrule="\ADVERT&Ecirc;NCIA\">
+<savetext textid="dangr.txt" conrule="\PERIGO\">
+<savetext textid="noteu.txt" conrule="\Nota\">
+<savetext textid="prsnt.txt" conrule="\Presente\">
+<savetext textid="nopre.txt" conrule="\N&atilde;o presente\">
+<savetext textid="ccopy.txt" conrule="\Para informa&ccedil;&atilde;o\">
+<savetext textid="xmpll.txt" conrule="\exemplo\">
+<savetext textid="xmplu.txt" conrule="\Exemplo\">
+<savetext textid="sourc.txt" conrule="\Fonte\">
+<savetext textid="stepl.txt" conrule="\step\">
+<savetext textid="copyr.txt" conrule="\Copyright\">
+<savetext textid="discl.txt" conrule="\Disclaimer\">
+<savetext textid="tmark.txt" conrule="\Trademarks\"></charsubset>
+</att>
+<att>
+<specval attname="code" attval="sl">
+<charsubset>
+<savetext textid="enclo.txt" conrule="\Anexos\">
+<savetext textid="abstr.txt" conrule="\Resumen\">
+<savetext textid="conte.txt" conrule="\Contenido\">
+<savetext textid="pageu.txt" conrule="\P&aacute;gina\">
+<savetext textid="pagel.txt" conrule="\p&aacute;gina\">
+<savetext textid="figuu.txt" conrule="\Figura\">
+<savetext textid="figul.txt" conrule="\figura\">
+<savetext textid="tablu.txt" conrule="\Tabla\">
+<savetext textid="tabll.txt" conrule="\tabla\">
+<savetext textid="cautn.txt" conrule="\PRECAUCION\">
+<savetext textid="warng.txt" conrule="\ADVERTENCIA\">
+<savetext textid="dangr.txt" conrule="\PELIGRO\">
+<savetext textid="noteu.txt" conrule="\Nota\">
+<savetext textid="prsnt.txt" conrule="\Presente\">
+<savetext textid="nopre.txt" conrule="\Ausente\">
+<savetext textid="ccopy.txt" conrule="\Para informaci&oacute;n\">
+<savetext textid="xmpll.txt" conrule="\ejemplo\">
+<savetext textid="xmplu.txt" conrule="\Ejemplo\">
+<savetext textid="sourc.txt" conrule="\Fuente\">
+<savetext textid="stepl.txt" conrule="\step\">
+<savetext textid="copyr.txt" conrule="\Copyright\">
+<savetext textid="discl.txt" conrule="\Disclaimer\">
+<savetext textid="tmark.txt" conrule="\Trademarks\"></charsubset>
+</att>
+<att>
+<specval attname="code" attval="sv">
+<charsubset>
+<savetext textid="enclo.txt" conrule="\Bilagor\">
+<savetext textid="abstr.txt" conrule="\Referat\">
+<savetext textid="conte.txt" conrule="\Inneh&aring;ll\">
+<savetext textid="pageu.txt" conrule="\Sida\">
+<savetext textid="pagel.txt" conrule="\sida\">
+<savetext textid="figuu.txt" conrule="\Figur\">
+<savetext textid="figul.txt" conrule="\figur\">
+<savetext textid="tablu.txt" conrule="\Tabell\">
+<savetext textid="tabll.txt" conrule="\tabell\">
+<savetext textid="cautn.txt" conrule="\IAKTTA F&Ouml;RSIKTIGHET\">
+<savetext textid="warng.txt" conrule="\VARNING\">
+<savetext textid="dangr.txt" conrule="\FARA\">
+<savetext textid="noteu.txt" conrule="\OBS!\">
+<savetext textid="prsnt.txt" conrule="\N&auml;rvarande\">
+<savetext textid="nopre.txt" conrule="\Icke n&auml;rvarande\">
+<savetext textid="ccopy.txt" conrule="\F&ouml;r k&auml;nnedom\">
+<savetext textid="xmpll.txt" conrule="\exempel\">
+<savetext textid="xmplu.txt" conrule="\Exempel\">
+<savetext textid="sourc.txt" conrule="\K&auml;lla\">
+<savetext textid="stepl.txt" conrule="\step\">
+<savetext textid="copyr.txt" conrule="\Copyright\">
+<savetext textid="discl.txt" conrule="\Disclaimer\">
+<savetext textid="tmark.txt" conrule="\Trademarks\"></charsubset>
+</att>
+<att>
+<specval attname="code" attval="x">
+<charsubset>
+<savetext textid="enclo.txt" conrule="\Enclosures\">
+<savetext textid="abstr.txt" conrule="\Abstract\">
+<savetext textid="conte.txt" conrule="\Contents\">
+<savetext textid="pageu.txt" conrule="\Page\">
+<savetext textid="pagel.txt" conrule="\page\">
+<savetext textid="figuu.txt" conrule="\Figure\">
+<savetext textid="figul.txt" conrule="\figure\">
+<savetext textid="tablu.txt" conrule="\Table\">
+<savetext textid="tabll.txt" conrule="\table\">
+<savetext textid="cautn.txt" conrule="\CAUTION\">
+<savetext textid="warng.txt" conrule="\WARNING\">
+<savetext textid="dangr.txt" conrule="\DANGER\">
+<savetext textid="noteu.txt" conrule="\Note\">
+<savetext textid="prsnt.txt" conrule="\Present\">
+<savetext textid="nopre.txt" conrule="\Not present\">
+<savetext textid="ccopy.txt" conrule="\For information\">
+<savetext textid="xmpll.txt" conrule="\example\">
+<savetext textid="xmplu.txt" conrule="\Example\">
+<savetext textid="sourc.txt" conrule="\Source\">
+<savetext textid="stepl.txt" conrule="\step\">
+<savetext textid="copyr.txt" conrule="\Copyright\">
+<savetext textid="discl.txt" conrule="\Disclaimer\">
+<savetext textid="tmark.txt" conrule="\Trademarks\"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="confidentiality" context="meta-data"><?Pub Lcl _id="f58"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="20pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1"></charlist>
+<att>
+<specval attname="class" attval="confidential">
+<charsubset>
+<savetext textid="sclass" conrule="\CONFIDENTIAL\"></charsubset>
+</att>
+<att>
+<specval attname="class" attval="internal">
+<charsubset>
+<savetext textid="sclass" conrule="\INTERNAL INFORMATION\"></charsubset>
+</att>
+<att>
+<specval attname="class" attval="open">
+<charsubset>
+<savetext textid="sclass" conrule="\OPEN INFORMATION\"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="doc-name" context="meta-data"><?Pub Lcl _id="f59"><?Pub Dtl>
+<charlist>
+<font weight="bold">
+<indent inherit="1" leftind="20pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1">
+<suppress sup="1">
+<savetext textid="docname" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="doc-info" context="meta-data"><?Pub Lcl _id="f60"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="20pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1">
+<suppress sup="1">
+<savetext textid="info" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="doc-id" context="meta-data"><?Pub Lcl _id="f61"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="20pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="doc-no"><?Pub Dtl>
+<charlist>
+<font weight="bold">
+<indent inherit="1" leftind="40pt" rightind="0pt" firstln="*">
+<suppress sup="1">
+<savetext textid="docno" conrule="#CONTENT"></charlist>
+<att>
+<specval attname="type" attval="#NONE">
+<charsubset>
+<textbrk startpg="recto" pageid="lzf03228" newpgmdl="global" startln="1">
+</charsubset>
+</att>
+<att>
+<specval attname="type" attval="reference">
+<charsubset>
+<textbrk startpg="recto" pageid="lzf03228" newpgmdl="global" startln="1">
+</charsubset>
+</att>
+<att>
+<specval attname="type" attval="registration">
+<charsubset>
+<textbrk startpg="recto" pageid="lzf03241" newpgmdl="global" startln="1">
+</charsubset>
+</att>
+<att>
+<specval attname="type" attval="other">
+<charsubset>
+<textbrk startpg="recto" pageid="lzf03228" newpgmdl="global" startln="1">
+</charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="rev" context="meta-data"><?Pub Lcl _id="f67"><?Pub Dtl>
+<charlist>
+<font weight="bold">
+<indent inherit="1" leftind="40pt" rightind="0pt" firstln="*">
+<textbrk startln="1">
+<suppress sup="1">
+<savetext textid="rev" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="date" context="meta-data"><?Pub Lcl _id="f68"><?Pub Dtl>
+<charlist></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="y" context="* meta-data"><?Pub Lcl _id="f69"><?Pub Dtl>
+<charlist>
+<font weight="bold">
+<suppress sup="1">
+<savetext textid="date" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="m" context="* meta-data"><?Pub Lcl _id="f70"><?Pub Dtl>
+<charlist>
+<font weight="bold">
+<suppress sup="1">
+<savetext textid="date" conrule="\-\,#CONTENT" append="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="d" context="* meta-data"><?Pub Lcl _id="f71"><?Pub Dtl>
+<charlist>
+<font weight="bold">
+<suppress sup="1">
+<savetext textid="date" conrule="\-\,#CONTENT" append="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="company-id" context="meta-data"><?Pub Lcl _id="f72"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="@20pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="business-unit" context="* meta-data"><?Pub Lcl _id="f73"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="@20pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1">
+<suppress sup="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="company-name" context="* meta-data"><?Pub Lcl _id="f74"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="@20pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1">
+<suppress sup="1">
+<savetext textid="cpylogo" conrule="<cmpny-nm>,#CONTENT,</cmpny-nm>"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="company-symbol" context="* meta-data"><?Pub Lcl _id="f75"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="@20pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1">
+<suppress sup="1">
+<savetext textid="cpylogo" conrule="<put-opt-logo>,#CONTENT,</put-opt-logo>">
+</charlist>
+<att>
+<specval attname="logotype" attval="ericsson">
+<charsubset>
+<savetext textid="cpylogo" conrule="<put-eri-logo>,</put-eri-logo>"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="graphics" context="company-symbol"><?Pub Lcl _id="f247"><?Pub Dtl>
+<charlist>
+<textbrk startln="1"></charlist>
+</e-i-c>
+<e-i-c gi="part-of" context="meta-data"><?Pub Lcl _id="f76"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="@20pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1">
+<suppress sup="1">
+<savetext textid="ref" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="title" context="meta-data"><?Pub Lcl _id="f77"><?Pub Dtl>
+<charlist>
+<font size="18pt" weight="bold">
+<indent inherit="1" leftind="@20pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1">
+<suppress sup="1">
+<savetext textid="doctitle" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="subtitle" context="meta-data"><?Pub Lcl _id="f78"><?Pub Dtl>
+<charlist>
+<font size="18pt" weight="bold">
+<indent inherit="1" leftind="@20pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1">
+<suppress sup="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="stitle" context="meta-data"><?Pub Lcl _id="f79"><?Pub Dtl>
+<charlist>
+<font size="18pt" weight="bold">
+<indent inherit="1" leftind="@20pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1">
+<suppress sup="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="english-title" context="meta-data"><?Pub Lcl _id="f80"><?Pub Dtl>
+<charlist>
+<font size="18pt" weight="bold">
+<indent inherit="1" leftind="@20pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1">
+<suppress sup="1">
+<savetext textid="edoctitle" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="user-info" context="meta-data"><?Pub Lcl _id="f81"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="@20pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1">
+<suppress sup="1">
+<savetext textid="user" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="drafted-by" context="meta-data"><?Pub Lcl _id="f82"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="@20pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1">
+<savetext textid="prep-tmp" conrule="loc,\/\,dept,\ \,name" placemnt="after"><![ %foo; [<savetext textid="prep-reg-tmp" conrule="dept,\ \" placemnt="after">
+]]></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="checked-by" context="meta-data"><?Pub Lcl _id="f83"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="@20pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1"></charlist>
+<att>
+<specval attname="checked" attval="#NONE">
+<charsubset>
+<savetext textid="check" conrule="chksign" placemnt="after"></charsubset>
+</att>
+<att>
+<specval attname="checked" attval="no">
+<charsubset>
+<savetext textid="check" conrule="chksign" placemnt="after"></charsubset>
+</att>
+<att>
+<specval attname="checked" attval="yes">
+<charsubset>
+<savetext textid="check" conrule="\(\,chksign,\)\" placemnt="after"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="factual-supervisor" context="meta-data"><?Pub Lcl _id="f84"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="@20pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1">
+<savetext textid="factresp" conrule="\FACTRESP\"></charlist>
+<att>
+<specval attname="responsible" attval="#NONE">
+<charsubset>
+<savetext textid="factresp" conrule="sign" placemnt="after"></charsubset>
+</att>
+<att>
+<specval attname="responsible" attval="person">
+<charsubset>
+<savetext textid="factresp" conrule="sign" placemnt="after"></charsubset>
+</att>
+<att>
+<specval attname="responsible" attval="department">
+<charsubset>
+<savetext textid="factresp" conrule="dept" placemnt="after"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="approved-by" context="meta-data"><?Pub Lcl _id="f85"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="@20pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1">
+<savetext textid="appr" conrule="dept,\ \" placemnt="after"></charlist>
+<att>
+<specval attname="approved" attval="#NONE">
+<charsubset>
+<savetext textid="appr" conrule="name" placemnt="after" append="1"></charsubset>
+</att>
+<att>
+<specval attname="approved" attval="no">
+<charsubset>
+<savetext textid="appr" conrule="name" placemnt="after" append="1"></charsubset>
+</att>
+<att>
+<specval attname="approved" attval="yes">
+<charsubset>
+<savetext textid="appr" conrule="\(\,name,\)\" placemnt="after" append="1">
+</charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="translated-by" context="meta-data"><?Pub Lcl _id="f86"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="@20pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="person" context="* meta-data"><?Pub Lcl _id="f87"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="@20pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="name" context="* meta-data"><?Pub Lcl _id="f88"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="60pt" rightind="0pt" firstln="*">
+<textbrk startln="1">
+<suppress sup="1">
+<savetext textid="name" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="signature" context="drafted-by"><?Pub Lcl _id="f89"><?Pub Dtl>
+<charlist>
+<textbrk endln="1">
+<suppress sup="1">
+<savetext textid="draft-init" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="signature" context="checked-by"><?Pub Lcl _id="f90"><?Pub Dtl>
+<charlist>
+<textbrk endln="1">
+<suppress sup="1">
+<savetext textid="chksign" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="signature" context="translated-by"><?Pub Lcl _id="f91"><?Pub Dtl>
+<charlist>
+<textbrk endln="1">
+<suppress sup="1">
+<savetext textid="trnslsign" conrule="\/\,#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="signature" context="meta-data"><?Pub Lcl _id="f92"><?Pub Dtl>
+<charlist>
+<textbrk endln="1">
+<suppress sup="1">
+<savetext textid="sign" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="initials" context="drafted-by"><?Pub Lcl _id="f93"><?Pub Dtl>
+<charlist>
+<textbrk endln="1">
+<suppress sup="1">
+<savetext textid="draft-init" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="initials" context="checked-by"><?Pub Lcl _id="f94"><?Pub Dtl>
+<charlist>
+<textbrk endln="1">
+<suppress sup="1">
+<savetext textid="chksign" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="initials" context="translated-by"><?Pub Lcl _id="f95"><?Pub Dtl>
+<charlist>
+<textbrk endln="1">
+<suppress sup="1">
+<savetext textid="trnslsign" conrule="\/\,#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="initials" context="meta-data"><?Pub Lcl _id="f96"><?Pub Dtl>
+<charlist>
+<textbrk endln="1">
+<suppress sup="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="location" context="* meta-data"><?Pub Lcl _id="f97"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="60pt" rightind="0pt" firstln="*">
+<textbrk startln="1">
+<suppress sup="1">
+<savetext textid="loc" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="location" context="drafted-by"><?Pub Lcl _id="f98"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="60pt" rightind="0pt" firstln="*">
+<suppress sup="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="company" context="* meta-data"><?Pub Lcl _id="f99"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="60pt" rightind="0pt" firstln="*">
+<suppress sup="1">
+<savetext textid="dept" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="department" context="drafted-by"><?Pub Lcl _id="f100"><?Pub Dtl>
+<charlist>
+<suppress sup="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="department" context="* meta-data"><?Pub Lcl _id="f101"><?Pub Dtl>
+<charlist>
+<suppress sup="1">
+<savetext textid="dept" conrule="\/\,#CONTENT" append="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="ext-addr" context="* meta-data"><?Pub Lcl _id="f102"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="60pt" rightind="0pt" firstln="*">
+<quadding quad="asis">
+<textbrk startln="1" endln="1">
+<suppress sup="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="phone" context="drafted-by meta-data"><?Pub Lcl _id="f103"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="60pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1">
+<savetext textid="prep-phone" conrule="\   \"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="phone" context="meta-data"><?Pub Lcl _id="f104"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="60pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="ecn-code" context="drafted-by meta-data"><?Pub Lcl _id="f105"><?Pub Dtl>
+<charlist>
+<suppress sup="1">
+<savetext textid="prep-phone" conrule="#CONTENT,\ \" append="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="ecn-code" context="meta-data"><?Pub Lcl _id="f106"><?Pub Dtl>
+<charlist>
+<suppress sup="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="extension" context="drafted-by meta-data"><?Pub Lcl _id="f107"><?Pub Dtl>
+<charlist>
+<suppress sup="1">
+<savetext textid="prep-phone" conrule="#CONTENT" append="1"></charlist>
+</e-i-c>
+<e-i-c gi="extension" context="meta-data"><?Pub Lcl _id="f108"><?Pub Dtl>
+<charlist>
+<suppress sup="1"></charlist>
+</e-i-c>
+<e-i-c gi="public-no" context="meta-data"><?Pub Lcl _id="f109"><?Pub Dtl>
+<charlist>
+<suppress sup="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="public-no" context="drafted-by meta-data"><?Pub Lcl _id="f109"><?Pub Dtl>
+<charlist>
+<suppress sup="1">
+<savetext textid="prep-phone" conrule="#CONTENT" append="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<!-- - HyTime - -->
+<e-i-c gi="hy-locations"><?Pub Lcl _id="f191"><?Pub Dtl>
+<charlist></charlist>
+</e-i-c>
+<e-i-c gi="ref-by-title"><?Pub Lcl _id="f193"><?Pub Dtl>
+<charlist inherit="1">
+<textbrk startln="1" endln="1"></charlist>
+</e-i-c>
+<e-i-c gi="title" context="ref-by-title"><?Pub Lcl _id="f193"><?Pub Dtl>
+<charlist inherit="1">
+<suppress sup="1"></charlist>
+<att>
+<fillval attname="id" attloc="ref-by-title" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="#CONTENT"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="#CONTENT"></charsubset>
+</att>
+</e-i-c>
+<!-- - Front - -->
+<e-i-c gi="front"><?Pub Lcl _id="f116"><?Pub Dtl>
+<charlist>
+<textbrk startln="1" endln="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="dist-info"><?Pub Lcl _id="f117"><?Pub Dtl>
+<charlist>
+<textbrk startln="1" endln="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="receivers"><?Pub Lcl _id="f196"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="1.8in" firstln="*">
+<savetext textid="rcvrstr" conrule="" append="0"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="info-copy"><?Pub Lcl _id="f197"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="-1.8in" firstln="*">
+<textbrk startln="1">
+<savetext textid="ccopstr" conrule="" append="0"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="present"><?Pub Lcl _id="f198"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="1.8in" firstln="*">
+<savetext textid="presstr" conrule="" append="0"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="not-present"><?Pub Lcl _id="f199"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="1.8in" firstln="*"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="person" context="receivers"><?Pub Lcl _id="f118"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="@" firstln="*">
+<textbrk endln="1">
+<savetext textid="rcvrstr" conrule="<T4>,lcd,@1.4in,distname,</T4>" placemnt="after"
+append="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="person" context="info-copy" occur="first"><?Pub Lcl _id="f253"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="@" rightind="0pt" firstln="*">
+<textbrk endln="1">
+<savetext textid="ccopstr" conrule="<T1>,<bold>,ccopy.txt,</bold>,</T1>,<T1>,lcd,@1.4in,distname,</T1>"
+placemnt="after" append="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="person" context="info-copy"><?Pub Lcl _id="f254"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="@" rightind="0pt" firstln="*">
+<textbrk endln="1">
+<savetext textid="ccopstr" conrule="<T1>,lcd,@1.4in,distname,</T1>" placemnt="after"
+append="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="person" context="present" occur="first"><?Pub Lcl _id="f253"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="@" rightind="0pt" firstln="*">
+<textbrk endln="1">
+<savetext textid="presstr" conrule="<T4>,<bold>,prsnt.txt,</bold>,</T4>,<T4>,lcd,@1.4in,distname,</T4>"
+placemnt="after" append="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="person" context="present"><?Pub Lcl _id="f254"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="@" rightind="0pt" firstln="*">
+<textbrk endln="1">
+<savetext textid="presstr" conrule="<T4>,lcd,@1.4in,distname,</T4>" placemnt="after"
+append="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="person" context="not-present" occur="first"><?Pub Lcl _id="f253"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="@" rightind="0pt" firstln="*">
+<textbrk endln="1">
+<savetext textid="presstr" conrule="<sp>,</sp>,<T4>,<bold>,nopre.txt,</bold>,</T4>,<T4>,lcd,@1.4in,distname,</T4>"
+placemnt="after" append="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="person" context="not-present"><?Pub Lcl _id="f254"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="@" rightind="0pt" firstln="*">
+<textbrk endln="1">
+<savetext textid="presstr" conrule="<T4>,lcd,@1.4in,distname,</T4>" placemnt="after"
+append="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="name" context="dist-info" occur="all"><?Pub Lcl _id="f119"><?Pub Dtl>
+<charlist>
+<suppress sup="1">
+<savetext textid="distname" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="signature" context="dist-info"><?Pub Lcl _id="f120"><?Pub Dtl>
+<charlist>
+<textbrk endln="1">
+<suppress sup="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="initials" context="dist-info"><?Pub Lcl _id="f121"><?Pub Dtl>
+<charlist>
+<textbrk endln="1">
+<suppress sup="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="location" context="dist-info"><?Pub Lcl _id="f122"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="60pt" rightind="0pt" firstln="*">
+<suppress sup="1">
+<savetext textid="lcd" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="company" context="dist-info"><?Pub Lcl _id="f123"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="60pt" rightind="0pt" firstln="*">
+<suppress sup="1">
+<savetext textid="lcd" conrule="\/\,#CONTENT" append="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="department" context="dist-info"><?Pub Lcl _id="f124"><?Pub Dtl>
+<charlist>
+<suppress sup="1">
+<savetext textid="lcd" conrule="\/\,#CONTENT" append="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="ext-addr" context="dist-info"><?Pub Lcl _id="f125"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="60pt" rightind="0pt" firstln="*">
+<quadding quad="asis">
+<textbrk startln="1" endln="1">
+<suppress sup="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="phone" context="dist-info"><?Pub Lcl _id="f126"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="60pt" rightind="0pt" firstln="*">
+<textbrk startln="1" endln="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="ecn-code" context="dist-info"><?Pub Lcl _id="f127"><?Pub Dtl>
+<charlist>
+<suppress sup="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="extension" context="dist-info"><?Pub Lcl _id="f128"><?Pub Dtl>
+<charlist>
+<suppress sup="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="public-no" context="dist-info"><?Pub Lcl _id="f129"><?Pub Dtl>
+<charlist>
+<suppress sup="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="title-page"><?Pub Dtl>
+<charlist inherit="1">
+<textbrk startln="1" endln="1"></charlist>
+</e-i-c>
+<e-i-c gi="copyright"><?Pub Lcl _id="f200"><?Pub Dtl>
+<charlist>
+<suppress sup="1">
+<usetext source="copyr.txt" placemnt="before">
+<subchars>
+<font style="sanserif" size="11pt" weight="bold">
+<presp minimum="18" nominal="18" maximum="18" priority="med">
+<postsp minimum="12" nominal="12" maximum="12" priority="med">
+<keeps next="1">
+<textbrk startln="1" endln="1"></subchars>
+</usetext>
+</charlist>
+</e-i-c>
+<e-i-c gi="disclaimer"><?Pub Lcl _id="f201"><?Pub Dtl>
+<charlist>
+<suppress sup="1">
+<usetext source="discl.txt" placemnt="before">
+<subchars>
+<font style="sanserif" size="11pt" weight="bold">
+<presp minimum="18" nominal="18" maximum="18" priority="med">
+<postsp minimum="12" nominal="12" maximum="12" priority="med">
+<keeps next="1">
+<textbrk startln="1" endln="1"></subchars>
+</usetext>
+</charlist>
+</e-i-c>
+<e-i-c gi="trademark-list"><?Pub Lcl _id="f202"><?Pub Dtl>
+<charlist>
+<textbrk startln="1" endln="1">
+<usetext source="tmark.txt" placemnt="before">
+<subchars>
+<font style="sanserif" size="11pt" weight="bold">
+<presp minimum="18" nominal="18" maximum="18" priority="med">
+<postsp minimum="12" nominal="12" maximum="12" priority="med">
+<keeps next="1">
+<textbrk startln="1" endln="1"></subchars>
+</usetext>
+</charlist>
+</e-i-c>
+<e-i-c gi="tm-item"><?Pub Dtl>
+<charlist>
+<textbrk startln="1" endln="1"></charlist>
+</e-i-c>
+<e-i-c gi="trademark"><?Pub Dtl>
+<charlist>
+<font inherit="1" weight="bold">
+<indent inherit="1">
+<suppress sup="1">
+<savetext textid="tm.str" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="#CONTENT"></charsubset>
+</att>
+<att>
+<fillval attname="id" attloc="tm-item" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="#CONTENT"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="owner"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="0.9in" firstln="*">
+<usetext source="-0.9in,tm.str,\ \,@0" placemnt="before">
+<subchars>
+<font weight="bold">
+<indent inherit="1"></subchars>
+</usetext>
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="#CONTENT"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="enclosure-list"><?Pub Lcl _id="f132"><?Pub Dtl>
+<charlist>
+<textbrk startln="1">
+<usetext source="enclo.txt">
+<subchars>
+<font weight="bold">
+<presp minimum="18" nominal="18" maximum="18" priority="med">
+<postsp minimum="18" nominal="18" maximum="18">
+<keeps next="1">
+<textbrk startln="1" endln="1"></subchars>
+</usetext>
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="en-item"><?Pub Dtl>
+<charlist>
+<textbrk startln="1" endln="1"></charlist>
+</e-i-c>
+<e-i-c gi="doc-no" context="en-item"><?Pub Lcl _id="f236"><?Pub Dtl>
+<charlist>
+<font inherit="1" weight="bold">
+<indent inherit="1">
+<suppress sup="1">
+<savetext textid="en-term.str" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="#CONTENT"></charsubset>
+</att>
+<att>
+<fillval attname="id" attloc="en-item" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="#CONTENT"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="title" context="en-item"><?Pub Lcl _id="f170"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="0.9in" rightind="*+3.95in" firstln="*">
+<algroup refpoint="top">
+<usetext source="-0.9in,en-term.str,\ \,@0" placemnt="before">
+<subchars>
+<font weight="bold">
+<indent inherit="1"></subchars>
+</usetext>
+<savetext textid="en-term.str" conrule="" placemnt="after"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="#CONTENT"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="abstract" occur="first"><?Pub Lcl _id="f133"><?Pub Dtl>
+<charlist>
+<keeps keep="1">
+<textbrk startln="1">
+<usetext source="abstr.txt" placemnt="before">
+<subchars>
+<font style="sanserif" size="11pt" weight="bold">
+<presp minimum="18" nominal="18" maximum="18" priority="med">
+<postsp minimum="12" nominal="12" maximum="12" priority="med">
+<keeps next="1">
+<textbrk startln="1" endln="1"></subchars>
+</usetext>
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="abstract" occur="notfirst"><?Pub Lcl _id="f134"><?Pub Dtl>
+<charlist>
+<textbrk startln="1">
+<usetext source="\Abstract\">
+<subchars>
+<font weight="bold">
+<presp minimum="18" nominal="18" maximum="18" priority="med">
+<keeps next="1">
+<textbrk startln="1" endln="1"></subchars>
+</usetext>
+<usetext source="edoctitle">
+<subchars>
+<font weight="bold">
+<presp minimum="12" nominal="12" maximum="12" priority="med">
+<postsp minimum="12" nominal="12" maximum="12" priority="med">
+<keeps next="1">
+<textbrk startln="1" endln="1"></subchars>
+</usetext>
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<!-- - Body - -->
+<e-i-c gi="body"><?Pub Lcl _id="f139"><?Pub Dtl>
+<charlist>
+<textbrk startln="1">
+<savetext textid="totalpg" conrule="folio[BO]" placemnt="after"></charlist>
+<att>
+<specval attname="toc-level" attloc="seif" attval="#NONE">
+<charsubset>
+<usetext source="<tocp1>,conte.txt,spcfill,pageu.txt,</tocp1>">
+<subchars>
+<keeps next="1"></subchars>
+</usetext>
+<usetext source="toc.str"></usetext>
+</charsubset>
+</att>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc0">
+<charsubset></charsubset>
+</att>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc1">
+<charsubset>
+<usetext source="<tocp1>,conte.txt,spcfill,pageu.txt,</tocp1>">
+<subchars>
+<keeps next="1"></subchars>
+</usetext>
+<usetext source="toc.str"></usetext>
+</charsubset>
+</att>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc2">
+<charsubset>
+<usetext source="<tocp1>,conte.txt,spcfill,pageu.txt,</tocp1>">
+<subchars>
+<keeps next="1"></subchars>
+</usetext>
+<usetext source="toc.str"></usetext>
+</charsubset>
+</att>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc3">
+<charsubset>
+<usetext source="<tocp1>,conte.txt,spcfill,pageu.txt,</tocp1>">
+<subchars>
+<keeps next="1"></subchars>
+</usetext>
+<usetext source="toc.str"></usetext>
+</charsubset>
+</att>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc4">
+<charsubset>
+<usetext source="<tocp1>,conte.txt,spcfill,pageu.txt,</tocp1>">
+<subchars>
+<keeps next="1"></subchars>
+</usetext>
+<usetext source="toc.str"></usetext>
+</charsubset>
+</att>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc5">
+<charsubset>
+<usetext source="<tocp1>,conte.txt,spcfill,pageu.txt,</tocp1>">
+<subchars>
+<keeps next="1"></subchars>
+</usetext>
+<usetext source="toc.str"></usetext>
+</charsubset>
+</att>
+<att>
+<specval attname="list-of-figures" attloc="seif" attval="lof-yes">
+<charsubset>
+<savetext textid="tof.str" conrule="<tocp1>,figuu.txt,spcfill,pageu.txt,</tocp1>
+,<sp>,</sp>">
+<usetext source="tof.str">
+<subchars>
+<textbrk startpg="next" endln="1"></subchars>
+</usetext>
+</charsubset>
+</att>
+<att>
+<specval attname="table-caption" attloc="seif" attval="tc-yes">
+<specval attname="list-of-tables" attloc="seif" attval="lot-yes">
+<charsubset>
+<savetext textid="tot.str" conrule="<tocp1>,tablu.txt,spcfill,pageu.txt,</tocp1>,<sp>,</sp>">
+<usetext source="tot.str">
+<subchars>
+<textbrk startpg="next" endln="1"></subchars>
+</usetext>
+</charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="chl1" occur="first"><?Pub Lcl _id="f140"><?Pub Dtl>
+<charlist>
+<presp minimum="26pt" nominal="28pt" maximum="30pt" priority="med">
+<textbrk startpg="next" startln="1" endln="1">
+<reset resetlist="h2ct list1ct"><?Pub Lcl _convmesg1="3;1;14;37;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+<enumerat increm="1" enumid="h1ct"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="chl1"><?Pub Lcl _id="f245"><?Pub Dtl>
+<charlist>
+<presp minimum="26pt" nominal="28pt" maximum="30pt" priority="high">
+<textbrk startln="1" endln="1">
+<reset resetlist="h2ct list1ct"><?Pub Lcl _convmesg1="3;1;14;37;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+<enumerat increm="1" enumid="h1ct"></charlist>
+<att>
+<specval attname="new-page-level" attloc="seif" attval="npl1">
+<charsubset>
+<textbrk startpg="next"></charsubset>
+</att>
+<att>
+<specval attname="new-page-level" attloc="seif" attval="npl2">
+<charsubset>
+<textbrk startpg="next"></charsubset>
+</att>
+<att>
+<specval attname="new-page-level" attloc="seif" attval="npl3">
+<charsubset>
+<textbrk startpg="next"></charsubset>
+</att>
+<att>
+<specval attname="new-page-level" attloc="seif" attval="npl4">
+<charsubset>
+<textbrk startpg="next"></charsubset>
+</att>
+<att>
+<specval attname="new-page-level" attloc="seif" attval="npl5">
+<charsubset>
+<textbrk startpg="next"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="h1ct"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="chl2"><?Pub Lcl _id="f141"><?Pub Dtl>
+<charlist>
+<presp minimum="16pt" nominal="18pt" maximum="20pt" priority="high">
+<textbrk startln="1" endln="1">
+<reset resetlist="h3ct list1ct"><?Pub Lcl _convmesg1="3;1;14;37;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+<enumerat increm="1" enumid="h2ct"></charlist>
+<att>
+<specval attname="new-page-level" attloc="seif" attval="npl2">
+<charsubset>
+<textbrk startpg="next"></charsubset>
+</att>
+<att>
+<specval attname="new-page-level" attloc="seif" attval="npl3">
+<charsubset>
+<textbrk startpg="next"></charsubset>
+</att>
+<att>
+<specval attname="new-page-level" attloc="seif" attval="npl4">
+<charsubset>
+<textbrk startpg="next"></charsubset>
+</att>
+<att>
+<specval attname="new-page-level" attloc="seif" attval="npl5">
+<charsubset>
+<textbrk startpg="next"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="<hold>,h1ct,\.\,h2ct,</hold>"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="chl3"><?Pub Lcl _id="f142"><?Pub Dtl>
+<charlist>
+<presp minimum="12pt" nominal="14pt" maximum="16pt" priority="high">
+<textbrk startln="1" endln="1">
+<reset resetlist="h4ct list1ct"><?Pub Lcl _convmesg1="3;1;14;37;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+<enumerat increm="1" enumid="h3ct"></charlist>
+<att>
+<specval attname="new-page-level" attloc="seif" attval="npl3">
+<charsubset>
+<textbrk startpg="next"></charsubset>
+</att>
+<att>
+<specval attname="new-page-level" attloc="seif" attval="npl4">
+<charsubset>
+<textbrk startpg="next"></charsubset>
+</att>
+<att>
+<specval attname="new-page-level" attloc="seif" attval="npl5">
+<charsubset>
+<textbrk startpg="next"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="<hold>,h1ct,\.\,h2ct,\.\,h3ct,</hold>"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="chl4"><?Pub Lcl _id="f143"><?Pub Dtl>
+<charlist>
+<presp minimum="8pt" nominal="10pt" maximum="12pt" priority="high">
+<textbrk startln="1" endln="1">
+<reset resetlist="h5ct list1ct"><?Pub Lcl _convmesg1="3;1;14;37;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+<enumerat increm="1" enumid="h4ct"></charlist>
+<att>
+<specval attname="new-page-level" attloc="seif" attval="npl4">
+<charsubset>
+<textbrk startpg="next"></charsubset>
+</att>
+<att>
+<specval attname="new-page-level" attloc="seif" attval="npl5">
+<charsubset>
+<textbrk startpg="next"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="<hold>,h1ct,\.\,h2ct,\.\,h3ct,\.\,h4ct,</hold>"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="chl5"><?Pub Lcl _id="f144"><?Pub Dtl>
+<charlist>
+<presp minimum="8pt" nominal="10pt" maximum="12pt" priority="high">
+<textbrk startln="1" endln="1">
+<reset resetlist="list1ct"><?Pub Lcl _convmesg1="3;1;14;37;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+<enumerat increm="1" enumid="h5ct"></charlist>
+<att>
+<specval attname="new-page-level" attloc="seif" attval="npl4">
+<charsubset>
+<textbrk startpg="next"></charsubset>
+</att>
+<att>
+<specval attname="new-page-level" attloc="seif" attval="npl5">
+<charsubset>
+<textbrk startpg="next"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="<hold>,h1ct,\.\,h2ct,\.\,h3ct,\.\,h4ct,\.\,h5ct,</hold>">
+</charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="titled-block"><?Pub Lcl _id="f145"><?Pub Dtl>
+<charlist>
+<presp minimum="12pt" nominal="13pt" maximum="14pt" priority="med">
+<textbrk startln="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="title" context="chl1"><?Pub Lcl _id="f146"><?Pub Dtl>
+<charlist>
+<font size="20pt" weight="bold">
+<postsp minimum="16pt" nominal="18pt" maximum="20pt" condit="keep" priority="high">
+<keeps keep="1" next="1">
+<textbrk endln="1"></charlist>
+<att>
+<specval attname="toc-level" attloc="seif" attval="#NONE">
+<charsubset>
+<savetext textid="toc.str" conrule="<tocp1>,h1ct,@0.9in,#CONTENT,spcfill,folio[BO],</tocp1>"
+append="1"></charsubset>
+</att>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc1">
+<charsubset>
+<savetext textid="toc.str" conrule="<tocp1>,h1ct,@0.9in,#CONTENT,spcfill,folio[BO],</tocp1>"
+append="1"></charsubset>
+</att>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc2">
+<charsubset>
+<savetext textid="toc.str" conrule="<tocp1>,h1ct,@0.9in,#CONTENT,spcfill,folio[BO],</tocp1>"
+append="1"></charsubset>
+</att>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc3">
+<charsubset>
+<savetext textid="toc.str" conrule="<tocp1>,h1ct,@0.9in,#CONTENT,spcfill,folio[BO],</tocp1>"
+append="1"></charsubset>
+</att>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc4">
+<charsubset>
+<savetext textid="toc.str" conrule="<tocp1>,h1ct,@0.9in,#CONTENT,spcfill,folio[BO],</tocp1>"
+append="1"></charsubset>
+</att>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc5">
+<charsubset>
+<savetext textid="toc.str" conrule="<tocp1>,h1ct,@0.9in,#CONTENT,spcfill,folio[BO],</tocp1>"
+append="1"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="title" context="chl2"><?Pub Lcl _id="f147"><?Pub Dtl>
+<charlist>
+<font size="18pt" weight="bold">
+<postsp minimum="12pt" nominal="14pt" maximum="16pt" priority="high">
+<keeps keep="1" next="1">
+<textbrk endln="1"></charlist>
+<att>
+<specval attname="toc-level" attloc="seif" attval="#NONE">
+<charsubset>
+<savetext textid="toc.str" conrule="<tocp2>,h1ct,\.\,h2ct,@0.9in,#CONTENT,spcfill,folio[BO],</tocp2>">
+</charsubset>
+</att>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc2">
+<charsubset>
+<savetext textid="toc.str" conrule="<tocp2>,h1ct,\.\,h2ct,@0.9in,#CONTENT,spcfill,folio[BO],</tocp2>"
+append="1"></charsubset>
+</att>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc3">
+<charsubset>
+<savetext textid="toc.str" conrule="<tocp2>,h1ct,\.\,h2ct,@0.9in,#CONTENT,spcfill,folio[BO],</tocp2>"
+append="1"></charsubset>
+</att>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc4">
+<charsubset>
+<savetext textid="toc.str" conrule="<tocp2>,h1ct,\.\,h2ct,@0.9in,#CONTENT,spcfill,folio[BO],</tocp2>"
+append="1"></charsubset>
+</att>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc5">
+<charsubset>
+<savetext textid="toc.str" conrule="<tocp2>,h1ct,\.\,h2ct,@0.9in,#CONTENT,spcfill,folio[BO],</tocp2>"
+append="1"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="title" context="chl3"><?Pub Lcl _id="f148">
+<charlist>
+<font size="16pt" weight="bold">
+<postsp minimum="9pt" nominal="10pt" maximum="11pt" priority="high">
+<keeps keep="1" next="1">
+<textbrk endln="1"></charlist>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc3">
+<charsubset>
+<savetext textid="toc.str" conrule="<tocp3>,h1ct,\.\,h2ct,\.\,h3ct,@0.9in,#CONTENT,spcfill,folio[BO],</tocp3>"
+append="1"></charsubset>
+</att>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc4">
+<charsubset>
+<savetext textid="toc.str" conrule="<tocp3>,h1ct,\.\,h2ct,\.\,h3ct,@0.9in,#CONTENT,spcfill,folio[BO],</tocp3>"
+append="1"></charsubset>
+</att>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc5">
+<charsubset>
+<savetext textid="toc.str" conrule="<tocp3>,h1ct,\.\,h2ct,\.\,h3ct,@0.9in,#CONTENT,spcfill,folio[BO],</tocp3>"
+append="1"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="title" context="chl4"><?Pub Lcl _id="f149">
+<charlist>
+<font size="14pt" weight="bold">
+<postsp minimum="5pt" nominal="6pt" maximum="7pt" priority="high">
+<keeps keep="1" next="1">
+<textbrk endln="1"></charlist>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc4">
+<charsubset>
+<savetext textid="toc.str" conrule="<tocp4>,h1ct,\.\,h2ct,\.\,h3ct,\.\,h4ct,@0.9in,#CONTENT,spcfill,folio[BO],</tocp4>"
+append="1"></charsubset>
+</att>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc5">
+<charsubset>
+<savetext textid="toc.str" conrule="<tocp4>,h1ct,\.\,h2ct,\.\,h3ct,\.\,h4ct,@0.9in,#CONTENT,spcfill,folio[BO],</tocp4>"
+append="1"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="title" context="chl5"><?Pub Lcl _id="f150"><?Pub Dtl>
+<charlist>
+<font size="11pt" weight="bold">
+<postsp minimum="5pt" nominal="6pt" maximum="7pt" priority="high">
+<keeps keep="1" next="1">
+<textbrk endln="1"></charlist>
+<att>
+<specval attname="toc-level" attloc="seif" attval="toc5">
+<charsubset>
+<savetext textid="toc.str" conrule="<tocp5>,h1ct,\.\,h2ct,\.\,h3ct,\.\,h4ct,\.\,h5ct,@0.9in,#CONTENT,spcfill,folio[BO],</tocp5>"
+append="1"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="title" context="titled-block"><?Pub Lcl _id="f151"><?Pub Dtl>
+<charlist>
+<font size="11pt" weight="bold">
+<postsp minimum="5pt" nominal="6pt" maximum="7pt" priority="high">
+<keeps keep="1" next="1">
+<textbrk endln="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="stitle"><?Pub Lcl _id="f152"><?Pub Dtl>
+<charlist>
+<font size="11pt" weight="bold">
+<textbrk startln="1">
+<suppress sup="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<!-- - Lists - -->
+<e-i-c gi="list"><?Pub Lcl _id="f162"><?Pub Dtl>
+<charlist>
+<indent inherit="1">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<textbrk startln="1" endln="1">
+<reset resetlist="list1ct"><?Pub Lcl _convmesg1="3;1;14;37;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="list" context="* list"><?Pub Lcl _id="f163"><?Pub Dtl>
+<charlist>
+<indent inherit="1">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<postsp minimum="10" nominal="11" maximum="12" priority="med">
+<textbrk startln="1" endln="1">
+<reset resetlist="list2ct"><?Pub Lcl _convmesg1="3;1;14;37;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="list" context="* def-list"><?Pub Lcl _id="f246"><?Pub Dtl>
+<charlist>
+<indent inherit="1">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<postsp minimum="10" nominal="11" maximum="12" priority="med">
+<textbrk startln="1" endln="1">
+<reset resetlist="list2ct"><?Pub Lcl _convmesg1="3;1;14;37;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="list" context="* list * list"><?Pub Lcl _id="f203"><?Pub Dtl>
+<charlist>
+<indent inherit="1">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<postsp minimum="10" nominal="11" maximum="12" priority="med">
+<textbrk startln="1" endln="1">
+<reset resetlist="list3ct"><?Pub Lcl _convmesg1="3;1;14;37;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="list" context="* list * def-list"><?Pub Lcl _id="f204"><?Pub Dtl>
+<charlist>
+<indent inherit="1">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<postsp minimum="10" nominal="11" maximum="12" priority="med">
+<textbrk startln="1" endln="1">
+<reset resetlist="list3ct"><?Pub Lcl _convmesg1="3;1;14;37;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="list" context="* list * list * list"><?Pub Lcl _id="f205"><?Pub Dtl>
+<charlist>
+<indent inherit="1">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<postsp minimum="10" nominal="11" maximum="12" priority="med">
+<textbrk startln="1" endln="1">
+<reset resetlist="list4ct"><?Pub Lcl _convmesg1="3;1;14;37;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="list" context="* list * list * def-list"><?Pub Lcl _id="f206"><?Pub Dtl>
+<charlist>
+<indent inherit="1">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<postsp minimum="10" nominal="11" maximum="12" priority="med">
+<textbrk startln="1" endln="1">
+<reset resetlist="list4ct"><?Pub Lcl _convmesg1="3;1;14;37;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="list" context="* list * list * list * list"><?Pub Lcl _id="f207"><?Pub Dtl>
+<charlist>
+<indent inherit="1">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<postsp minimum="10" nominal="11" maximum="12" priority="med">
+<textbrk startln="1" endln="1">
+<reset resetlist="list5ct"><?Pub Lcl _convmesg1="3;1;14;37;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="list" context="* list * list * list * def-list"><?Pub Lcl _id="f208"><?Pub Dtl>
+<charlist>
+<indent inherit="1">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<postsp minimum="10" nominal="11" maximum="12" priority="med">
+<textbrk startln="1" endln="1">
+<reset resetlist="list5ct"><?Pub Lcl _convmesg1="3;1;14;37;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="list-item"><?Pub Lcl _id="f164"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="0.2in" firstln="*">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<textbrk startln="1" endln="1">
+<enumerat increm="1" enumid="list1ct"></charlist>
+<att>
+<specval attname="compact" attloc="list" attval="yes">
+<charsubset>
+<presp minimum="2pt" nominal="3pt" maximum="4pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="compact" attloc="list" attval="no">
+<charsubset>
+<presp minimum="10pt" nominal="12pt" maximum="14pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="compact" attloc="list" attval="#NONE">
+<charsubset>
+<presp minimum="10pt" nominal="12pt" maximum="14pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="#NONE">
+<charsubset>
+<savetext textid="dtext" conrule="list1ct[AL]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="alphabetic">
+<charsubset>
+<savetext textid="dtext" conrule="list1ct[AL]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="numeric">
+<charsubset>
+<savetext textid="dtext" conrule="list1ct[AR]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="selection">
+<charsubset>
+<savetext textid="dtext" conrule="%$\square$%"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="unordered">
+<charsubset>
+<savetext textid="dtext" conrule="\&bull;\"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="#ANY">
+<charsubset>
+<usetext source="-0.2in,dtext,6pt,@0" placemnt="before">
+<subchars>
+<font weight="bold">
+<indent inherit="1"></subchars>
+</usetext>
+</charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="list-item" context="* list-item"><?Pub Lcl _id="f165"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="1.8in" firstln="*">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<textbrk startln="1" endln="1">
+<enumerat increm="1" enumid="list2ct"></charlist>
+<att>
+<specval attname="compact" attloc="list" attval="yes">
+<charsubset>
+<presp minimum="2pt" nominal="3pt" maximum="4pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="compact" attloc="list" attval="no">
+<charsubset>
+<presp minimum="10pt" nominal="12pt" maximum="14pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="compact" attloc="list" attval="#NONE">
+<charsubset>
+<presp minimum="10pt" nominal="12pt" maximum="14pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="#NONE">
+<charsubset>
+<savetext textid="dtext" conrule="list2ct[AL]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="alphabetic">
+<charsubset>
+<savetext textid="dtext" conrule="list2ct[AL]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="numeric">
+<charsubset>
+<savetext textid="dtext" conrule="list2ct[AR]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="selection">
+<charsubset>
+<savetext textid="dtext" conrule="%$\square$%"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="unordered">
+<charsubset>
+<savetext textid="dtext" conrule="\&minus;\"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="#ANY">
+<charsubset>
+<usetext source="-0.9in,dtext,6pt,@0" placemnt="before">
+<subchars>
+<font weight="bold">
+<indent inherit="1"></subchars>
+</usetext>
+</charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="list-item" context="* dl-item"><?Pub Lcl _id="f209"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="1.8in" firstln="*">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<textbrk startln="1" endln="1">
+<enumerat increm="1" enumid="list2ct"></charlist>
+<att>
+<specval attname="compact" attloc="list" attval="yes">
+<charsubset>
+<presp minimum="2pt" nominal="3pt" maximum="4pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="compact" attloc="list" attval="no">
+<charsubset>
+<presp minimum="10pt" nominal="12pt" maximum="14pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="compact" attloc="list" attval="#NONE">
+<charsubset>
+<presp minimum="10pt" nominal="12pt" maximum="14pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="#NONE">
+<charsubset>
+<savetext textid="dtext" conrule="list2ct[AL]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="alphabetic">
+<charsubset>
+<savetext textid="dtext" conrule="list2ct[AL]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="numeric">
+<charsubset>
+<savetext textid="dtext" conrule="list2ct[AR]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="selection">
+<charsubset>
+<savetext textid="dtext" conrule="%$\square$%"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="unordered">
+<charsubset>
+<savetext textid="dtext" conrule="\&minus;\"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="#ANY">
+<charsubset>
+<usetext source="-0.9in,dtext,6pt,@0" placemnt="before">
+<subchars>
+<font weight="bold">
+<indent inherit="1"></subchars>
+</usetext>
+</charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="list-item" context="* list-item * list-item"><?Pub Lcl _id="f210"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="2.7in" firstln="*">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<textbrk startln="1" endln="1">
+<enumerat increm="1" enumid="list3ct"></charlist>
+<att>
+<specval attname="compact" attloc="list" attval="yes">
+<charsubset>
+<presp minimum="2pt" nominal="3pt" maximum="4pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="compact" attloc="list" attval="no">
+<charsubset>
+<presp minimum="10pt" nominal="12pt" maximum="14pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="compact" attloc="list" attval="#NONE">
+<charsubset>
+<presp minimum="10pt" nominal="12pt" maximum="14pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="#NONE">
+<charsubset>
+<savetext textid="dtext" conrule="list3ct[AL]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="alphabetic">
+<charsubset>
+<savetext textid="dtext" conrule="list3ct[AL]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="numeric">
+<charsubset>
+<savetext textid="dtext" conrule="list3ct[AR]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="selection">
+<charsubset>
+<savetext textid="dtext" conrule="%$\square$%"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="unordered">
+<charsubset>
+<savetext textid="dtext" conrule="\&ast;\"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="#ANY">
+<charsubset>
+<usetext source="-0.9in,dtext,6pt,@0" placemnt="before">
+<subchars>
+<font weight="bold">
+<indent inherit="1"></subchars>
+</usetext>
+</charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="list-item" context="* list-item * dl-item"><?Pub Lcl _id="f211"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="2.7in" firstln="*">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<textbrk startln="1" endln="1">
+<enumerat increm="1" enumid="list3ct"></charlist>
+<att>
+<specval attname="compact" attloc="list" attval="yes">
+<charsubset>
+<presp minimum="2pt" nominal="3pt" maximum="4pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="compact" attloc="list" attval="no">
+<charsubset>
+<presp minimum="10pt" nominal="12pt" maximum="14pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="compact" attloc="list" attval="#NONE">
+<charsubset>
+<presp minimum="10pt" nominal="12pt" maximum="14pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="#NONE">
+<charsubset>
+<savetext textid="dtext" conrule="list3ct[AL]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="alphabetic">
+<charsubset>
+<savetext textid="dtext" conrule="list3ct[AL]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="numeric">
+<charsubset>
+<savetext textid="dtext" conrule="list3ct[AR]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="selection">
+<charsubset>
+<savetext textid="dtext" conrule="%$\square$%"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="unordered">
+<charsubset>
+<savetext textid="dtext" conrule="\&ast;\"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="#ANY">
+<charsubset>
+<usetext source="-0.9in,dtext,6pt,@0" placemnt="before">
+<subchars>
+<font weight="bold">
+<indent inherit="1"></subchars>
+</usetext>
+</charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="list-item" context="* list-item * list-item * list-item"><?Pub Lcl
+_id="f212"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="2.7in" firstln="*">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<textbrk startln="1" endln="1">
+<enumerat increm="1" enumid="list4ct"></charlist>
+<att>
+<specval attname="compact" attloc="list" attval="yes">
+<charsubset>
+<presp minimum="2pt" nominal="3pt" maximum="4pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="compact" attloc="list" attval="no">
+<charsubset>
+<presp minimum="10pt" nominal="12pt" maximum="14pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="compact" attloc="list" attval="#NONE">
+<charsubset>
+<presp minimum="10pt" nominal="12pt" maximum="14pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="#NONE">
+<charsubset>
+<savetext textid="dtext" conrule="list4ct[AL]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="alphabetic">
+<charsubset>
+<savetext textid="dtext" conrule="list4ct[AL]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="numeric">
+<charsubset>
+<savetext textid="dtext" conrule="list4ct[AR]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="selection">
+<charsubset>
+<savetext textid="dtext" conrule="%$\square$%"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="unordered">
+<charsubset>
+<savetext textid="dtext" conrule="\&bull;\"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="#ANY">
+<charsubset>
+<usetext source="-0.9in,dtext,6pt,@0" placemnt="before">
+<subchars>
+<font weight="bold">
+<indent inherit="1"></subchars>
+</usetext>
+</charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="list-item" context="* list-item * list-item * dl-item"><?Pub Lcl
+_id="f215"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="2.7in" firstln="*">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<textbrk startln="1" endln="1">
+<enumerat increm="1" enumid="list4ct"></charlist>
+<att>
+<specval attname="compact" attloc="list" attval="yes">
+<charsubset>
+<presp minimum="2pt" nominal="3pt" maximum="4pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="compact" attloc="list" attval="no">
+<charsubset>
+<presp minimum="10pt" nominal="12pt" maximum="14pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="compact" attloc="list" attval="#NONE">
+<charsubset>
+<presp minimum="10pt" nominal="12pt" maximum="14pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="#NONE">
+<charsubset>
+<savetext textid="dtext" conrule="list4ct[AL]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="alphabetic">
+<charsubset>
+<savetext textid="dtext" conrule="list4ct[AL]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="numeric">
+<charsubset>
+<savetext textid="dtext" conrule="list4ct[AR]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="selection">
+<charsubset>
+<savetext textid="dtext" conrule="%$\square$%"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="unordered">
+<charsubset>
+<savetext textid="dtext" conrule="\&bull;\"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="#ANY">
+<charsubset>
+<usetext source="-0.9in,dtext,6pt,@0" placemnt="before">
+<subchars>
+<font weight="bold">
+<indent inherit="1"></subchars>
+</usetext>
+</charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="list-item" context="* list-item * list-item * list-item * list-item"><?Pub Lcl
+_id="f214"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="2.7in" firstln="*">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<textbrk startln="1" endln="1">
+<enumerat increm="1" enumid="list5ct"></charlist>
+<att>
+<specval attname="compact" attloc="list" attval="yes">
+<charsubset>
+<presp minimum="2pt" nominal="3pt" maximum="4pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="compact" attloc="list" attval="no">
+<charsubset>
+<presp minimum="10pt" nominal="12pt" maximum="14pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="compact" attloc="list" attval="#NONE">
+<charsubset>
+<presp minimum="10pt" nominal="12pt" maximum="14pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="#NONE">
+<charsubset>
+<savetext textid="dtext" conrule="list5ct[AL]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="alphabetic">
+<charsubset>
+<savetext textid="dtext" conrule="list5ct[AL]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="numeric">
+<charsubset>
+<savetext textid="dtext" conrule="list5ct[AR]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="selection">
+<charsubset>
+<savetext textid="dtext" conrule="%$\square$%"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="unordered">
+<charsubset>
+<savetext textid="dtext" conrule="\&bull;\"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="#ANY">
+<charsubset>
+<usetext source="-0.9in,dtext,6pt,@0" placemnt="before">
+<subchars>
+<font weight="bold">
+<indent inherit="1"></subchars>
+</usetext>
+</charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="list-item" context="* list-item * list-item * list-item * dl-item"><?Pub Lcl
+_id="f213"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="2.7in" firstln="*">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<textbrk startln="1" endln="1">
+<enumerat increm="1" enumid="list5ct"></charlist>
+<att>
+<specval attname="compact" attloc="list" attval="yes">
+<charsubset>
+<presp minimum="2pt" nominal="3pt" maximum="4pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="compact" attloc="list" attval="no">
+<charsubset>
+<presp minimum="10pt" nominal="12pt" maximum="14pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="compact" attloc="list" attval="#NONE">
+<charsubset>
+<presp minimum="10pt" nominal="12pt" maximum="14pt" priority="med"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="#NONE">
+<charsubset>
+<savetext textid="dtext" conrule="list5ct[AL]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="alphabetic">
+<charsubset>
+<savetext textid="dtext" conrule="list5ct[AL]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="numeric">
+<charsubset>
+<savetext textid="dtext" conrule="list5ct[AR]"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="selection">
+<charsubset>
+<savetext textid="dtext" conrule="%$\square$%"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="unordered">
+<charsubset>
+<savetext textid="dtext" conrule="\&bull;\"></charsubset>
+</att>
+<att>
+<specval attname="type" attloc="list" attval="#ANY">
+<charsubset>
+<usetext source="-0.9in,dtext,6pt,@0" placemnt="before">
+<subchars>
+<font weight="bold">
+<indent inherit="1"></subchars>
+</usetext>
+</charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="def-list"><?Pub Lcl _id="f166"><?Pub Dtl>
+<charlist>
+<indent inherit="1">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<textbrk startln="1" endln="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="dl-item"><?Pub Lcl _id="f167"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="0" firstln="*">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<textbrk startln="1" endln="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="term"><?Pub Lcl _id="f168"><?Pub Dtl>
+<charlist>
+<font inherit="1" weight="bold">
+<hyphen hyph="1">
+<indent inherit="1">
+<textbrk startln="1">
+<suppress sup="1">
+<savetext textid="termstr" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="def"><?Pub Lcl _id="f170"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="0.9in" rightind="*+3.95in" firstln="*">
+<algroup refpoint="top">
+<usetext source="-0.9in,termstr,\ \,@0" placemnt="before">
+<subchars>
+<font weight="bold">
+<indent inherit="1"></subchars>
+</usetext>
+<savetext textid="termstr" conrule="" placemnt="after"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="step-list"><?Pub Dtl>
+<charlist>
+<indent inherit="1">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<textbrk startln="1" endln="1"></charlist>
+<att>
+<specval attname="reset" attval="yes">
+<charsubset>
+<reset resetlist="slct"><?Pub Lcl _convmesg1="3;1;14;37;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+</charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="sl-item"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="0.2in" firstln="*">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<textbrk startln="1" endln="1">
+<enumerat increm="1" enumid="slct">
+<usetext source="-0.2in,slct,\.\,@0" placemnt="before">
+<subchars>
+<indent inherit="1"></subchars>
+</usetext>
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="stepl.txt,\ \,slct,\  \,pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<!-- - Other Major Elements - -->
+<e-i-c gi="block"><?Pub Lcl _id="f155"><?Pub Dtl>
+<charlist>
+<indent inherit="1">
+<textbrk startln="1" endln="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="p"><?Pub Lcl _id="f153"><?Pub Dtl>
+<charlist inherit="1">
+<indent inherit="1">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<textbrk endln="1"></charlist>
+<att>
+<fillval attname="annotation" fillcat="savetext" fillchar="conrule">
+<charsubset>
+<savetext textid="annostr" placemnt="before"></charsubset>
+</att>
+<att>
+<specval attname="annotation" attval="#ANY">
+<charsubset>
+<savetext textid="anno.str" conrule="annostr,\ \" placemnt="before">
+<usetext source="-1.8in,anno.str,@0" placemnt="before">
+<subchars>
+<font posture="italic"></subchars>
+</usetext>
+</charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="p" context="list-item"><?Pub Lcl _id="f153"><?Pub Dtl>
+<charlist inherit="1">
+<indent inherit="1">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<textbrk endln="1"></charlist>
+<att>
+<specval attname="compact" attloc="list-item" attval="yes">
+<charsubset>
+<presp minimum="0" nominal="0" maximum="0" priority="force"></charsubset>
+</att>
+<att>
+<fillval attname="annotation" fillcat="savetext" fillchar="conrule">
+<charsubset>
+<savetext textid="annostr" placemnt="before"></charsubset>
+</att>
+<att>
+<specval attname="annotation" attval="#ANY">
+<charsubset>
+<savetext textid="anno.str" conrule="annostr,\ \" placemnt="before">
+<usetext source="-1.8in,anno.str,@0" placemnt="before">
+<subchars>
+<font posture="italic"></subchars>
+</usetext>
+</charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="p" context="sl-item"><?Pub Lcl _id="f153"><?Pub Dtl>
+<charlist inherit="1">
+<indent inherit="1">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<textbrk endln="1"></charlist>
+<att>
+<specval attname="compact" attloc="sl-item" attval="yes">
+<charsubset>
+<presp minimum="0" nominal="0" maximum="0" priority="force"></charsubset>
+</att>
+<att>
+<fillval attname="annotation" fillcat="savetext" fillchar="conrule">
+<charsubset>
+<savetext textid="annostr" placemnt="before"></charsubset>
+</att>
+<att>
+<specval attname="annotation" attval="#ANY">
+<charsubset>
+<savetext textid="anno.str" conrule="annostr,\ \" placemnt="before">
+<usetext source="-1.8in,anno.str,@0" placemnt="before">
+<subchars>
+<font posture="italic"></subchars>
+</usetext>
+</charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="note"><?Pub Lcl _id="f160"><?Pub Dtl>
+<charlist inherit="1">
+<indent inherit="1" leftind="0.9in" firstln="*">
+<presp minimum="12" nominal="12" maximum="12">
+<textbrk startln="1" endln="1">
+<usetext source="-0.9in,noteu.txt,@0">
+<subchars>
+<font inherit="1" weight="bold"></subchars>
+</usetext>
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="table"><?Pub Lcl _id="f161"><?Pub Dtl>
+<charlist>
+<indent inherit="1">
+<presp minimum="9" nominal="10" maximum="11" priority="med">
+<postsp minimum="5" nominal="6" maximum="7">
+<textbrk startln="1" endln="1">
+<enumerat increm="1" enumid="tblct">
+<reset resetlist="tblntct"><?Pub Lcl _convmesg1="3;1;14;37;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+<usetext source="tblntstr" placemnt="after">
+<subchars>
+<keeps keep="1"></subchars>
+</usetext>
+<savetext textid="tblntstr" conrule="" append="0"></charlist>
+<att>
+<specval attname="l-r" attval="leftmargin">
+<charsubset>
+<indent leftind="-1.8in" firstln="-1.8in"></charsubset>
+</att>
+<att>
+<specval attname="l-r" attval="half-indent">
+<charsubset>
+<indent leftind="-0.9in" firstln="-0.9in"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="tabll.txt,\ \,tblct"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="tnote"><?Pub Lcl _id="f216"><?Pub Dtl>
+<charlist>
+<suppress sup="1">
+<enumerat increm="1" enumid="tblntct">
+<savetext textid="tblntstr" conrule="<tblntp>,\(\,tblntct,\)\,@0.3in,#CONTENT,</tblntp>"
+append="1">
+<usetext source="\(\,tblntct,\)\">
+<subchars>
+<font size="0.7em" offset="0.8em"></subchars>
+</usetext>
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="<tnote-format>,\(\,tblntct,\)\,</tnote-format>"></charsubset>
+</att>
+</e-i-c><![ %math; [<e-i-c gi="equation"><?Pub Dtl>
+<charlist>
+<indent inherit="1">
+<presp minimum="11" nominal="12" maximum="13" priority="med">
+<keeps keep="1">
+<textbrk startln="1" endln="1">
+<enumerat increm="1" enumid="eqtct"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset></charsubset>
+</att>
+</e-i-c>]]>
+<e-i-c gi="figure"><?Pub Lcl _id="f158"><?Pub Dtl>
+<charlist>
+<indent inherit="1">
+<presp minimum="11" nominal="12" maximum="13" priority="med">
+<keeps keep="1">
+<textbrk startln="1" endln="1">
+<enumerat increm="1" enumid="figct">
+<usetext source="figcap.str" placemnt="after">
+<subchars>
+<font posture="italic"></subchars>
+</usetext>
+</charlist>
+<att>
+<specval attname="l-r" attval="leftmargin">
+<charsubset>
+<indent leftind="-1.8in" firstln="-1.8in"></charsubset>
+</att>
+<att>
+<specval attname="l-r" attval="half-indent">
+<charsubset>
+<indent leftind="-0.9in" firstln="-0.9in"></charsubset>
+</att>
+<att>
+<specval attname="boxed-graphics" attloc="seif" attval="bg-yes">
+<charsubset>
+<boxing toffset="3mm" boffset="3mm" loffset="3mm" roffset="3mm" trel="top"
+brel="bottom" siderel="col" tthick="0.3pt" bthick="0.3pt" lthick="0.3pt" rthick="0.3pt">
+</charsubset>
+</att>
+<att>
+<specval attname="boxed" attloc="graphics" attval="yes">
+<charsubset>
+<boxing toffset="3mm" boffset="3mm" loffset="3mm" roffset="3mm" trel="top"
+brel="bottom" siderel="col" tthick="0.3pt" bthick="0.3pt" lthick="0.3pt" rthick="0.3pt">
+</charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="figul.txt,\ \,figct"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="graphics"><?Pub Lcl _id="f217"><?Pub Dtl>
+<charlist inherit="1">
+<textbrk startln="1" endln="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="figul.txt,\ \,figct"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="graphics" context="dl-item"><?Pub Lcl _id="f178"><?Pub Dtl>
+<charlist>
+<indent inherit="0" leftind="-0.9in" rightind="*+0.85in" firstln="-0.9in">
+<textbrk startln="1" endln="1">
+<algroup refpoint="top">
+<savetext textid="termstr" conrule="\\"></charlist>
+</e-i-c>
+<e-i-c gi="caption" context="example"><?Pub Lcl _id="f179"><?Pub Dtl>
+<charlist>
+<font posture="italic">
+<presp minimum="12" nominal="14" maximum="16" priority="med">
+<keeps keep="1" next="1">
+<textbrk startln="1" endln="1">
+<usetext source="xmplu.txt,\ \,xmpct,4mm,\ \" placemnt="before">
+<subchars>
+<font posture="italic"></subchars>
+</usetext>
+</charlist>
+<att>
+<specval attname="l-r" attloc="example" attval="leftmargin">
+<charsubset>
+<indent leftind="-1.8in" firstln="-1.8in"></charsubset>
+</att>
+<att>
+<specval attname="l-r" attloc="example" attval="half-indent">
+<charsubset>
+<indent leftind="-0.9in" firstln="-0.9in"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="xmpll.txt,\ \,xmpct"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="caption" context="figure"><?Pub Lcl _id="f180"><?Pub Dtl>
+<charlist>
+<font posture="italic">
+<presp minimum="7" nominal="8" maximum="9" priority="med">
+<postsp minimum="11" nominal="12" maximum="13" priority="med">
+<keeps keep="1" prev="1">
+<textbrk startln="1" endln="1">
+<suppress sup="1">
+<savetext textid="figcap.str" conrule="figuu.txt,\ \,figct,4mm,\ \,#CONTENT">
+</charlist>
+<att>
+<specval attname="list-of-figures" attloc="seif" attval="lof-yes">
+<charsubset>
+<savetext textid="tof.str" conrule="<tocp5>,figul.txt,\ \,figct,@0.9in,#CONTENT,spcfill,folio[BO],</tocp5>"
+append="1"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="figul.txt,\ \,figct"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="caption" context="table"><?Pub Lcl _id="f182"><?Pub Dtl>
+<charlist>
+<font posture="italic">
+<indent inherit="1">
+<presp minimum="10" nominal="12" maximum="14" priority="med">
+<keeps keep="1" next="1">
+<textbrk startln="1" endln="1">
+<suppress sup="1">
+<savetext textid="tblcap" conrule="tablu.txt,\ \,tblct,4mm,\ \,#CONTENT">
+</charlist>
+<att>
+<specval attname="table-caption" attloc="seif" attval="tc-yes">
+<charsubset>
+<usetext source="tblcap" placemnt="before">
+<subchars>
+<font posture="italic"></subchars>
+</usetext>
+</charsubset>
+</att>
+<att>
+<specval attname="list-of-tables" attloc="seif" attval="lot-yes">
+<charsubset>
+<savetext textid="tot.str" conrule="<tocp5>,tabll.txt,\ \,tblct,@0.9in,#CONTENT,spcfill,folio[BO],</tocp5>"
+append="1"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="tabll.txt,\ \,tblct"></charsubset>
+</att>
+</e-i-c><![ %math; [<e-i-c gi="caption" context="equation"><?Pub Lcl _id="f180"><?Pub Dtl>
+<charlist>
+<font posture="italic">
+<presp minimum="7" nominal="8" maximum="9" priority="med">
+<postsp minimum="11" nominal="12" maximum="13" priority="med">
+<keeps keep="1" prev="1">
+<textbrk startln="1" endln="1">
+<suppress sup="1">
+<usetext source="equau.txt,\ \,eqtct,4mm,\ \,#CONTENT" placemnt="before">
+</usetext>
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset></charsubset>
+</att>
+</e-i-c>]]>
+<e-i-c gi="source" context="figure"><?Pub Lcl _id="f218"><?Pub Dtl>
+<charlist>
+<suppress sup="1"></charlist>
+<att>
+<specval attname="list-of-figures" attloc="seif" attval="lof-yes">
+<charsubset>
+<savetext textid="tof.str" conrule="<tocp5>,@0.9in,sourc.txt,\: \,#CONTENT,</tocp5>"
+append="1"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="source" context="table"><?Pub Lcl _id="f219"><?Pub Dtl>
+<charlist>
+<suppress sup="1"></charlist>
+<att>
+<specval attname="list-of-tables" attloc="seif" attval="lot-yes">
+<charsubset>
+<savetext textid="tot.str" conrule="<tocp5>,@0.9in,sourc.txt,\: \,#CONTENT,</tocp5>"
+append="1"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="grid"><?Pub Lcl _id="f159"><?Pub Dtl>
+<charlist><![ %foo; [<indent inherit="1" leftind="-1.9mm">]]>
+<indent inherit="1">
+<textbrk startln="1" endln="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="example"><?Pub Lcl _id="f156"><?Pub Dtl>
+<charlist>
+<presp minimum="11" nominal="12" maximum="13" priority="med">
+<textbrk startln="1" endln="1">
+<enumerat increm="1" enumid="xmpct"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="xmpll.txt,\ \,xmpct"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="asis preform"><?Pub Lcl _id="f220"><?Pub Dtl>
+<charlist>
+<font style="monoser">
+<quadding quad="asis">
+<presp minimum="10" nominal="12" maximum="14" priority="med">
+<textbrk startln="1" endln="1"></charlist>
+<att>
+<specval attname="boxed-examples" attloc="seif" attval="be-yes">
+<charsubset>
+<boxing toffset="3mm" boffset="3mm" loffset="3mm" roffset="3mm" trel="top"
+brel="bottom" siderel="text" tthick="0.3pt" bthick="0.3pt" lthick="0.3pt"
+rthick="0.3pt"></charsubset>
+</att>
+<att>
+<specval attname="boxed" attval="yes">
+<charsubset>
+<boxing toffset="3mm" boffset="3mm" loffset="3mm" roffset="3mm" trel="top"
+brel="bottom" siderel="text" tthick="0.3pt" bthick="0.3pt" lthick="0.3pt"
+rthick="0.3pt"></charsubset>
+</att>
+<att>
+<specval attname="condensed" attloc="example" attval="yes">
+<charsubset>
+<font size="7pt"></charsubset>
+</att>
+<att>
+<specval attname="l-r" attloc="example" attval="leftmargin">
+<charsubset>
+<indent leftind="-1.8in" firstln="-1.8in"></charsubset>
+</att>
+<att>
+<specval attname="l-r" attloc="example" attval="half-indent">
+<charsubset>
+<indent leftind="-0.9in" firstln="-0.9in"></charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="xmpll.txt,\ \,xmpct"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="admonition"><?Pub Lcl _id="f154"><?Pub Dtl>
+<charlist>
+<indent inherit="1">
+<quadding quad="center">
+<presp minimum="15" nominal="16" maximum="17" priority="high">
+<postsp minimum="15" nominal="16" maximum="17">
+<keeps keep="1">
+<textbrk startln="1" endln="1">
+<boxing toffset="5" boffset="3" loffset="5" roffset="5" trel="top" brel="last"
+siderel="text" tthick="2pt" bthick="2pt" lthick="0.5pt" rthick="0.5pt">
+<ruling thick="0.5pt" lentype="rel" rellen="col" voffset="4" placemnt="before">
+<indent leftind="0" firstln="0"><?Pub Lcl _convmesg1="3;1;58;134;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+</ruling>
+<ruling thick="0.5pt" lentype="rel" rellen="col" voffset="3" placemnt="after">
+<indent leftind="0" firstln="0"><?Pub Lcl _convmesg1="3;1;58;134;1;3-1" _convcomm="Thu Oct 22 11:06:11 1998__N__Status changed to Updated.">
+</ruling>
+</charlist>
+<att>
+<specval attname="type" attval="caution">
+<charsubset>
+<usetext source="cautn.txt">
+<subchars>
+<font inherit="1" size="14pt" weight="bold">
+<quadding quad="center">
+<postsp minimum="8" nominal="8" maximum="8" priority="high">
+<textbrk startln="1" endln="1"></subchars>
+</usetext>
+</charsubset>
+</att>
+<att>
+<specval attname="type" attval="danger">
+<charsubset>
+<usetext source="dangr.txt">
+<subchars>
+<font inherit="1" size="14pt" weight="bold">
+<quadding quad="center">
+<postsp minimum="8" nominal="8" maximum="8" priority="high">
+<textbrk startln="1" endln="1"></subchars>
+</usetext>
+</charsubset>
+</att>
+<att>
+<specval attname="type" attval="warning">
+<charsubset>
+<usetext source="warng.txt">
+<subchars>
+<font inherit="1" size="14pt" weight="bold">
+<quadding quad="center">
+<postsp minimum="8" nominal="8" maximum="8" priority="high">
+<textbrk startln="1" endln="1"></subchars>
+</usetext>
+</charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="default"><?Pub Lcl _id="f225"><?Pub Dtl>
+<charlist inherit="1">
+<highlt scoring="1" scorespc="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<!-- - Floating Elements - -->
+<e-i-c gi="emph"><?Pub Lcl _id="f226"><?Pub Dtl>
+<charlist inherit="1"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+<att>
+<specval attname="type" attval="low">
+<charsubset>
+<font inherit="1" posture="italic"></charsubset>
+</att>
+<att>
+<specval attname="type" attval="medium">
+<charsubset>
+<font inherit="1" weight="bold"></charsubset>
+</att>
+<att>
+<specval attname="type" attval="high">
+<charsubset>
+<font inherit="1" posture="italic" weight="bold"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="quote"><?Pub Dtl>
+<charlist inherit="1"></charlist>
+<att>
+<specval attname="type" attval="monospaced">
+<charsubset>
+<font famname="Courier"></charsubset>
+</att>
+<att>
+<specval attname="type" attval="normal">
+<charsubset>
+<usetext source='\"\' placemnt="before"></usetext>
+</charsubset>
+</att>
+<att>
+<specval attname="type" attval="normal">
+<charsubset>
+<usetext source='\"\' placemnt="after"></usetext>
+</charsubset>
+</att>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="sups"><?Pub Lcl _id="f227"><?Pub Dtl>
+<charlist inherit="1">
+<font size="0.7em" offset="0.8em"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="subs"><?Pub Lcl _id="f228"><?Pub Dtl>
+<charlist inherit="1">
+<font size="0.7em" offset="-0.4em"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="literal"><?Pub Lcl _id="f229"><?Pub Dtl>
+<charlist>
+<font style="monoser" famname="Courier">
+<quadding quad="asis"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="xref"><?Pub Lcl _id="f230"><?Pub Dtl>
+<charlist inherit="1"></charlist>
+<att>
+<fillval attname="linkend" fillcat="usetext" fillchar="source">
+<charsubset>
+<usetext></usetext>
+</charsubset>
+</att>
+</e-i-c>
+<!-- - Rear - -->
+<e-i-c gi="rear"><?Pub Lcl _id="f233"><?Pub Dtl>
+<charlist inherit="1">
+<textbrk startpg="next" startln="1">
+<savetext textid="totalpg" conrule="folio[BO]" placemnt="after"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="reference-list"><?Pub Lcl _id="f234"><?Pub Dtl>
+<charlist>
+<indent inherit="1">
+<presp minimum="16" nominal="18" maximum="20" priority="med">
+<postsp minimum="12" nominal="14" maximum="16" priority="med">
+<textbrk startln="1" endln="1">
+<usetext source="\References\">
+<subchars>
+<font size="14pt" weight="bold">
+<presp minimum="10" nominal="12" maximum="14" priority="med"></subchars>
+</usetext>
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="rf-item"><?Pub Lcl _id="f235"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="0" firstln="*">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<textbrk startln="1" endln="1"></charlist>
+</e-i-c>
+<e-i-c gi="doc-no" context="rf-item"><?Pub Lcl _id="f236"><?Pub Dtl>
+<charlist>
+<font inherit="1" weight="bold">
+<indent inherit="1">
+<suppress sup="1">
+<savetext textid="refterm.str" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="#CONTENT"></charsubset>
+</att>
+<att>
+<fillval attname="id" attloc="rf-item" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="#CONTENT"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="title" context="rf-item"><?Pub Lcl _id="f237"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="0.9in" firstln="*">
+<usetext source="-0.9in,refterm.str,\ \,@0" placemnt="before">
+<subchars>
+<font weight="bold">
+<indent inherit="1"></subchars>
+</usetext>
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="#CONTENT"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="glossary-list"><?Pub Lcl _id="f238"><?Pub Dtl>
+<charlist>
+<indent inherit="1">
+<presp minimum="12" nominal="14" maximum="16" priority="med">
+<textbrk startln="1" endln="1">
+<usetext source="\Glossary\">
+<subchars>
+<font size="14pt" weight="bold">
+<presp minimum="10" nominal="12" maximum="14" priority="med"></subchars>
+</usetext>
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="pagel.txt,\ \,folio[BO]"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="gl-item"><?Pub Lcl _id="f239"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="0" firstln="*">
+<presp minimum="11pt" nominal="12pt" maximum="13pt" priority="med">
+<textbrk startln="1" endln="1"></charlist>
+</e-i-c>
+<e-i-c gi="term" context="gl-item"><?Pub Lcl _id="f240"><?Pub Dtl>
+<charlist>
+<font inherit="1" weight="bold">
+<indent inherit="1">
+<suppress sup="1">
+<savetext textid="glosterm.str" conrule="#CONTENT"></charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="#CONTENT"></charsubset>
+</att>
+<att>
+<fillval attname="id" attloc="gl-item" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="#CONTENT"></charsubset>
+</att>
+</e-i-c>
+<e-i-c gi="expansion"><?Pub Lcl _id="f241"><?Pub Dtl>
+<charlist>
+<indent inherit="1" leftind="0.9in" firstln="*">
+<usetext source="-0.9in,glosterm.str,\ \,@0" placemnt="before">
+<subchars>
+<font weight="bold">
+<indent inherit="1"></subchars>
+</usetext>
+</charlist>
+<att>
+<fillval attname="id" fillcat="savetext" fillchar="textid">
+<charsubset>
+<savetext conrule="#CONTENT"></charsubset>
+</att>
+</e-i-c>
+<!-- - Pseudo Elements - -->
+<e-i-c gi="italic"><?Pub Lcl _id="f112"><?Pub Dtl>
+<charlist inherit="1">
+<font inherit="1" posture="italic"></charlist>
+</e-i-c>
+<e-i-c gi="bold"><?Pub Lcl _id="f255"><?Pub Dtl>
+<charlist inherit="1">
+<font weight="bold"></charlist>
+</e-i-c>
+<e-i-c gi="tocp1"><?Pub Lcl _id="f242"><?Pub Dtl>
+<charlist>
+<font weight="bold">
+<presp minimum="10" nominal="11" maximum="12" priority="med">
+<textbrk startln="1"></charlist>
+</e-i-c>
+<e-i-c gi="tocp2 tocp3 tocp4 tocp5"><?Pub Lcl _id="f243"><?Pub Dtl>
+<charlist>
+<textbrk startln="1"></charlist>
+</e-i-c>
+<e-i-c gi="T1"><?Pub Lcl _id="f256"><?Pub Dtl>
+<charlist>
+<indent leftind="-1.8in" rightind="*+3.55in">
+<textbrk startln="1">
+<algroup refpoint="top"></charlist>
+</e-i-c>
+<e-i-c gi="T4"><?Pub Lcl _id="f257"><?Pub Dtl>
+<charlist>
+<indent leftind="1.8in" rightind="*+2.95in">
+<textbrk startln="1">
+<algroup refpoint="top"></charlist>
+</e-i-c>
+<e-i-c gi="sp"><?Pub Dtl>
+<charlist>
+<presp minimum="11" nominal="12" maximum="13" priority="high"></charlist>
+</e-i-c>
+<e-i-c gi="tblntp"><?Pub Lcl _id="f244"><?Pub Dtl>
+<charlist inherit="0">
+<indent inherit="1" leftind="0.3in" firstln="*-0.3in">
+<textbrk startln="1"></charlist>
+</e-i-c>
+<e-i-c gi="tnote-format"><?Pub Dtl>
+<charlist>
+<font size="0.7em" offset="0.8em"></charlist>
+</e-i-c>
+<e-i-c gi="cmpny-nm"><?Pub Lcl _id="f248"><?Pub Dtl>
+<charlist>
+<font size="14pt" weight="bold" offset="8"></charlist>
+</e-i-c>
+<e-i-c gi="put-eri-logo"><?Pub Lcl _id="f113"><?Pub Dtl>
+<charlist>
+<indent leftind="1.5mm-1.85in" firstln="*">
+<textbrk startln="1">
+<putgraph graphname="erilogo" hscale="18" vscale="18" hoffset="0mm" voffset="0mm"><?Pub Lcl
+_comment="">
+<subchars></subchars>
+</putgraph>
+</charlist>
+</e-i-c>
+<e-i-c gi="put-opt-logo"><?Pub Dtl>
+<charlist>
+<indent leftind="-1.85in">
+<presp minimum="-16" nominal="-16" maximum="-16" priority="force"></charlist>
+</e-i-c>
+<e-i-c gi="hold"><?Pub Dtl>
+<charlist>
+<hyphen hyph="0">
+<quadding quad="asis"></charlist>
+</e-i-c>
+</styldesc>
+</outspec>
+<?Pub *0000142117 0>

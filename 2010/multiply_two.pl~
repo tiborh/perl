@@ -1,0 +1,16 @@
+#!/usr/bin/perl
+
+use String::Scanf; #String-Scanf-2.1 from http://search.cpan.org
+
+$a=$b=0;
+$inline="";
+
+print "Two numbers: ";
+$inline=<STDIN>;
+($a, $b)=sscanf("%f %f",$inline);
+
+printf("a = %f\n",$a);
+printf("b = %f\n",$b);
+printf("a * b = %f\n",$a*$b);
+
+#end of multiply_two.pl

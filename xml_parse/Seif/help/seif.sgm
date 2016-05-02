@@ -1,0 +1,37 @@
+<headA><14-point>seif</14-point></headA>
+<par>This is the main tag of the SEIF document. The attributes you can set in this tag will apply to the entire document.</par>
+<par></par>
+
+<headB>Attributes</headB>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>hytime</bold> This attribute is not implemented today. It will be used for Hytime applications when
+they are added to SEIF.</list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>toc-level</bold> Defines  how many headline levels that will be generated in the table of contents and has the following values:
+<list><?Pub Lcl MarkerStyle="bulleted">
+<item><sans-serif>toc0</sans-serif>   Setting this value means no table of contents is generated.</item>
+<item><sans-serif>toc1-toc5</sans-serif>   Setting one of these values will generate a table of contents down to the set level.</item>
+</list></list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>new-page-level</bold> Defines at which headline levels page-breaks should be allowed and has the following values:
+<list><?Pub Lcl MarkerStyle="bulleted">
+<item><sans-serif>npl0</sans-serif>   Setting this value will not create any page-breaks based on headline tags.</item>
+<item><sans-serif>npl1-npl5</sans-serif>   Setting this value will create a page break at the set level (ch1, ch2, ch3, ch4 or ch5).</item>
+</list></list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>boxed-graphics</bold>  Defines whether or not a box should surround graphics. It has the values <sans-serif>bg-yes</sans-serif> and <sans-serif>bg-no</sans-serif>. The default value is bg-no.</list>
+
+
+<list><?Pub Lcl MarkerStyle="none"><bold>boxed-examples</bold> Defines whether or not a box should surround example text. It has the values <sans-serif>be-yes</sans-serif> and <sans-serif>be-no</sans-serif>. The default value is be-no.</list>
+
+
+<list><?Pub Lcl MarkerStyle="none"><bold>list-of-figures</bold> Defines whether or not a list of figures should be generated. It has the values <sans-serif>lof-yes</sans-serif> and <sans-serif>lof-no</sans-serif>. The default value is lof-no</list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>list-of-tables</bold> Defines whether or not a list of tables should be generated. It has the values <sans-serif>lot-yes</sans-serif> and <sans-serif>lot-no</sans-serif>. The default value is lot-no</list>
+
+
+<list><?Pub Lcl MarkerStyle="none"><bold>tables-caption</bold> Defines whether or not table captions should be included in the tables. It has the values <sans-serif>lot-yes</sans-serif> and <sans-serif>lot-no</sans-serif>. The default value is tc-yes. You may insert a caption tag in the table tag.</list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>version</bold> This attribute shows the version of SEIF for the document.</list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold> An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>

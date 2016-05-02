@@ -1,0 +1,12 @@
+#!/usr/bin/perl -w
+
+use strict;
+use Getopt::Std;
+
+my %optHash;
+
+getopt('abc',\%optHash);
+
+foreach my $key (%optHash) {
+    print "$key: $optHash{$key}\n";
+}

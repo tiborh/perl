@@ -1,0 +1,7 @@
+#!/usr/bin/perl -w
+
+my @sample = qw(one two three four five);
+
+print "@sample\n";
+my $length = ++$#sample;
+print "Length of the array: $length\n";

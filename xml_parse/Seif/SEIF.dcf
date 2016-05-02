@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE DocumentTypeConfiguration PUBLIC "-//Arbortext//DTD Document Type Configuration 2.0//EN" 
+"dcfdtd.dtd">
+<DocumentTypeConfiguration>
+<Options allowApplicationToolbar="no" allowComposeStylesheetList="no" allowFosiMod="no" allowTouchup="no" dictionaryName="eriDict" protected="no"/>
+<ElementOptions>
+<ElementOption element="chl1" category="division"/>
+<ElementOption element="chl2" category="division"/>
+<ElementOption element="chl3" category="division"/>
+<ElementOption element="chl4" category="division"/>
+<ElementOption element="chl5" category="division"/>
+<ElementOption element="title" category="title"/>
+</ElementOptions>
+<Display>
+<Icon id="para" characterSet="ati_tag" characterNumber="16" characterNumberLocal="15"/>
+<Icon id="endpara" characterSet="ati_tag" characterNumber="18" characterNumberLocal="17"/>
+<ElementDisplay element="asis" pair="start" newline="yes" partialTagModeDisplay="full" noTagModeDisplay="full"/>
+<ElementDisplay element="asis" pair="end" newline="yes"/>
+<ElementDisplay element="bridge" pair="start" partialTagModeDisplay="full" noTagModeDisplay="full"/>
+<ElementDisplay element="business-unit" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="caption" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="chl1" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="chl2" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="chl3" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="chl4" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="chl5" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="company" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="company-id" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="company-name" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="company-symbol" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="d" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="date" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="department" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="doc-id" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="doc-name" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="doc-no" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="ecn-code" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="english-title" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="ext-addr" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="extension" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="front" pair="start" partialTagModeDisplay="full" noTagModeDisplay="full"/>
+<ElementDisplay element="graphics" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="grid" pair="start" partialTagModeDisplay="full" noTagModeDisplay="full"/>
+<ElementDisplay element="initials" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="language" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="location" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="m" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="meta-data" pair="start" partialTagModeDisplay="full" noTagModeDisplay="full"/>
+<ElementDisplay element="name" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="p" pair="start" partialTagModeDisplay="full" fullTagModeIcon="para" partialTagModeIcon="para"/>
+<ElementDisplay element="p" pair="end" fullTagModeIcon="endpara" partialTagModeIcon="endpara"/>
+<ElementDisplay element="phone" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="preform" newline="yes"/>
+<ElementDisplay element="public-no" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="rear" pair="start" partialTagModeDisplay="full" noTagModeDisplay="full"/>
+<ElementDisplay element="rev" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="signature" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="source" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="stitle" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="stitle" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="subtitle" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="table" pair="start" partialTagModeDisplay="full" noTagModeDisplay="full"/>
+<ElementDisplay element="term" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="title" pair="start" partialTagModeDisplay="full"/>
+<ElementDisplay element="title" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="user-info" pair="end" fullTagModeDisplay="partial"/>
+<ElementDisplay element="xref" pair="start" partialTagModeDisplay="full" noTagModeDisplay="full"/>
+<ElementDisplay element="y" pair="end" fullTagModeDisplay="partial"/>
+</Display>
+<Specials>
+<Graphic element="graphics" entity="name" horizScale="ScalePct" vertScale="ScalePct" vertOffsetAmount="VertAdjAmt" reproDepth="scaleheight" reproWidth="scalewidth" scaleToFit="scalefit"/>
+<Paragraph element="p"/>
+<Paragraph element="source"/>
+<Paragraph element="caption"/>
+<Paragraph element="def"/>
+<Paragraph element="list-item"/>
+<Paragraph element="dl-item"/>
+<Paragraph element="en-item"/>
+<Paragraph element="rf-item"/>
+<Paragraph element="tm-item"/>
+</Specials>
+<ContextTransformations>
+<InsertAroundToFix>
+<ElementListItem element="p"/>
+<ElementListItem element="source"/>
+<ElementListItem element="caption"/>
+<ElementListItem element="title"/>
+<ElementListItem element="term"/>
+</InsertAroundToFix>
+<Substitutions element="caption">
+<ElementListItem element="source"/>
+<ElementListItem element="title"/>
+<ElementListItem element="stitle"/>
+<ElementListItem element="term"/>
+<ElementListItem element="p"/>
+</Substitutions>
+<Substitutions element="chl1">
+<ElementListItem element="chl2"/>
+<ElementListItem element="chl3"/>
+<ElementListItem element="chl4"/>
+<ElementListItem element="chl5"/>
+</Substitutions>
+<Substitutions element="chl2">
+<ElementListItem element="chl3"/>
+<ElementListItem element="chl4"/>
+<ElementListItem element="chl5"/>
+<ElementListItem element="chl1"/>
+</Substitutions>
+<Substitutions element="chl3">
+<ElementListItem element="chl2"/>
+<ElementListItem element="chl4"/>
+<ElementListItem element="chl5"/>
+<ElementListItem element="chl1"/>
+</Substitutions>
+<Substitutions element="chl4">
+<ElementListItem element="chl2"/>
+<ElementListItem element="chl3"/>
+<ElementListItem element="chl5"/>
+<ElementListItem element="chl1"/>
+</Substitutions>
+<Substitutions element="chl5">
+<ElementListItem element="chl2"/>
+<ElementListItem element="chl3"/>
+<ElementListItem element="chl4"/>
+<ElementListItem element="chl1"/>
+</Substitutions>
+<Substitutions element="p">
+<ElementListItem element="source"/>
+<ElementListItem element="caption"/>
+<ElementListItem element="title"/>
+<ElementListItem element="stitle"/>
+<ElementListItem element="term"/>
+</Substitutions>
+<Substitutions element="source">
+<ElementListItem element="caption"/>
+<ElementListItem element="title"/>
+<ElementListItem element="stitle"/>
+<ElementListItem element="term"/>
+<ElementListItem element="p"/>
+</Substitutions>
+<Substitutions element="stitle">
+<ElementListItem element="source"/>
+<ElementListItem element="caption"/>
+<ElementListItem element="title"/>
+<ElementListItem element="term"/>
+<ElementListItem element="p"/>
+</Substitutions>
+<Substitutions element="term">
+<ElementListItem element="source"/>
+<ElementListItem element="caption"/>
+<ElementListItem element="title"/>
+<ElementListItem element="stitle"/>
+<ElementListItem element="p"/>
+</Substitutions>
+<Substitutions element="title">
+<ElementListItem element="source"/>
+<ElementListItem element="caption"/>
+<ElementListItem element="stitle"/>
+<ElementListItem element="term"/>
+<ElementListItem element="p"/>
+</Substitutions>
+<InsertAutoWithin element="hy-locations" xmlns:SEIF="SEIF.dtd"><SEIF:ref-by-title><InsertAutoSelection/><InsertAutoCaret/></SEIF:ref-by-title></InsertAutoWithin>
+<InsertAutoWithin element="ref-by-title" xmlns:SEIF="SEIF.dtd"><SEIF:title><InsertAutoSelection/><InsertAutoCaret/></SEIF:title></InsertAutoWithin>
+</ContextTransformations>
+</DocumentTypeConfiguration>

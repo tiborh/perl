@@ -1,0 +1,20 @@
+package LangDat;
+require Exporter;
+use strict;
+
+our @ISA                = qw(Exporter);
+our @EXPORT             = qw( getconfig ); 
+
+my %confighash = ( 
+            thisone => 'one',
+            thatone => 2,
+            somthingelse => 'froboz',
+                           );
+
+
+
+sub getconfig {
+ return  %confighash;
+ }
+
+1;

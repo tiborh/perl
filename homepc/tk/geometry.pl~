@@ -1,0 +1,12 @@
+#!/usr/local/bin/perl -w
+
+use Tk;
+
+&come_window;
+
+sub come_window {
+    my $mw = MainWindow->new;
+    $mw->configure(-title => "Hello world", -background => "blue");
+
+    MainLoop;
+}

@@ -1,0 +1,10 @@
+<headA><14-point>reference-list</14-point></headA>
+<par>This is a reference list in def-list style that is placed at the end of a document. It is used for terms and their reference information.</par>
+<par></par>
+<headB>Attributes</headB>
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold>  An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>
+
+
+
+
+

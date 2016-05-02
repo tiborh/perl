@@ -1,0 +1,19 @@
+package Person v0.0.2;
+sub new
+{
+    my $class = shift;
+    my $self = {
+        _firstName => shift,
+        _lastName  => shift,
+        _ssn       => shift,
+    };
+    bless $self, $class;
+    return $self;
+}
+
+sub print
+{
+    my $self = shift;
+    print $_," => ",$self->{$_},"\n" foreach (sort keys %$self);
+}
+1;

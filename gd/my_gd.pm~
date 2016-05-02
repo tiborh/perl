@@ -1,0 +1,15 @@
+package MyGd v0.0.1{
+    use GD;
+    sub send_to_file {
+	my $img = shift;
+	use File::Basename;
+	my $bn = (split /\./,basename($0))[0];
+
+	local *IMG;
+	open(IMG, ">$bn.png");
+	binmode IMG;
+	print IMG $img->png;
+	close IMG;
+    }
+}
+1;

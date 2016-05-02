@@ -1,0 +1,21 @@
+#!/usr/local/bin/perl -w
+
+use Tk;
+use utf8;
+use encoding 'utf8';
+require Tk::Font;
+
+print "今日は！\n";
+&come_window;
+
+sub come_window {
+    my $mw = MainWindow->new;
+    my $defCol = "SlateBlue1";
+    $mw->configure(
+	-title => "悪いウインドウ", 
+	-background => $defCol, 
+	-width => "300", 
+	-height => "100",
+	);
+
+}

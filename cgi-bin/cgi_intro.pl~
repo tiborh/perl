@@ -1,0 +1,14 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+use CGI;
+
+$cgi = new CGI;
+print $cgi->header,
+    $cgi->start_html,
+
+    $cgi->end_html;
+
+exit;

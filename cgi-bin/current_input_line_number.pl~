@@ -1,0 +1,46 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+my $title = "Current Input Line Number";
+
+sub main {
+    print <<EOT;
+<h1>$title</h1>
+<p> for the most recent file handle.</p>
+
+my $fh;
+    my $fn = "data.txt";
+
+    # without the line counter
+    open($fh,"<",$fn);
+    my $counter = 1;
+
+    while ((my $line = <$fh>) && ($counter <= 10)) {
+	print "$line";
+	$counter++;
+    }
+	   close($fh);
+
+    # with the build-in variable: 
+    open($fh,"<",$fn);
+
+    print "$line" while ((my $line = <$fh>) && ($. <= 10));
+
+    close($fh);
+
+
+EOT
+
+
+
+} # main
+
+require "html.cgi";
+
+&cgi_head("$title");
+&main();
+&printcode($0);
+&cgi_foot();
+exit;

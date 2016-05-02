@@ -1,0 +1,11 @@
+#!/usr/bin/perl -w
+
+my @rray = qw(alpha beta gamma delta epsylon);
+
+my @r_empty = ();
+
+print ("$#r_empty\n");
+
+@rray = sort @rray;
+
+print "@rray\n";

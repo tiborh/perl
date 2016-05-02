@@ -1,0 +1,15 @@
+Undefined subroutine &main::new called at /usr/local/share/perl/5.14.2/Tkx.pm line 347.
+
+Undefined subroutine &main::new called at /usr/local/share/perl/5.14.2/Tkx.pm line 347.
+
+    while executing
+"::perl::CODE(0x28b6b70)"
+    invoked from within
+".#m.#m#m invoke active"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list $w invoke active]"
+    (procedure "tk::MenuInvoke" line 50)
+    invoked from within
+"tk::MenuInvoke .#m.#m#m 1"
+    (command bound to event)

@@ -1,0 +1,46 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+my $title = "Regex - Look Ahead and Look Behind Assertions";
+
+sub main {
+    print <<EOT;
+<h1>$title</h1>
+<p>before or after the match is true.</p>
+<p></p>
+EOT
+
+my $string = "Monday Tuesday Wednesday Thursday Friday\n";
+
+    print "Positive lookahead: there is a Monday (immediately) followed by a space and a Tuesday.\n" if ($string =~ m/Monday\s(?=Tuesday)/); # it matches a Monday which is followed by a Tuesday
+
+    print "Negative lookahead: there is no Monday (immediately) followed by a space and Thursday.\n" if ($string =~ m/Monday\s(?!Thursday)/); # it matches a Monday which is not followed by a Thursday
+
+    print "Positive lookbehind: there is a Tuesday preceded (immediately) by a Monday and a space.\n" if ($string =~ m/(?<=Monday)\sTuesday/); # it matches a <space>Tuesday which is preceded by a Monday
+
+    print "Negative lookbehid: there is no Tuesday preceded (immediately) by a Sunday and a space.\n" if ($string =~ m/(?<!Sunday)\sTuesday/); # it matches a <space>Tuesday which is not preceded by a Sunday
+
+    print "We have a Monday preceded by a Monday.\n" if ($string =~ m/Monday(?=.*Thursday)/);
+    # variable length lookbehind is not implemented:
+    # print "We have a Thursday preceded by a Monday.\n" if ($string =~ m/(?<=.*Monday)Thursday/);
+    # a workaround:
+    print "A Thursday has been found with a Monday somewhere before it.\n" if ($string =~ m/Monday.*\KThursday/);
+    if ($string =~ m/Sunday.*\KThursday/) {
+	print "We have a Thursday somewhere before which there is a Sunday.\n";
+    } else {
+	print "There is no Thursday which is preceded by a Sunday.\n"
+    }
+    
+
+
+} # main
+
+require "html.cgi";
+
+&cgi_head("$title");
+&main();
+&printcode($0);
+&cgi_foot();
+exit;

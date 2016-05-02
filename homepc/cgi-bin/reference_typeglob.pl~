@@ -1,0 +1,29 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+my $title = "References to typeglobs";
+
+sub main {
+    print <<EOT;
+<h1>$title</h1>
+<p>These are useful when the referenced data does not have a specific data type, such as a filehandle.</p>
+EOT
+
+sub printit {
+    my $handle = shift;
+    print $handle "A file reference.\n";
+    print "$handle\n";
+
+}
+
+}
+
+require "html.cgi";
+
+&cgi_head("$title");
+&main();
+&printcode($0);
+&cgi_foot();
+exit;

@@ -1,0 +1,42 @@
+#!/usr/bin/perl -w
+use XML::Writer;
+use strict;
+
+use utf8;
+use encoding 'utf8';
+#binmode STDIN, 'encoding(UTF-8)';
+#binmode STDOUT, 'encoding(UTF-8)';
+
+use LangDat;
+
+my %word_data = %LangDat::word_data;
+
+my $fh;
+my $fn = "word_data.xml";
+my $fm = ">:encoding(UTF-8)";
+open $fh,$fm,$fn or die "Cannot open $fn: $!";
+my $writer = XML::Writer->new(DATA_MODE => 'true', DATA_INDENT => 2, OUTPUT => $fh);
+
+$writer->xmlDecl('UTF-8');
+
+$writer->startTag("言葉");
+
+foreach my $word (keys %word_data) {
+$writer->startTag($word);
+foreach my $info (keys %{$word_data{$word}}) {
+    $writer->startTag($info);
+    $writer->characters("bogus");
+    $writer->endTag($info);
+}
+$writer->endTag($word);
+}
+
+$writer->endTag("言葉");
+
+#$writer->startTag();
+#$writer->characters();
+#$writer->endTag();
+#$writer->dataElement($words,"");
+
+$writer->end();
+close($fh);

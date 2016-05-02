@@ -1,0 +1,14 @@
+Ben:
+	76 12	Average: 44
+Carol:
+	25 33	Average: 29
+Chris:
+	92 89	Average: 90.5
+Clementine:
+	49 0	Average: 24.5
+Doug:
+	42 56	Average: 49
+Norm:
+	66 66	Average: 66
+Noël:
+	25 39	Average: 32

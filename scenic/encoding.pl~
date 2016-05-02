@@ -1,0 +1,10 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+binmode STDOUT, ':encoding(UTF-8)';
+binmode STDIN, ':encoding(UTF-8)';
+
+my $fn = "haiku.txt";
+
+open $fh,"<",$fn or die "Can't open $fn";

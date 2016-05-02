@@ -1,0 +1,18 @@
+<headA><14-point>example</14-point></headA>
+<par>This tag is used to create examples.</par>
+<par></par>
+<headB>Attributes</headB>
+<list><?Pub Lcl MarkerStyle="none"><bold>condensed</bold>   This is an
+attribute which, if it is set to the value  <sans-serif>yes</sans-serif>, will condense the text in the example tag.</list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>l-r</bold>   Defines the horizontal indentation of the text in the example tag and has the following values:
+<list><?Pub Lcl MarkerStyle="bulleted">
+<item><sans-serif>column</sans-serif>   Selecting this value will give a full indent</item>
+<item><sans-serif>half-indent</sans-serif>   Selecting this value will give a half indent</item>
+<item><sans-serif>leftmargin</sans-serif>   Selecting this value will give no indent</item>
+</list></list>
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold>  An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>
+
+
+
+

@@ -1,0 +1,22 @@
+<theYear>
+	<season name="Winter （冬）">
+		<month>December （十二月）</month>
+		<month>January （一月）</month>
+		<month>February （二月）</month>
+	</season>
+	<season name="Summer （夏）">
+		<month>June （六月）</month>
+		<month>July （七月）</month>
+		<month>August （八月）</month>
+	</season>
+	<season name="Spring (春)">
+		<month>March （三月）</month>
+		<month>April （四月）</month>
+		<month>May （五月）</month>
+	</season>
+	<season name="Autumn （秋）">
+		<month>September （九月）</month>
+		<month>October （十月）</month>
+		<month>November （十一月）</month>
+	</season>
+</theYear>

@@ -1,0 +1,11 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+my $the_arg = "";
+
+while (@ARGV) {
+    $the_arg = shift @ARGV;
+    print @ARGV;
+}
+print "\n";

@@ -1,0 +1,7 @@
+#!/usr/perl -w
+
+@rr_samp = (1,2,3);
+
+foreach $item (@rr_samp) {
+    print "$item\n";
+}

@@ -1,0 +1,12 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+#the recommended way to open a file is with three args:
+$fh = "TEST_FILE";		# name of file handler
+$fm = "<"; 			# for reading
+$fn = "test_file.txt";		# name of the file
+
+open($fh,$fm,$fn) or die "Unable to open $fn for reading. $!";
+
+close($fh);

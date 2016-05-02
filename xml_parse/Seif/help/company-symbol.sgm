@@ -1,0 +1,9 @@
+<headA><14-point>company-symbol</14-point></headA>
+<par>This tag is used to create a company symbol.</par>
+<headB>Attributes</headB>
+<list><?Pub Lcl MarkerStyle="none"><bold>logotype</bold> If the attribute is set to "ericsson" the Ericsson logotype is generated.
+<par>The company-symbol may  refer to any existing logotype, (depending on what
+the company-name is set to) or a new symbol may be created by using the
+graphics tag.</par></list>
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold> An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>
+

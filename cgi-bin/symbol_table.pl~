@@ -1,0 +1,30 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+my $title = "Using the Symbol Table";
+
+sub main {
+    print <<EOT;
+<h1>$title</h1>
+<p>Getting references from the Symbol Table, which is a hash of data (name{type}).</p>
+EOT
+
+    my $variable = "A scalar reference.";
+    my $reference = \$variable;
+    print "<p>Dereferencing the reference: $$reference</p>\n";
+    print "<p>The reference to the variable: $reference</p>\n";
+
+$$scalarRef = *
+
+
+}
+
+require "html.cgi";
+
+&cgi_head("$title");
+&main();
+&printcode($0);
+&cgi_foot();
+exit;

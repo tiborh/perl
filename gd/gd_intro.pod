@@ -1,0 +1,109 @@
+#!/usr/bin/env perl
+
+use warnings;
+use v5.14; 			# implies strict
+use utf8;
+
+binmode(STDOUT, ":utf8");
+
+=pod
+
+A few lines about GD module when it is used for drawing.
+
+=head1 Four Classes
+
+=over 4
+
+=item GD::Image
+
+An image class, which holds the image data and accepts graphic primitive method calls.
+
+=item GD::Font
+
+A font class, which holds static font information and used for text rendering.
+
+=item GD::Polygon
+
+A simple polygon object, used for storing lists of vertices prior to rendering a polygon into an image.
+
+=item GD::Simple
+
+A "simple" class that simplifies the GD::Image API and then adds a set of object-oriented drawing methods using turtle graphics, simplified font handling, ability to work in polar coordinates, HSV color spaces, and human-readable color names like "lightblue". Please see GD::Simple for a description of these methods.
+
+=back
+
+=head1 Drawing Primitives
+
+=over 4
+
+=item setPixel(x,y,color)
+
+set the color of the pixel at the specified coordinates
+
+=item line(x1,y1,x2,y2,color)
+
+draw a solid line between the specified points
+
+=item dashedLine(x1,y1,x2,y2,color) 
+
+draw a dashed line between the specified points
+
+=item rectangle(x1,y1,x2,y2,color)
+
+draw a rectangle with the specified corners
+
+=item filledRectangle(x1,y1,x2,y2,color) 
+
+draw a filled rectangle with the specified corners
+
+=item polygon(poly,color)
+
+draw the polygon specified by poly, which is a polygon object
+created with GD::Polygon::new()
+
+=item filledPolygon(poly,color) 
+
+draw the filled polygon specified by poly
+
+=item arc(cx,cy,w,h,st,end,color) 
+
+draw an arc with the specified center, width and height, and
+start and end angle
+
+=item fill(x,y,color) 
+
+flood-fill all pixels with the same color around the specified
+point
+
+=item fillToBorder(x,y,bcolor,color) 
+
+flood-fill all pixels around the specified point, until a pixel
+with the specified bcolor is encountered
+
+=item setBrush(brush) 
+
+Set the brush to be used to the specified brush, which is
+another GD::Image object
+
+=item setStyle(color-list) 
+
+Set the line style to the specified color list. Each element of
+the list represents a single pixel on the line to be drawn.
+
+=item Note
+
+Unfortunately, there is no filled form of the arc() drawing primitive,
+which can cause some hardship when trying to create filled partial circles or
+ellipses. There also is no variant of the arc primitive which allows you to
+specify a start and end point of the arc. Thus, it is almost impossible to reliably
+create a pie slice (or a pizza slice) that can be flood-filled. Because of
+little rounding errors it is possible that there are gaps between the arc that
+forms the outside bit of the slice, and the lines that form the wedge. When
+subsequently one of the fill methods is called, these little gaps will cause the
+flood-fill to leak out into the rest of your drawing. If there were an arc command
+that allowed one to specify start and end points, it would be possible
+to reliably close these gaps.
+
+=back
+
+=cut

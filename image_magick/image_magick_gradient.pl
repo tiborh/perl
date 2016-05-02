@@ -1,0 +1,24 @@
+#!/usr/bin/env perl
+
+use warnings;
+use v5.14; 			# implies strict
+use Carp;
+use utf8;
+use autodie;
+#the following two needs installation:
+#use Modern::Perl;
+#use Test::More;
+
+binmode(STDOUT, ":utf8");
+
+use Image::Magick;
+
+my $img = Image::Magick->new();
+@$img = ();
+$img->Set(size => '100x600');
+my $rc = $img->Read('gradient:#efefef-#3f3f3f');
+warn $rc if $rc;
+$img->Rotate(degrees => -90);
+$rc = $img->Write('grayGradient.png');
+warn $rc if $rc;
+

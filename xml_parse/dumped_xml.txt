@@ -1,0 +1,1091 @@
+$VAR1 = [
+          'doc',
+          [
+            {
+              'xmlns' => 'urn:x-ericsson:r2:reg-doc:1551-fad.110.05:en:*',
+              'publication-no' => 'doc-id',
+              'new-page-level' => 'npl0',
+              'cover-back' => 'cb-no',
+              'version' => 'XSEIF R6',
+              'math-support' => 'ms-no',
+              'new-page-right' => 'npr-yes',
+              'index-support' => 'is-no',
+              'table-caption' => 'tc-no'
+            },
+            0,
+            '
+',
+            'meta-data',
+            [
+              {},
+              0,
+              '
+',
+              'confidentiality',
+              [
+                {
+                  'class' => 'ericsson-confidential'
+                }
+              ],
+              0,
+              '
+',
+              'doc-name',
+              [
+                {
+                  'xml:id' => 'sdieditor'
+                },
+                0,
+                'DOCUMENT LIST'
+              ],
+              0,
+              '
+',
+              'doc-id',
+              [
+                {},
+                0,
+                '
+',
+                'doc-no',
+                [
+                  {
+                    'type' => 'registration'
+                  },
+                  0,
+                  '00151-EN/LZN 000 0000'
+                ],
+                'language',
+                [
+                  {
+                    'code' => 'en'
+                  }
+                ],
+                'rev',
+                [
+                  {},
+                  0,
+                  'PA1'
+                ],
+                0,
+                '
+',
+                'date',
+                [
+                  {},
+                  'y',
+                  [
+                    {},
+                    0,
+                    '2014'
+                  ],
+                  'm',
+                  [
+                    {},
+                    0,
+                    '01'
+                  ],
+                  'd',
+                  [
+                    {},
+                    0,
+                    '10'
+                  ]
+                ],
+                0,
+                '
+'
+              ],
+              0,
+              '
+',
+              'company-id',
+              [
+                {},
+                0,
+                '
+',
+                'business-unit',
+                [
+                  {}
+                ],
+                0,
+                '
+',
+                'company-name',
+                [
+                  {}
+                ],
+                0,
+                '
+',
+                'company-symbol',
+                [
+                  {
+                    'logotype' => 'ericsson'
+                  }
+                ],
+                0,
+                '
+'
+              ],
+              0,
+              '
+',
+              'part-of',
+              [
+                {}
+              ],
+              0,
+              '
+',
+              'title',
+              [
+                {},
+                0,
+                'Test Library'
+              ],
+              0,
+              '
+',
+              'user-info',
+              [
+                {
+                  'xml:id' => 'v2.2'
+                }
+              ],
+              0,
+              '
+',
+              'drafted-by',
+              [
+                {},
+                0,
+                '
+',
+                'person',
+                [
+                  {},
+                  0,
+                  '
+',
+                  'name',
+                  [
+                    {},
+                    0,
+                    ' '
+                  ],
+                  'signature',
+                  [
+                    {},
+                    0,
+                    ' '
+                  ],
+                  0,
+                  '
+',
+                  'location',
+                  [
+                    {},
+                    0,
+                    ' '
+                  ],
+                  'company',
+                  [
+                    {},
+                    0,
+                    ' '
+                  ],
+                  'department',
+                  [
+                    {},
+                    0,
+                    ' '
+                  ],
+                  0,
+                  '
+'
+                ],
+                0,
+                '
+'
+              ],
+              0,
+              '
+',
+              'approved-by',
+              [
+                {},
+                0,
+                '
+',
+                'person',
+                [
+                  {},
+                  0,
+                  '
+',
+                  'name',
+                  [
+                    {},
+                    0,
+                    'Andrs Czigny'
+                  ],
+                  'signature',
+                  [
+                    {},
+                    0,
+                    'eandczi '
+                  ],
+                  0,
+                  '
+',
+                  'location',
+                  [
+                    {},
+                    0,
+                    'HU'
+                  ],
+                  'company',
+                  [
+                    {},
+                    0,
+                    'ETH'
+                  ],
+                  'department',
+                  [
+                    {},
+                    0,
+                    'XKL'
+                  ],
+                  0,
+                  '
+'
+                ],
+                0,
+                '
+'
+              ],
+              0,
+              '
+',
+              'checked-by',
+              [
+                {},
+                0,
+                '
+',
+                'person',
+                [
+                  {},
+                  0,
+                  '
+',
+                  'name',
+                  [
+                    {},
+                    0,
+                    ' Tibor Harcsa'
+                  ],
+                  'signature',
+                  [
+                    {},
+                    0,
+                    'etibhar '
+                  ],
+                  0,
+                  '
+',
+                  'location',
+                  [
+                    {},
+                    0,
+                    'HU'
+                  ],
+                  'company',
+                  [
+                    {},
+                    0,
+                    'ETH'
+                  ],
+                  'department',
+                  [
+                    {},
+                    0,
+                    'XKL'
+                  ],
+                  0,
+                  '
+'
+                ],
+                0,
+                '
+'
+              ],
+              0,
+              '
+',
+              'factual-supervisor',
+              [
+                {},
+                0,
+                '
+',
+                'person',
+                [
+                  {},
+                  0,
+                  '
+',
+                  'name',
+                  [
+                    {},
+                    0,
+                    ' '
+                  ],
+                  'signature',
+                  [
+                    {},
+                    0,
+                    ' '
+                  ],
+                  0,
+                  '
+',
+                  'location',
+                  [
+                    {},
+                    0,
+                    ' '
+                  ],
+                  'company',
+                  [
+                    {},
+                    0,
+                    ' '
+                  ],
+                  'department',
+                  [
+                    {},
+                    0,
+                    ' '
+                  ],
+                  0,
+                  '
+'
+                ],
+                0,
+                '
+'
+              ],
+              0,
+              '
+',
+              'revision-history',
+              [
+                {},
+                0,
+                '
+',
+                'rev-info',
+                [
+                  {},
+                  0,
+                  '
+',
+                  'rev',
+                  [
+                    {},
+                    0,
+                    'PA1'
+                  ],
+                  0,
+                  '
+',
+                  'date',
+                  [
+                    {},
+                    'y',
+                    [
+                      {},
+                      0,
+                      '2014'
+                    ],
+                    'm',
+                    [
+                      {},
+                      0,
+                      '01'
+                    ],
+                    'd',
+                    [
+                      {},
+                      0,
+                      '01'
+                    ]
+                  ],
+                  0,
+                  '
+',
+                  'signature',
+                  [
+                    {},
+                    0,
+                    'etibhar'
+                  ],
+                  0,
+                  '
+',
+                  'description',
+                  [
+                    {},
+                    'dp',
+                    [
+                      {},
+                      0,
+                      'Test entry 1'
+                    ],
+                    0,
+                    '
+'
+                  ],
+                  0,
+                  '
+'
+                ],
+                0,
+                '
+',
+                'rev-info',
+                [
+                  {},
+                  0,
+                  '
+',
+                  'rev',
+                  [
+                    {},
+                    0,
+                    'PA2'
+                  ],
+                  0,
+                  '
+',
+                  'date',
+                  [
+                    {},
+                    'y',
+                    [
+                      {},
+                      0,
+                      '2014'
+                    ],
+                    'm',
+                    [
+                      {},
+                      0,
+                      '01'
+                    ],
+                    'd',
+                    [
+                      {},
+                      0,
+                      '16'
+                    ]
+                  ],
+                  0,
+                  '
+',
+                  'signature',
+                  [
+                    {},
+                    0,
+                    'etibhar'
+                  ],
+                  0,
+                  '
+',
+                  'description',
+                  [
+                    {},
+                    'dp',
+                    [
+                      {},
+                      0,
+                      'Test entry 2'
+                    ],
+                    0,
+                    '
+'
+                  ],
+                  0,
+                  '
+'
+                ],
+                0,
+                '
+'
+              ],
+              0,
+              '
+'
+            ],
+            0,
+            '
+',
+            'front',
+            [
+              {},
+              0,
+              '
+',
+              'title-page',
+              [
+                {
+                  'align-front-graphics' => 'right'
+                },
+                0,
+                '
+',
+                'copyright',
+                [
+                  {},
+                  0,
+                  '
+',
+                  'p',
+                  [
+                    {},
+                    0,
+                    ' Ericsson AB 2014. All rights reserved. No part of this material
+may be reproduced in any form without the written permission of the
+copyright owner.'
+                  ],
+                  0,
+                  '
+'
+                ],
+                0,
+                '
+',
+                'disclaimer',
+                [
+                  {},
+                  0,
+                  '
+',
+                  'p',
+                  [
+                    {},
+                    0,
+                    'The contents of these documents are subject to revision without
+notice due to continued progress in methodology, design and manufacturing.
+Ericsson shall have no liability for any error or damage of any kind
+resulting from the use of these documents.'
+                  ],
+                  0,
+                  '
+'
+                ],
+                0,
+                '
+',
+                'trademark-list',
+                [
+                  {},
+                  0,
+                  '
+',
+                  'tm-item',
+                  [
+                    {},
+                    'trademark',
+                    [
+                      {},
+                      0,
+                      'Ericsson'
+                    ],
+                    'owner',
+                    [
+                      {},
+                      0,
+                      'is the trademark or
+registered trademark of Telefonaktiebolaget LM Ericsson. All other
+trademarks mentioned herein are the property of their respective owners.'
+                    ],
+                    0,
+                    '
+'
+                  ],
+                  0,
+                  '
+'
+                ],
+                0,
+                '
+'
+              ]
+            ],
+            0,
+            '
+',
+            'body',
+            [
+              {},
+              0,
+              '
+',
+              'chl',
+              [
+                {
+                  'role' => ' '
+                },
+                'title',
+                [
+                  {
+                    'xml:id' => 'id_gclx'
+                  },
+                  0,
+                  'Safety and Environment'
+                ],
+                0,
+                '
+',
+                'table',
+                [
+                  {
+                    'indent' => 'half-indent'
+                  },
+                  0,
+                  '
+',
+                  'caption',
+                  [
+                    {}
+                  ],
+                  0,
+                  '
+',
+                  'tgroup',
+                  [
+                    {
+                      'align' => 'left',
+                      'char' => '',
+                      'charoff' => '50',
+                      'cols' => '2'
+                    },
+                    'colspec',
+                    [
+                      {
+                        'colwidth' => '60*'
+                      }
+                    ],
+                    'colspec',
+                    [
+                      {
+                        'colwidth' => '40*'
+                      }
+                    ],
+                    0,
+                    '
+',
+                    'tbody',
+                    [
+                      {
+                        'valign' => 'top'
+                      },
+                      'row',
+                      [
+                        {},
+                        0,
+                        '
+',
+                        'entry',
+                        [
+                          {
+                            'rotate' => '0',
+                            'valign' => 'top',
+                            'morerows' => '0'
+                          },
+                          'tp',
+                          [
+                            {},
+                            0,
+                            'Personal Health and
+Safety Information'
+                          ],
+                          0,
+                          '
+'
+                        ],
+                        0,
+                        '
+',
+                        'entry',
+                        [
+                          {
+                            'rotate' => '0',
+                            'valign' => 'top',
+                            'morerows' => '0'
+                          },
+                          'tp',
+                          [
+                            {},
+                            0,
+                            '124 46-2885 Uen D'
+                          ],
+                          0,
+                          '
+'
+                        ],
+                        0,
+                        '
+'
+                      ],
+                      0,
+                      '
+',
+                      'row',
+                      [
+                        {},
+                        0,
+                        '
+',
+                        'entry',
+                        [
+                          {
+                            'rotate' => '0',
+                            'valign' => 'top',
+                            'morerows' => '0'
+                          },
+                          'tp',
+                          [
+                            {},
+                            0,
+                            'System Safety Information'
+                          ],
+                          0,
+                          '
+'
+                        ],
+                        0,
+                        '
+',
+                        'entry',
+                        [
+                          {
+                            'rotate' => '0',
+                            'valign' => 'top',
+                            'morerows' => '0'
+                          },
+                          'tp',
+                          [
+                            {},
+                            0,
+                            '124 46-2886 Uen G'
+                          ],
+                          0,
+                          '
+'
+                        ],
+                        0,
+                        '
+'
+                      ],
+                      0,
+                      '
+'
+                    ],
+                    0,
+                    '
+'
+                  ],
+                  0,
+                  '
+'
+                ],
+                0,
+                '
+'
+              ],
+              0,
+              '
+',
+              'chl',
+              [
+                {
+                  'role' => ' '
+                },
+                'title',
+                [
+                  {
+                    'xml:id' => 'id_d3av'
+                  },
+                  0,
+                  'Operation and Maintenance'
+                ],
+                0,
+                '
+',
+                'chl',
+                [
+                  {
+                    'role' => ' '
+                  },
+                  'title',
+                  [
+                    {
+                      'xml:id' => 'id_h03e'
+                    },
+                    0,
+                    'Fault Management'
+                  ],
+                  0,
+                  '
+',
+                  'table',
+                  [
+                    {
+                      'indent' => 'half-indent'
+                    },
+                    0,
+                    '
+',
+                    'caption',
+                    [
+                      {}
+                    ],
+                    0,
+                    '
+',
+                    'tgroup',
+                    [
+                      {
+                        'align' => 'left',
+                        'char' => '',
+                        'charoff' => '50',
+                        'cols' => '2'
+                      },
+                      'colspec',
+                      [
+                        {
+                          'colwidth' => '60*'
+                        }
+                      ],
+                      'colspec',
+                      [
+                        {
+                          'colwidth' => '40*'
+                        }
+                      ],
+                      0,
+                      '
+',
+                      'tbody',
+                      [
+                        {
+                          'valign' => 'top'
+                        },
+                        'row',
+                        [
+                          {},
+                          0,
+                          '
+',
+                          'entry',
+                          [
+                            {
+                              'rotate' => '0',
+                              'valign' => 'top',
+                              'morerows' => '0'
+                            },
+                            'tp',
+                            [
+                              {},
+                              0,
+                              'Troubleshooting'
+                            ],
+                            0,
+                            '
+'
+                          ],
+                          0,
+                          '
+',
+                          'entry',
+                          [
+                            {
+                              'rotate' => '0',
+                              'valign' => 'top',
+                              'morerows' => '0'
+                            },
+                            'tp',
+                            [
+                              {},
+                              0,
+                              '24/1543-AXB 250 05/8
+Uen FJ'
+                            ],
+                            0,
+                            '
+'
+                          ],
+                          0,
+                          '
+'
+                        ],
+                        0,
+                        '
+'
+                      ],
+                      0,
+                      '
+'
+                    ],
+                    0,
+                    '
+'
+                  ],
+                  0,
+                  '
+'
+                ],
+                0,
+                '
+',
+                'chl',
+                [
+                  {
+                    'role' => ' '
+                  },
+                  'title',
+                  [
+                    {
+                      'xml:id' => 'id_12n8'
+                    },
+                    0,
+                    'Emergency'
+                  ],
+                  0,
+                  '
+',
+                  'table',
+                  [
+                    {
+                      'indent' => 'half-indent'
+                    },
+                    0,
+                    '
+',
+                    'caption',
+                    [
+                      {}
+                    ],
+                    0,
+                    '
+',
+                    'tgroup',
+                    [
+                      {
+                        'align' => 'left',
+                        'char' => '',
+                        'charoff' => '50',
+                        'cols' => '2'
+                      },
+                      'colspec',
+                      [
+                        {
+                          'colwidth' => '60*'
+                        }
+                      ],
+                      'colspec',
+                      [
+                        {
+                          'colwidth' => '40*'
+                        }
+                      ],
+                      0,
+                      '
+',
+                      'tbody',
+                      [
+                        {
+                          'valign' => 'top'
+                        },
+                        'row',
+                        [
+                          {},
+                          0,
+                          '
+',
+                          'entry',
+                          [
+                            {
+                              'rotate' => '0',
+                              'valign' => 'top',
+                              'morerows' => '0'
+                            },
+                            'tp',
+                            [
+                              {},
+                              0,
+                              'Emergency Handling'
+                            ],
+                            0,
+                            '
+'
+                          ],
+                          0,
+                          '
+',
+                          'entry',
+                          [
+                            {
+                              'rotate' => '0',
+                              'valign' => 'top',
+                              'morerows' => '0'
+                            },
+                            'tp',
+                            [
+                              {},
+                              0,
+                              '11/1543-AXB 250 05
+Uen BF'
+                            ],
+                            0,
+                            '
+'
+                          ],
+                          0,
+                          '
+'
+                        ],
+                        0,
+                        '
+'
+                      ],
+                      0,
+                      '
+'
+                    ],
+                    0,
+                    '
+'
+                  ],
+                  0,
+                  '
+'
+                ],
+                0,
+                '
+'
+              ],
+              0,
+              '
+'
+            ],
+            0,
+            '
+'
+          ]
+        ];

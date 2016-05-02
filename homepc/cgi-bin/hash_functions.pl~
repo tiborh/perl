@@ -1,0 +1,32 @@
+#!/usr/bin/perl -w
+use strict;
+
+&cgi_head("hash functions");
+{
+    my %a_hash = qw(1 一つ 2 二つ 3 三つ 4 四つ 5 五つ 6 六つ 7 七つ 8 八つ 9 九つ 10 十);
+    print("<h1>Hash functions</h1>\n");
+    print("<p>the hash: @{[%a_hash]}</p>\n");
+}
+
+&cgi_foot();
+exit;
+
+sub cgi_head {
+print <<"EOT";
+Content-type: text/html\n
+<!doctype html>
+<html lang="en">
+<head>
+\t<meta charset="utf-8">
+\t<title>$_[0]</title>
+</head>
+<body>
+EOT
+}
+
+sub cgi_foot {
+print <<"EOT";
+</body>
+</html>
+EOT
+}

@@ -1,0 +1,14 @@
+<headA><14-point>d</14-point></headA>
+<par>This tag contains information that is used  within the date-tag.</par>
+<par>The content of this tag pair will be placed in the form header in the 
+<bold>Datum-Date</bold> field together with the information in the y- and m-tags.</par>
+
+
+<headB>Attributes</headB>
+
+
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold>  An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>
+
+
+
+

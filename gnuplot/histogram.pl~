@@ -1,0 +1,15 @@
+#!/usr/bin/perl -w
+use strict;
+use Chart::Gnuplot;
+use File::Basename;
+
+my $bn = (split /\./,basename($0))[0];
+
+my $ds = Chart::Gnuplot::DataSet->new(
+    xdata => [qw(A B C)],
+    ydata => [1, 2, 3],
+    using => "2:xticlabels(1)",
+    style => "histograms",
+    );
+
+$chart->plot2d($sineSet,$cosineSet);

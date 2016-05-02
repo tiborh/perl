@@ -1,0 +1,57 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+sub main {
+    {
+	print "<h1>The usage of substr</h1>\n";
+	my $a_string = "If a dog jumps in your lap, it is because he is fond of you; but if a cat does the same thing, it is because your lap is warmer.";
+	print "<p>The sample string we are going to work with:<br />\n";
+	print "<i>$a_string</i></p>\n";
+	{
+	    print "<h2>The usage of substr</h2>\n";
+	    print "<p>Using two variables: 1. string 2. an index:<br />\n";
+	    my $first_because = index($a_string,"because");
+	    my $last_because = rindex($a_string,"because");
+	    print "<i>",substr($a_string,$first_because),"</i><br />\n";
+	    print "or<br />\n";
+	    print "<i>",substr($a_string,$last_because),"</i></p>\n";
+	    print "<p>Using three variables: 3. how long?:<br />\n";
+	    print "<i>",substr($a_string,$first_because,index($a_string,";")-$first_because),"</i></p>\n";
+	    print "<p>Using four variables: 4. replacement string:<br />\n";
+	    substr($a_string,$first_because,index($a_string,";")-$first_because,"because he is a fool");
+	    print "<i>$a_string</i><br />\n";
+	    print "or<br />\n";
+	    $last_because = rindex($a_string,"because"); # length changed because of previous replacement
+	    substr($a_string,$last_because,index($a_string,".")-$last_because,"because either it offers her an advantage or she wants something");
+	    print "<i>$a_string</i></p>\n";
+	    print "<p><b>Note:</b> This script also shows examples for the usage of <tt>index()</tt> and <tt>rindex()</tt>.";
+	}
+    }
+}
+
+&cgi_head("Functions: substr");
+&main();
+&cgi_foot();
+exit;
+
+sub cgi_head {
+print <<"EOT";
+Content-type: text/html\n
+<!doctype html>
+<html lang="en">
+<head>
+\t<meta charset="utf-8">
+\t<title>$_[0]</title>
+</head>
+<body>
+EOT
+}
+
+sub cgi_foot {
+print <<"EOT";
+</body>
+</html>
+EOT
+}

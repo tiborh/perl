@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<言葉>
+  <誕生日>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>たんじょうび</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="0">
+        <data_item>birthday</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="3">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </誕生日>
+  <日中>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>にっちゅう</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="0">
+        <data_item>during the day</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="3">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </日中>
+  <日の入り>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>ひのいり</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="0">
+        <data_item>sunset</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="3">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </日の入り>
+  <朝日影>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>あさひかげ</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="0">
+        <data_item>morning sunlight</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="3">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </朝日影>
+  <日々>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>ひび</data_item>
+        <data_item>にちにち</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="0">
+        <data_item>every day</data_item>
+        <data_item>daily</data_item>
+        <data_item>day after day</data_item>
+        <data_item>(good old) days</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="3">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </日々>
+  <日に日に>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>ひにひに</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="1">
+        <data_item>day by day</data_item>
+        <data_item>by the day</data_item>
+      </numlist-item>
+      <numlist-item number="2">
+        <data_item>(arch) daily</data_item>
+        <data_item>(arch) every day</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="3">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </日に日に>
+  <日本>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>にっぽん</data_item>
+        <data_item>にほん</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="0">
+        <data_item>Japan</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </日本>
+  <日夜>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>にちや</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="0">
+        <data_item>day and night</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日>看護婦達は、日夜患者の世話を為た。</日>
+        <平>かんごふたちは、にちやかんじゃのせわおした。</平>
+        <英>The nurses attend to the patient day and night.</英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日>彼は金持ちになる為に、日夜働いた。</日>
+        <平>かれはかねもちになるために、にちやはたらいた。</平>
+        <英>He worked day and night so that he might become rich.</英>
+      </numlist-item>
+      <numlist-item number="3">
+        <日>私は昨日夜遅く迄起きていた。</日>
+        <平>わたしはさくじつ（きのう）よるおそくまでおきていた。</平>
+        <英>I stayed up late last night.</英>
+      </numlist-item>
+    </例>
+  </日夜>
+  <平日>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>へいじつ</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="0">
+        <data_item>weekday</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </平日>
+  <日月>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>じつげつ</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="0">
+        <data_item>sun and moon</data_item>
+        <data_item>time</data_item>
+        <data_item>days</data_item>
+        <data_item>years</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </日月>
+  <日時計>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>ひどけい</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="0">
+        <data_item>sundial</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="3">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </日時計>
+  <明日>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>あした</data_item>
+        <data_item>あす</data_item>
+        <data_item>みょうにち</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="0">
+        <data_item>tomorrow</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="3">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </明日>
+  <十月十日>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>とつきとおか</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="1">
+        <data_item>babies born on October 10</data_item>
+        <data_item>supposedly conceived on New Year's Day</data_item>
+      </numlist-item>
+      <numlist-item number="2">
+        <data_item>normal gestation time (i.e. 9 months)</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="3">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </十月十日>
+  <日の出>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>ひので</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="0">
+        <data_item>sunrise</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日>初日の出</日>
+        <平>はつひので</平>
+        <英>first sunrise (of the New Year)</英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="3">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </日の出>
+  <朝日>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>あさひ</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="0">
+        <data_item>morning sun</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="3">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </朝日>
+  <毎日>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>まいにち</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="0">
+        <data_item>every day</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </毎日>
+  <一日>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>いちにち</data_item>
+        <data_item>いちじつ</data_item>
+        <data_item>ついたち</data_item>
+        <data_item>つきたち</data_item>
+        <data_item>いっぴ</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="1">
+        <data_item>first day of the month (いっぴ's only meaning)</data_item>
+      </numlist-item>
+      <numlist-item number="2">
+        <data_item>one day (いちにち、いちじつ)</data_item>
+      </numlist-item>
+      <numlist-item number="3">
+        <data_item>first 10 days of the lunar month (つきたち)</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </一日>
+  <今日>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>きょう</data_item>
+        <data_item>こんにち</data_item>
+        <data_item>こんじつ</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="0">
+        <data_item>today</data_item>
+        <data_item>this day</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="3">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </今日>
+  <日曜日>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>にちようび</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="0">
+        <data_item>Sunday</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="3">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </日曜日>
+  <三日前>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>さんにちまえ</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="0">
+        <data_item>three days ago</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日>三日前、トムは去った。</日>
+        <平>さんにちまえ、とむはさった。</平>
+        <英>Tom left three days ago.</英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日>三日前、旧友にひょっこり会った。</日>
+        <平>さんにちまえ、きゅうゆうにひょっこりあった。</平>
+        <英>I ran into an old friend three days ago.</英>
+      </numlist-item>
+      <numlist-item number="3">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </三日前>
+  <土日>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>どにち</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="0">
+        <data_item>Saturday and Sunday</data_item>
+        <data_item>weekend</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="3">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </土日>
+  <昨日>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>きのう</data_item>
+        <data_item>さくじつ</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="0">
+        <data_item>yesterday</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="3">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </昨日>
+  <本日>
+    <平仮名>
+      <numlist-item number="0">
+        <data_item>ほんじつ</data_item>
+      </numlist-item>
+    </平仮名>
+    <英>
+      <numlist-item number="0">
+        <data_item>today</data_item>
+      </numlist-item>
+    </英>
+    <例>
+      <numlist-item number="1">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+      <numlist-item number="2">
+        <日></日>
+        <平></平>
+        <英></英>
+      </numlist-item>
+    </例>
+  </本日>
+</言葉>

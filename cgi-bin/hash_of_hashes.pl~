@@ -1,0 +1,50 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+my $title = "Hash of Hashes";
+
+sub main {
+    print <<EOT;
+<h1>$title</h1>
+<p>For text-based data.</p>
+EOT
+
+my %hash = (
+    name => {
+	first => 'John',
+	family => 'Smith'
+    },
+    address => {
+	street => '23 Booth Crescent',
+	city => 'Frankton'
+    },
+    occupation = {
+	main => 'Plumber',
+	other => 'Charity Work'
+    }
+)
+
+print "$hash{name}{first}";
+    print "$hash{address}{street}";
+
+    my $ref = \%hash;
+    print "$$ref{occupation}{main}";
+
+    for $person (keys %hash) {
+	print "$person\n";
+	for $key (keys %{$hash{$person}}) {
+	    print "$key - $hash{$person}{$key}\n";
+	}
+    }
+
+} # main
+
+require "html.cgi";
+
+&cgi_head("$title");
+&main();
+&printcode($0);
+&cgi_foot();
+exit;

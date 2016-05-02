@@ -1,0 +1,23 @@
+<headA><14-point>list</14-point></headA>
+<par>This is a group-tag for inserting list items.</par>
+<par></par>
+
+<headB>Attributes</headB>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>type</bold>  Defines what type of list that should be generated and has the values:
+<list><?Pub Lcl MarkerStyle="bulleted">
+<item><sans-serif>alphabetic</sans-serif>   Generates an alphabetic list</item>
+<item><sans-serif>numeric</sans-serif>   Generates a numeric list</item>
+<item><sans-serif>selection</sans-serif>   Generates a selection box list</item>
+<item><sans-serif>unordered</sans-serif>   Generates a bulleted list</item>
+</list></list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>compact</bold> Determines whether or not the space between the list-items should be compressed and has the values:
+<list><?Pub Lcl MarkerStyle="bulleted">
+<item><sans-serif>yes</sans-serif>   Compresses the list</item>
+<item><sans-serif>no</sans-serif>   Does not compress the list</item>
+</list></list>
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold>  An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>
+
+
+

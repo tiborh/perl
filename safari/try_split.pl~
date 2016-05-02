@@ -1,0 +1,4 @@
+#!/usr/bin/env perl
+
+$_ = 0;
+print split /','/;

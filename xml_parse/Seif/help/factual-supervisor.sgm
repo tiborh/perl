@@ -1,0 +1,12 @@
+<headA><14-point>factual-supervisor</14-point></headA>
+<par>This tag contains the department of the person responsible for the factual content of the document. The department and other information is specified in the person tag. The text appeares in the page header's "Subject responsible-field" if you are using the registration document's formatting alternative.</par>
+<par></par>
+
+<headB>Attributes</headB>
+<list><?Pub Lcl MarkerStyle="none"><bold>responsible</bold> The person and department responsible. The options are<list><?Pub Lcl MarkerStyle="bulleted">
+<item><sans-serif>department</sans-serif></item>
+<item><sans-serif>person</sans-serif></item></list></list>
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold> An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>
+
+
+

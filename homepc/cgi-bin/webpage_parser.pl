@@ -1,0 +1,64 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+sub main {
+    print <<EOT;
+<h1>Parsing a webpage</h1>
+<ol>
+  <li>The following modules are needed:</li>
+  <ul>
+    <li><code>LWP::Simple</code></li>
+    <li><code>HTTP::TreeBuilder</code></li>
+    <li><code>HTTP::FormatText</code></li>
+  </ul>
+  <li>The output will be in plain text format.</li>
+  <li>There are some format parameters for the text.</li>
+</ol>
+EOT
+  {
+      use LWP::Simple;
+      use HTML::TreeBuilder;
+      use HTML::FormatText;
+      
+      my $url_content = get("http://www.harcsa.net/");
+      {
+	  my $fh;
+	  my $fn = "webpage_downloaded.html";
+	  open($fh,">",$fn) or die "Cannot open $fn, $!";
+	  print $fh $url_content;
+	  close($fh);
+	  printcode($fn,"The content of the downloaded file");
+      }
+      {
+	  my $Format = HTML::FormatText->new(leftmargin => 3, rightmargin => 50);
+	  my $TreeBuilder = HTML::TreeBuilder->new;
+	  
+	  $TreeBuilder->parse($url_content);
+	  {
+	      print ("<p>The build tree:</p>\n");
+	      print "<ol>\n";
+	      my %TreeBuilder = %{$TreeBuilder};
+	      printf("\t<li>%s: %s</li>\n",$_,defined($TreeBuilder{$_}) ? $TreeBuilder{$_} : "undef") foreach (keys %TreeBuilder);
+	      print "</ol>\n";
+	  }
+	  my $Parsed = $Format->format($TreeBuilder);
+
+	  my $fh;
+	  my $fn = "webpage_parsed.txt";
+	  open($fh,">",$fn) or die "Cannot open $fn, $!";
+	  print $fh $Parsed;
+	  close($fh);
+	  printcode($fn,"The parsed webpage");
+      }
+  }
+}
+
+require "html.cgi";
+
+&cgi_head("webpage parsing");
+&main();
+&printcode($0);
+&cgi_foot();
+exit;

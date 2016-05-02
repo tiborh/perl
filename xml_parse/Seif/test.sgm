@@ -1,0 +1,29 @@
+<!DOCTYPE SEIF PUBLIC "-//ERICSSON//DTD SEIF 1/FAD 110 02 R1//EN" [
+<!--ArborText, Inc., 1988-1994, v.4001-->
+]>
+<?Pub Inc>
+<seif>
+<meta-data>
+<confidentiality>
+<doc-name></doc-name>
+<doc-id><doc-no></doc-no><language></language>
+<rev></rev><date><y></y><m></m><d></d></date></doc-id>
+<company-id>
+<business-unit></business-unit>
+<company-name></company-name>
+<company-symbol logotype="ericsson">
+</company-id>
+<title></title>
+<drafted-by>
+<person>
+<name></name><signature></signature>
+<location></location><company></company><department></department></person>
+</drafted-by>
+<approved-by>
+<person>
+<name></name><signature></signature>
+<location></location><company></company><department></department></person>
+</approved-by>
+</meta-data>
+<body></body></seif>
+<?Pub *0000001176 0>

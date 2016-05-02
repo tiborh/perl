@@ -1,0 +1,6 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use Time::Piece;
+my $t = Time::Piece->strptime("20111121", "%Y%m%d");
+print $t->strftime("%w\n");

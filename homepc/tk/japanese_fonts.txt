@@ -1,0 +1,13 @@
+AoyagiKouzanFontT
+AoyagiSosekiFont2
+Dejima
+IPAMincho
+KanjiStrokeOrders
+Kochi Mincho
+KouzanBrushFont
+KouzanBrushFontGyousyo
+KouzanBrushFontSousyo
+NanumMyeongjo
+Sazanami Mincho
+TakaoMincho
+Ume Mincho

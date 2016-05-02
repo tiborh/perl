@@ -1,0 +1,32 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+my $title = "Typeglobs";
+
+sub main {
+    print <<EOT;
+<h1>$title</h1>
+<p>They are like aliases and we can tie a variable to a new variable name with their help. Like a wildcard.</p>
+EOT
+
+my $data = "A variabla of data.";
+    my @data = qw(an array of data);
+%data = qw(
+big dog
+small cat
+tiny mouse
+);
+sub data {
+    print "A subroutine of data.\n";
+}
+}
+
+require "html.cgi";
+
+&cgi_head("$title");
+&main();
+&printcode($0);
+&cgi_foot();
+exit;

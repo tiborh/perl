@@ -1,0 +1,19 @@
+#!/usr/bin/perl -w
+use strict;
+use Chart::Gnuplot;
+use File::Basename;
+
+my $bn = (split /\./,basename($0))[0];
+
+my $chart = Chart::Gnuplot->new(
+    output => "gallery/$bn.png",
+    title  => "3D plot from data file",
+    bg => "white",
+);
+
+
+my $dataSet = Chart::Gnuplot::DataSet->new(
+    datafile => "plot3d_3.dat",
+);
+
+$chart->plot3d($dataSet);

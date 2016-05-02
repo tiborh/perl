@@ -1,0 +1,489 @@
+<glossary>
+<glossary-list>
+<gl-item>
+<term>AF</term>
+<expansion><p>Assured Forwarding</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>AINI</term>
+<expansion><p>ATM Inter-Network Interface</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>AS</term>
+<expansion><p>Autonomous System</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>ATB</term>
+<expansion><p>ATM Termination Board</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>BAN</term>
+<expansion><p>Broadband Access Network</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>BASE</term>
+<expansion><p>A set of common functions and services used by all applications in AOS.</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>BER</term>
+<expansion><p>Basic Encoding Rules</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>BFD</term>
+<expansion><p>Bidirectional Forwarding Detection</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>CDR</term>
+<expansion><p>Committed Data Rate</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>CH</term>
+<expansion><p>Call Handler</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>CLP</term>
+<expansion><p>Cell Loss Priority</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>DES</term>
+<expansion><p>Data Encryption Standard</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>DF</term>
+<expansion><p>Default Forwarding</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>DPI</term>
+<expansion><p>Derived Performance Indicator. A PI in PMR derived from base PIs according to arithmetic expression</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>DTL</term>
+<expansion><p>Designated Transit List</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>E-BGP</term>
+<expansion><p>Exterior-BGP</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>EF</term>
+<expansion><p>Expedited Forwarding</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>EFM</term>
+<expansion><p>Ericsson Fault Manager</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>EM</term>
+<expansion><p>Equipment Module</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>EOS</term>
+<expansion><p>External Operations System</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>ET</term>
+<expansion><p>Exchange Terminal</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>FOD</term>
+<expansion><p>File Output Destination</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>I-BGP</term>
+<expansion><p>Interior BGP</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>IISP</term>
+<expansion><p>Interim Inter-Switch Signalling Protocol</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>ILMI</term>
+<expansion><p>Interim Local Management Interface</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>IPSec</term>
+<expansion><p>IP Security</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>ISIS</term>
+<expansion><p>Intermediate System to Intermediate System Protocol</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>IWF</term>
+<expansion><p>Interworking Function</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>LE</term>
+<expansion><p>Local Exchange</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>LSA</term>
+<expansion><p>Link-State Advertisement</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>LSP</term>
+<expansion><p>Label Switched Path</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>LSR</term>
+<expansion><p>Label Switching Router</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>MBQM</term>
+<expansion><p>Measurement Based Quality Management</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>MC</term>
+<expansion><p>Measurement Configuration</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>MGC</term>
+<expansion><p>Media Gateway Controller</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>MS</term>
+<expansion><p>Multiplex Section</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>MT</term>
+<expansion><p>Measurement Type</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>MTU</term>
+<expansion><p>Maximum Transmission Unit</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>NB</term>
+<expansion><p>Narrow Band</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>NBI</term>
+<expansion><p>Northbound Interface</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>NCP</term>
+<expansion><p>Network Control Protocol</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>NMGP</term>
+<expansion><p>Network Management General Procedures, a set of libraries used by all AOS applications.</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>OAM</term>
+<expansion><p>Operation and Maintenance</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>OP</term>
+<expansion><p>Observation Period</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>OSPF</term>
+<expansion><p>Open Shortest Path First Protocol</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>PC</term>
+<expansion><p>Performance Counter</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>PDB</term>
+<expansion><p>Performance Database</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>PDH</term>
+<expansion><p>Plesiochronous Digital Hierarchy</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>PDR file</term>
+<expansion><p>PMR measurement report file containing Performance Data Records</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>PDR</term>
+<expansion><p>Performance Data Record</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>PDT</term>
+<expansion><p>Port Down Time</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>PHB</term>
+<expansion><p>Per Hop Behavior</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>PMI</term>
+<expansion><p>Performance Monitor Interface</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>PNI</term>
+<expansion><p>PMR Northbound Interface</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>PNI</term>
+<expansion><p>Performance Northbound Interface</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>PNNI</term>
+<expansion><p>Private Network to Network Interface</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>PPP</term>
+<expansion><p>Point-to-Point Protocol</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>PSC</term>
+<expansion><p>Per Hop Behavior Scheduling Class</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>PSC</term>
+<expansion><p>Per hop diffserv Service Class</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>PSTN</term>
+<expansion><p>Public Switched Telephone Network</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>PTB</term>
+<expansion><p>Packet Termination Board</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>PTH</term>
+<expansion><p>Protocol Transport Handler</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>RCC</term>
+<expansion><p>Routing Control Channel</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>RS</term>
+<expansion><p>Regenerator Section</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>RSVP</term>
+<expansion><p>Resource Reservation Protocol</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>RTM</term>
+<expansion><p>Real-Time Monitoring</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>RTM</term>
+<expansion><p>Routing Table Manager</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>RTP</term>
+<expansion><p>Real-Time Transport Protocol</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>RTT</term>
+<expansion><p>Round Trip Time</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>Rlogin</term>
+<expansion><p>Remote Login Protocol</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>SAAL</term>
+<expansion><p>Signalling ATM Adaptation Layer</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>SC</term>
+<expansion><p>Switch Core</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>SCT</term>
+<expansion><p>Sybase Central Tool</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>SDH</term>
+<expansion><p>Synchronous Digital Hierarchy</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>SIW</term>
+<expansion><p>Service Interworking</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>SONET</term>
+<expansion><p>Synchronous Optical Network</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>SPC</term>
+<expansion><p>Semi Permanent Channel used to carry NB signaling</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>SRS</term>
+<expansion><p>Sequential ReStart</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>SSR</term>
+<expansion><p>Start/Stop/Restart service</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>STM</term>
+<expansion><p>Synchronous Transfer Mode</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>SVC</term>
+<expansion><p>Switched Virtual Connection</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>SVCC</term>
+<expansion><p>Switched Virtual Circuit Connection</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>TAG</term>
+<expansion><p>Telephony Access Gateway</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>TAGC</term>
+<expansion><p>TAG Controller</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>TDB</term>
+<expansion><p>Topology Database</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>TDM</term>
+<expansion><p>Time Division Multiplexing</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>TM</term>
+<expansion><p>Traffic Management</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>TNI</term>
+<expansion><p>Topology Northbound Interface</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>TOP</term>
+<expansion><p>Topology Manager, part of Base, managing node-level data</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>TPS</term>
+<expansion><p>Topology Poll Scheduler</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>TSS-CM</term>
+<expansion><p>Telephony Softswitch Solution Connection Management</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>UNI</term>
+<expansion><p>User Network Interface</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>VCL</term>
+<expansion><p>Virtual Channel Link</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>VPB</term>
+<expansion><p>Voice Processing Board</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>VPL</term>
+<expansion><p>Virtual Path Link</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>VoATM</term>
+<expansion><p>Voice over ATM application</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>VoIP</term>
+<expansion><p>Voice over IP application</p>
+</expansion>
+</gl-item>
+</glossary-list>
+</glossary>

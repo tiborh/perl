@@ -1,0 +1,38 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+sub main {
+    print <<EOT;
+<h1>Benchmark</h1>
+<p>Benchmarking code with the <code>Benchmark</code> module.</p>
+EOT
+
+    {
+	use Benchmark;
+
+	my $start = new Benchmark;
+
+	my $count = 50000000;
+	$count-- while ($count > 0);
+
+	my $finish = new Benchmark;
+
+	my $TimeDiff = timeDiff($start,$finish);
+
+	print "<p>Loop Time: ", timestr($TimeDiff) . "</p>\n\n";
+    }
+
+
+}
+
+
+
+require "html.cgi";
+
+&cgi_head("template");
+&main();
+&printcode($0);
+&cgi_foot();
+exit;

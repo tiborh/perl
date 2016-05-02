@@ -1,0 +1,95 @@
+Eriref,Heading,CP,EP,Table
+HT43519,There is a limit on how many entries java//sendXMLmsg.sh script can handle currently.,CP1,EP3,Table 23
+HT45887,CEA 2.0 ICP1 - Correlator: ~10% of KPIs contain invalid cell locations,CP1,EP3,Table 23
+HT49863,CEA 2.0 ICP1 neutal naming must be used in the documentation,CP1,EP3,Table 23
+HT11024,CEA 2.0 ICP1 - Probe video parser crash,CP1,EP2,Table 24
+HT13877,"CEA2.0 ICP1 - CC GUI changing interval, only incidents visible in Details-tab. No QI can be chosen.",CP1,EP2,Table 24
+HT28210,Changing time interval results in no Quality Indicators shown in CEA CC gui,CP1,EP2,Table 24
+HT14116,CEA 2.0 ICP1 - Probe traffic mix calculation should use Linux pipe instead of tmp file,CP1,EP2,Table 24
+HT14314,CEA 2.0 ICP1 - Probe video parser reports too high init buffer time,CP1,EP2,Table 24
+HT15005,CEA 2.0 ICP1 - Correlator fills some KPIs with non-realistic values,CP1,EP2,Table 24
+HT15053,CEA 2.0 ICP1 - Correlator reports too low TCP round-trip time KPI values,CP1,EP2,Table 24
+HT15042,CEA 2.0 ICP1 - Probe uplane parser exits on non UTF-8 string,CP1,EP2,Table 24
+HT15045,CEA 2.0 ICP1 - Probe gtpc parser internal status counters show false values,CP1,EP2,Table 24
+HT15046,CEA 2.0 ICP1 - Probe KPI Video Initial Buffering Time is missing from Technical Product Description,CP1,EP2,Table 24
+HT15047,CEA 2.0 ICP1 - Probe KPI Video Initial Buffering Time is missing from CC GUI,CP1,EP2,Table 24
+HT19078,CEA 2.0 ICP1 - Correlator reports negative throughput value,CP1,EP2,Table 24
+HT19386,CEA 2.0 ICP1 - Probe config should support using customised traffic classification signature files,CP1,EP2,Table 24
+HT19965,CEA 2.0 IPC1 EP1: Pag stops unexpectedly,CP1,EP2,Table 24
+HT20123,CEA 2.0 ICP1 - Correlator should report GTP cause text in triggers,CP1,EP2,Table 24
+HT20125,CEA 2.0 ICP1 - Correlator should report APN in 4G failed Attach trigger,CP1,EP2,Table 24
+HT20159,A request on SOC GUI specifying only 4G attach KPI ahows all the attach metrics.,CP1,EP2,Table 24
+HT20943,Add steps to the 2.0 ICP1 Admin Guide for documenting the DB failover steps/procedures,CP1,EP2,Table 24
+HT22232,CEA 2.0 ICP1 - CC GUI does not report device info from actual network usage,CP1,EP2,Table 24
+HT22234,CEA 2.0 ICP1 - CC GUI reports false warning on device info mismatch,CP1,EP2,Table 24
+HT22237,CEA 2.0 ICP1 - RE does not support networks using multiple IMSI MCC-MNC prefixes,CP1,EP2,Table 24
+HT24239,CEA 2.0 ICP1 - Correlator doesn't update MCC/MNC from 4G EBM events,CP1,EP2,Table 24
+HT26324,CEA 2.0 ICP1 - Correlator related NGEE alarms are redefined thus not set,CP1,EP2,Table 24
+HT26527,"The loader loads a file of incidents, moves it to the archive, then later loads and moves incidents",CP1,EP2,Table 24
+HT26553,GUI locale setting dont work in Euro format.,CP1,EP2,Table 24
+HT26555,Running tests in 3G .The QI speed in the details section says Im running on 2G,CP1,EP2,Table 24
+HT28516,CEA 2.0 ICP1 - Probe Probemon crash at start,CP1,EP2,Table 24
+HT28556,CEA 2.0 ICP1 - Probe reports too high max throughput,CP1,EP2,Table 24
+HT28564,CEA 2.0 ICP1 - Probe GTPC events: Create Initial PDP and IRAT HO should be differentiated,CP1,EP2,Table 24
+HT29926,CEA 2.0 ICP1 - Alarms are not deleted in NGEE FM,CP1,EP2,Table 24
+HT32939,CEA 2.0 ICP1 - Probe packet loss for HTTP conn with a lot of GET,CP1,EP2,Table 24
+HT33068,"CEA 2.0 ICP1 - Correlator should separate KPIs, triggers coming from EBM and GTP-C",CP1,EP2,Table 24
+HT33170,Need to document or provide tools to either sign the EAR or strip out the signing,CP1,EP2,Table 24
+HT34263,CEA 2.0 ICP1 - Correlator: ESR bearer should contain max_ul/dl fields in case of 4G traffic,CP1,EP2,Table 24
+HT36418,CEA 2.0 ICP1 - Correlator: Memory usage of corr process is increasing linearly with time,CP1,EP2,Table 24
+HT37348,CEA 2.0 ICP1 - Correlator: Correlator does not track PDP session correctly during 4G to 3G handovers,CP1,EP2,Table 24
+HT38063,CEA 2.0 ICP1 - Probe Rejected Create Session with IPv6 is not handled correctly,CP1,EP2,Table 24
+HS98283,CEA 2.0 ICP1 - Probe Load Balancer performance limitation with VLAN tagged traffic,CP1,EP1,Table 25
+HS99836,CEA 2.0 ICP1 - Probe uplane parser crash,CP1,EP1,Table 25
+HT10879,CEA 2.0 ICP1 - Probe snmp wrong community string in doc,CP1,EP1,Table 25
+HT10881,CEA 2.0 ICP1 - Probe redis-server process is not monitored by snmp,CP1,EP1,Table 25
+HT10887,CEA 2.0 ICP1 - Probe install does not stop Linux irqbalance service properly,CP1,EP1,Table 25
+HT10954,CEA 2.0 ICP1 - Probe SNMP daemon is flooding /var/log/messages,CP1,EP1,Table 25
+HT11029,CEA 2.0 ICP1 - Probe sw update fails to restart probe service,CP1,EP1,Table 25
+HT11421,CEA 2.0 ICP1 - Correlator crashes on 4G Update Bearer event,CP1,EP1,Table 25
+HT11838,"Installation Guide for 2.0 ICP1 incorrectly lists spackages as R2A and R3A in Section 1.3, Table 1",CP1,EP1,Table 25
+HT12070,CEA 2.0 ICP1 - Probe cluster config does not contain GTPC load balancing parameters,CP1,EP1,Table 25
+HS99304,"CEA 2.0 ICP1 - Probe uplane parser get stucked, packets from queue are dropped",CP1,,Table 26
+HS99376,CEA 2.0 ICP1 Unresolvable Greenplum warnings,CP1,EP2,Table 28
+HT32144,CEA 2.0 ICP1 - 4G cell process hangs up correlation,CP1,EP2,Table 28
+HT38399,CEA 2.0 ICP1 EP2 UI cannot be upgraded properly according to the install guide,CP1,EP2,Table 28
+HS90452,CEA 2.0 ICP1 - Probe memory usage increases linearly in time,CP1,EP1,Table 29
+HT10268,CEA 2.0 ICP1 - post_install script does not create crontab entries,CP1,EP1,Table 29
+HT14943,Clarification: CEA downloads GPEH binary files from the OSS,CP1,EP1,Table 29
+HT15029,DOC: Sentinel install section should be moved right after CEA UI install section,CP1,EP1,Table 29
+HT15033,Missing manual steps from Install Guide,CP1,EP1,Table 29
+HS67421,Pag on adapter host does not forward packets to correlator,CP1,,Table 30
+HS70430,CEA 2.0 - GPEH download daemon stuck at RNC having no valuable data,CP1,,Table 30
+HS70743,CEA R1A01: Staple does not handle PAG properly,CP1,,Table 30
+HS70818,Pag to handle file retention,CP1,,Table 30
+HS70911,CEA 2.0 - TC-EBM-01-77 Scenario IX. Site power off and back,CP1,,Table 30
+HS76748,CEA 2: Steps for installing/setting up alarmDB,CP1,,Table 30
+HS77088,LTE pdcp throughput unit of measure is incorrect,CP1,,Table 30
+HS81058,,CP1,,Table 30
+HS77100,Incorrect filters in network technology filter group,CP1,,Table 30
+HS82836,,CP1,,Table 30
+HS78340,CEA 2.0 Correlator: hostname resolving problem@redis start,CP1,,Table 30
+HS78374,CEA 2.0 Correlator: in engine.cfg hosts parameter should not be set in standalone config,CP1,,Table 30
+HS83971,Adapter/Correlator: setup-env.xml playlist always redistributes the ssh-keys in correlation_layer,CP1,,Table 30
+HS85279,After Installation of CEA release 2.0 the cea_spare service does not start,CP1,,Table 30
+HS85604,,CP1,,Table 30
+HS92122,Customer Test Lab configuration size in faulty in HDG,CP1,,Table 30
+HS80998,CEA 2.0: Stream Analytics issues if redis becomes unavailable,CP1,FD,Table 31
+HS81626,Aggregator doesn't works after DB restart.,CP1,FD,Table 31
+HS87227,RE configuration playlist hangs,CP1,FD,Table 31
+HS88638,QIs are not aligned based on kpi_meta_info table order in in Details view of Summary panel,CP1,FD,Table 31
+HS88995,JVM parameter settings for CEA components and NGEE scripts,CP1,FD,Table 31
+HS89362,CEA 2.0 ICP1 - GPEH download daemon stuck when the gpeh_downloaded.txt is over 40 000 lines.,CP1,FD,Table 31
+HS89416,Partition maintenance needs to be removed from the Terminal Agent SUF install playlist,CP1,FD,Table 31
+HS90075,CDR2G3G file is locked in the staging directory,CP1,FD,Table 31
+HS91245,CEA 2.0 ICP1 - ESR output throughput values are too high for 2G traffic,CP1,FD,Table 31
+HS92926,Export incident list to csv after jump from details tab incident band does not work,CP1,FD,Table 31
+HS95984,CEA 2.0 ICP1 - Probe cluster configuration does not work,CP1,FD,Table 31
+HS97238,correlator coredump if IP address array is missing in EBM events,CP1,FD,Table 31
+HS97873,Aggregator - PSQLException: ERROR: relation "flat_esr_table.p_fivemin_t_t" does not exist,CP1,FD,Table 31
+HS97984,CEA 2.0 ICP1 - Adaptor does not support 14A ENODEBs,CP1,FD,Table 31
+HS98670,CEA 2.0 ICP1 - Probe cluster installation fails with race conditions,CP1,FD,Table 31
+HS98685,DB esr table transition upgrade failure,CP1,FD,Table 31
+HS98712,CEA environment setup upgrade not correctly changing the configuration file,CP1,FD,Table 31
+HS98717,CEA 2.0 ICP1 - Probe monitor should display local time instead of GMT,CP1,FD,Table 31
+HS99230,CEA 2.0 ICP1 - Correlator celltrace input adapter crash,CP1,FD,Table 31

@@ -1,0 +1,45 @@
+#!/usr/bin/perl -w
+use strict;
+#use utf8;
+#binmode STDOUT, ":utf8";
+
+&cgi_head("hash functions");
+
+{
+    print "<h1>A string split in three</h1>";
+    $a_string = "Irrationally held truths may be more harmful than reasoned errors.";
+    print "<p>The string:<br />/n";
+    print "$a_string</p>\n";
+    my ($w1,$w2,$w3) = split(/ /,$a_string);
+    print "<dl>\n";
+    print "\t<dt>w1</dt>\n";
+    print "\t<dd>$w1</p>\n";
+    print "\t<dt>w2</dt>\n";
+    print "\t<dd>$w2</p>\n";
+    print "\t<dt>w3</dt>\n";
+    print "\t<dd>$w3</p>\n";
+    print "</dl>\n";
+}
+
+&cgi_foot();
+exit;
+
+sub cgi_head {
+print <<"EOT";
+Content-type: text/html\n
+<!doctype html>
+<html lang="en">
+<head>
+\t<meta charset="utf-8">
+\t<title>$_[0]</title>
+</head>
+<body>
+EOT
+}
+
+sub cgi_foot {
+print <<"EOT";
+</body>
+</html>
+EOT
+}

@@ -1,0 +1,7 @@
+       Members of Staff
+First   Last    ID      Phone
+-------------------------------
+John    Smith   652     x23
+Fred    Jones   781     x54
+Sarah   Thomas  167     x7
+Ray     Biggs   442     x18

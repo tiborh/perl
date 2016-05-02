@@ -1,0 +1,18 @@
+#	<doctype>/pubrc
+#
+#	Executed each time a document of this doctype is opened
+#
+
+if( require( stdDblClick ) != 1 ) {
+	eriUtil::IntErrMsg("Failed to require stdDblClick")
+}
+
+dlgitem_withdraw(0, "Toolbar_Equation"); 
+set keymap=system; # creates a new map, named after current window name
+map double+M1 stdDblClick::DblClick();
+
+
+# EOF
+
+
+

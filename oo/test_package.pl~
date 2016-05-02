@@ -1,0 +1,44 @@
+#!/usr/bin/env perl
+
+use warnings;
+use v5.14; 			# implies strict
+use Carp;
+use utf8;
+use autodie;
+#the following two needs installation:
+#use Modern::Perl;
+#use Test::More;
+
+binmode(STDOUT, ":utf8");
+
+use test_package;
+
+&list_package2("NonOO");
+
+sub list_package2 {
+    no strict 'refs';
+    my $test_pack = shift;
+    foreach my $symbol (keys %{"$test_pack\::"}) {
+	local *sym = *{"$test_pack\::$symbol"};
+	if (defined(*sym{SCALAR})) {
+	    say "\tscalar $symbol == ",${*sym{SCALAR}} if ${*sym{SCALAR}};
+	}
+	if (defined(*sym{ARRAY})) {
+	    say "\tarray $symbol == ",@{*sym{ARRAY}} if @{*sym{ARRAY}};
+	}
+	if (defined(*sym{HASH})) {
+	    say "\thash $symbol == ",%{*sym{HASH}} if %{*sym{HASH}};
+	}
+	if (defined(*sym{IO})) {
+	    say "\tIO $symbol";
+	}
+	if (defined(*sym{FORMAT})) {
+	    say "\tFORMAT $symbol";
+	}
+	if (defined(*sym{CODE})) {
+	    say "\tsub $symbol";
+	}
+
+    }
+}
+

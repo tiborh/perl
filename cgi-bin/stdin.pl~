@@ -1,0 +1,36 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+my $title = "Using STDIN to get typed input";
+
+sub main {
+    print <<EOT;
+<h1>$title</h1>
+<p></p>
+EOT
+
+# while (<STDIN>) {
+#     print;
+# }
+
+#minimalist
+#print while (<>);
+
+print "Type First Name: ";
+    my $c = 1;
+    for ($_) {
+	if ($c == 1) {print "Type First Name: "};
+	else {print "Thanks!\n"; exit;}
+    }
+
+} # main
+
+require "html.cgi";
+
+&cgi_head("$title");
+&main();
+&printcode($0);
+&cgi_foot();
+exit;

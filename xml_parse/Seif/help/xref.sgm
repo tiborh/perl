@@ -1,0 +1,16 @@
+<headA><14-point>xref</14-point></headA>
+<par>This tag is used for cross-referencing within a document.</par>
+<par></par>
+
+<headB>Attributes</headB>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>hytime</bold> This attribute is not implemented today. It will be used for Hytime applications when
+they are added to SEIF.</list>
+<list><?Pub Lcl MarkerStyle="none"><bold>linkend</bold> The contents of this attribute must be the tag to which it is being referred.    
+</list>
+
+
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold> An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>
+
+
+

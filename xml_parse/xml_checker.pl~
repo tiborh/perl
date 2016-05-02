@@ -1,0 +1,14 @@
+#!/usr/bin/perl -w
+
+use strict;
+use Cwd;
+use Time::Piece;
+use File::Basename;
+use Getopt::Std;
+use v5.14;
+use XML::Parser;
+
+die "XML file to check is required as an argument." if ($#ARGV == -1);
+
+my $DEBUG = 0;
+my $inXML = shift @ARGV;

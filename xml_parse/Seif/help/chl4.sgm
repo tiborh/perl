@@ -1,0 +1,9 @@
+<headA><14-point>chl4</14-point></headA>
+<par>The chl4 tag defines where chapter level 4 starts and ends.</par>
+<par></par>
+
+<headB>Attributes</headB>
+<list><?Pub Lcl MarkerStyle="none"><bold>role</bold>  This attribute is only to be used when converting to SEIF-documents from other types. Insert valuable conversion information.</list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold>  An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>
+

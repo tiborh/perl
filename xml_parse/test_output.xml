@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2008, v.4002-->
+<!DOCTYPE doc PUBLIC "-//ERICSSON//DTD XSEIF 1/FAD 110 05 R6//EN" "XSEIF_R6.dtd">
+<doc xmlns="urn:x-ericsson:r2:reg-doc:1551-fad.110.05:en:*" publication-no="doc-id" new-page-level="npl0" cover-back="cb-no" version="XSEIF R6" math-support="ms-no" new-page-right="npr-yes" index-support="is-no" table-caption="tc-no"><meta-data><confidentiality class="ericsson-confidential"/><doc-name xml:id="sdieditor">DOCUMENT LIST</doc-name>
+<doc-id><doc-no type="registration">00151-EN/LZN 000 0000</doc-no><language code="en"/><rev>PA1</rev>
+<date><y>2014</y><m>01</m><d>10</d>
+</date>
+</doc-id>
+<company-id><business-unit></business-unit>
+<company-name></company-name>
+<company-symbol logotype="ericsson"></company-symbol>
+</company-id>
+<part-of></part-of>
+<title>Test Library</title>
+<user-info xml:id="v2.2"></user-info>
+<drafted-by><person><name> </name><signature> </signature>
+<location> </location><company> </company><department> </department>
+</person>
+</drafted-by>
+<approved-by><person><name>Andrs Czigny</name><signature>eandczi </signature>
+<location>HU</location><company>ETH</company><department>XKL</department>
+</person>
+</approved-by>
+<checked-by><person><name> Tibor Harcsa</name><signature>etibhar </signature>
+<location>HU</location><company>ETH</company><department>XKL</department>
+</person>
+</checked-by>
+<factual-supervisor><person><name> </name><signature> </signature>
+<location> </location><company> </company><department> </department>
+</person>
+</factual-supervisor>
+<revision-history><rev-info><rev>PA1</rev>
+<date><y>2014</y><m>01</m><d>01</d>
+</date>
+<signature>etibhar</signature>
+<description><dp>Test entry 1</dp>
+</description>
+</rev-info>
+<rev-info><rev>PA2</rev>
+<date><y>2014</y><m>01</m><d>16</d>
+</date>
+<signature>etibhar</signature>
+<description><dp>Test entry 2</dp>
+</description>
+</rev-info>
+</revision-history>
+</meta-data>
+<front><title-page align-front-graphics="right"><copyright><p> Ericsson AB 2014. All rights reserved. No part of this material
+may be reproduced in any form without the written permission of the
+copyright owner.</p>
+</copyright>
+<disclaimer><p>The contents of these documents are subject to revision without
+notice due to continued progress in methodology, design and manufacturing.
+Ericsson shall have no liability for any error or damage of any kind
+resulting from the use of these documents.</p>
+</disclaimer>
+<trademark-list><tm-item><trademark>Ericsson</trademark><owner>is the trademark or
+registered trademark of Telefonaktiebolaget LM Ericsson. All other
+trademarks mentioned herein are the property of their respective owners.</owner>
+</tm-item>
+</trademark-list>
+</title-page>
+</front>
+<body><chl role=" "><title xml:id="id_gclx">Safety and Environment</title>
+<table indent="half-indent"><caption></caption>
+<tgroup align="left" char="" charoff="50" cols="2"><colspec colwidth="60*"/><colspec colwidth="40*"/><tbody valign="top"><row><entry rotate="0" valign="top" morerows="0"><tp>Personal Health and
+Safety Information</tp>
+</entry>
+<entry rotate="0" valign="top" morerows="0"><tp>124 46-2885 Uen D</tp>
+</entry>
+</row>
+<row><entry rotate="0" valign="top" morerows="0"><tp>System Safety Information</tp>
+</entry>
+<entry rotate="0" valign="top" morerows="0"><tp>124 46-2886 Uen G</tp>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</chl>
+<chl role=" "><title xml:id="id_d3av">Operation and Maintenance</title>
+<chl role=" "><title xml:id="id_h03e">Fault Management</title>
+<table indent="half-indent"><caption></caption>
+<tgroup align="left" char="" charoff="50" cols="2"><colspec colwidth="60*"/><colspec colwidth="40*"/><tbody valign="top"><row><entry rotate="0" valign="top" morerows="0"><tp>Troubleshooting</tp>
+</entry>
+<entry rotate="0" valign="top" morerows="0"><tp>24/1543-AXB 250 05/8
+Uen FJ</tp>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</chl>
+<chl role=" "><title xml:id="id_12n8">Emergency</title>
+<table indent="half-indent"><caption></caption>
+<tgroup align="left" char="" charoff="50" cols="2"><colspec colwidth="60*"/><colspec colwidth="40*"/><tbody valign="top"><row><entry rotate="0" valign="top" morerows="0"><tp>Emergency Handling</tp>
+</entry>
+<entry rotate="0" valign="top" morerows="0"><tp>11/1543-AXB 250 05
+Uen BF</tp>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</chl>
+</chl>
+</body>
+</doc>

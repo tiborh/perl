@@ -1,0 +1,38 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+sub main {
+    print <<EOT;
+<h1>Extracting links</h1>
+<p>The links on the page:</p>
+EOT
+    {
+	use LWP::Simple;
+	use HTML::LinkExtor;
+
+	my $url = get("http://www.scriptsocket.com");
+
+	my $LinkExtor = HTML::LinkExtor->new(\&links);
+
+	$LinkExtor->parse($url);
+
+	sub links {
+	    my ($tag, $links) = @_;
+	    if ($tag eq "a") { #using img will help extract images
+		foreach (keys %links) {
+		    print "<p>$links{$_}</p>\n" if ($key eq "href");
+		}
+	    }
+	}
+    }
+}
+
+require "html.cgi";
+
+&cgi_head("template");
+&main();
+&printcode($0);
+&cgi_foot();
+exit;

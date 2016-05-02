@@ -1,0 +1,12 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+my %states;
+my @linetmp = ();
+
+while (<>) {
+    chomp;
+    @linetmp = split(",",$_);
+    print join(" ",reverse(@linetmp));
+}

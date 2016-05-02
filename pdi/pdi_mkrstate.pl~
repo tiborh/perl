@@ -1,0 +1,3 @@
+
+pdi mkrstate -pno "" -rst R2A -prst R2B
+CXP 903 0593/3

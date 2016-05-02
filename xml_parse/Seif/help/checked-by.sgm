@@ -1,0 +1,12 @@
+<headA><14-point>checked-by</14-point></headA>
+<par>This tag contains the department and name of the person who has checked the document.</par>
+<par></par>
+
+<headB>Attributes</headB>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>checked</bold> This attribute has the values yes and no. If yes is chosen, the name in the person tag is specified within parentheses. Otherwise, nothing is entered for this tag. <bold>Note! </bold> The use of checked=yes has the same significance as an actual signing of the document.</list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold> An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>
+
+
+

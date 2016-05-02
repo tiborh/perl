@@ -1,0 +1,36 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+sub main {
+    print <<EOT;
+<h1>Using CPAN</h1>
+<p>The following steps need to be followed:</p>
+<ol>
+  <li>Enter the cpan shell.<br />
+      <code>perl -MCPAN -e shell</code> or <code>cpan</code>
+  </li>
+  <li>Search for the module.<br />
+      e.g. <code>i /LWP::/</code>
+  </li>
+  <li>Install the module.<br />
+      e.g. <code>install LWP::Socket</code>
+  </li>
+  <li>You can check the installed module in <code>cpan/build/&lt;modulename></code></li>
+</ol>
+
+<p><b>notes:</b><br />
+<ul>
+  <li>At first run: configuration settings</li>
+  <li><code>.lock</code> file is not deleted when <code>cpan</code> dies unexpectedly
+  <li>In Windows, <code>Nmake15.exe</code> may be missing.
+</ul>
+}
+
+require "html.cgi";
+
+&cgi_head("using cpan");
+&main();
+&cgi_foot();
+exit;

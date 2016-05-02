@@ -1,0 +1,9 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+print "2 or 3 space separated numbers: <start> <end> [<increment>]\n";
+die "not enough arguments" if (@ARGV < 2);
+my $start_num = $ARGV[0];
+my $end_num = $ARGV[1];
+my $increment = $ARGV[2] ? $ARGV[2] : 1;

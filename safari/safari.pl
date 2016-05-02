@@ -1,0 +1,454 @@
+#!/usr/bin/env perl
+
+use warnings;
+use 5.014; 			# implies strict
+#use strict;
+use Carp;
+use utf8;
+#use encoding 'utf8';
+use autodie;
+#use Modern::Perl;
+#use Test::More;
+
+my $DEBUG = 2;
+
+my @animals = qw(a e l r z);
+my %animals = qw(a antilope e elephant l lion r rhinoceros z zebra);
+my @squares = qw(ul ur dl dr);
+my %squares = (
+    ul => 'upper left',
+    ur => 'upper right',
+    dl => 'lower left',
+    dr => 'lower right'
+    );
+my @shapes = qw(C H Q U);
+my @angles = qw(0 90 180 270);
+my $safari_data_structure = &read_file();
+#&dump_data_struct("Safari Data Structure",$safari_data_structure);
+#&print_data_struct("Safari Data Structure",$safari_data_structure);
+my $transformed_data_structure = &transform_data_struct($safari_data_structure);
+#&dump_data_struct("Transformed Data Structure",$transformed_data_structure);
+my $the_combinations = &make_combinations($transformed_data_structure);
+if ($DEBUG == 2) {
+    print "the keys:\n";
+    print $_,"\n" foreach sort keys %$the_combinations;
+    print "number of keys: ", scalar(keys %$the_combinations),"\n";
+}
+# my $search_key = &ask_for_input();
+# if (exists($the_combinations->{$search_key})) {
+#     &print_solution($the_combinations->{$search_key})
+# } else {
+#     print "Impossible combination.\n";
+# }
+#&print_all_solutions($the_combinations);
+
+sub read_file {
+=head1 read_file
+    () -> ref
+
+    needs no input, filename is hardwired into this function
+
+    returns the ref to the data structure
+=cut
+
+my $fn = "safari_hide_n_seek.txt";
+my $fh;
+my $fm = '<';
+my $safari_data;
+
+open($fh,$fm,$fn) or die "Cannot open $fn, $!";
+while(<$fh>) {
+    chomp;
+    my ($data_key,$data_table) = &get_table($fh) if (/^:[S]$/);
+    $safari_data->{$data_key} = $data_table;
+}
+close($fh);
+return $safari_data;
+
+sub get_table {
+=head1 get_table
+    (filehandler) -> str,ref
+
+    receives $fh as an input
+
+    returns a data key and a reference to the data table (a hash of hashes)
+    where the keys are the elements of @shapes
+=cut
+
+my $fh = shift;
+while(<$fh>) {
+    #print "__debug__: $_";
+    chomp;
+    my $data_key;
+    my $data_value;
+    my $keys = join '',@shapes;
+    if (qr/^=[$keys]$/) {
+	#print "$_\n";
+	$data_key = substr($_,1,1);
+	$data_value = &get_table_body($fh);
+    }
+    return $data_key,$data_value;
+}				# while
+
+sub get_table_body {
+=head1 get_table_body
+    (filehandler) -> ref
+
+    receives $fh as an input
+
+    returns a reference to the data table body (a hash of hashes)
+    where the keys are the first items in the rows
+=cut
+
+my $fh = shift;
+my $data_struct = {};
+while(<$fh>) {
+    return $data_struct if (/^:[E]$/);
+    #print "__debug__: $_";
+    chomp;
+    my @data_row = split /\s+/;
+    my $data_key = shift @data_row;
+    my $data_row = &parse_data_row(@data_row);
+    $data_struct->{$data_key} = $data_row;
+    #print "\t $data_key\n\t\t@data_row\n";
+}				# while
+
+sub parse_data_row {
+=head1 parse_data_row
+    (array) -> $ref
+
+    receives @data_row as an input
+
+    returns a reference to the parsed data row (a hash of hashes),
+    where the keys are the items in @squares
+=cut
+
+my $data_row;
+#print "row size: ",scalar(@_),"\n";
+for (0..3) {
+    my @data_item = split /,/,$_[$_];
+    my $data_item = &make_empty_item;
+    for (@data_item) {
+	$_ = "$_";
+	#print "data item: $_\n";
+	#print "condition met\n" if $_ eq "0";
+	last if $_ eq "0";
+	$data_item->{substr($_,0,1)} += substr($_,1,1);
+    }
+    #print "\n";
+    $data_row->{$squares[$_]} = $data_item
+    #print %{$data_item},"\n";
+}				# for
+return $data_row;
+
+sub make_empty_item {
+=head1 make_empty_item()
+    () -> $ref
+
+    receives no input data
+
+    returns a reference to data item hash (using @animals as a template for keys)
+=cut
+
+my $row_data_template;
+for (@animals) {
+    $row_data_template->{$_} = 0;
+}				# for
+return $row_data_template;
+}				# make_empty_item
+}				# parse_data_row
+}				# get_table_body
+}				# get_table 
+}				# read_file
+
+sub dump_data_struct {
+=head1 dump_data_struct
+    (str,ref) -> None
+    
+    receives a title and a reference to a data structure
+    dumps the data structure and returns nothing
+=cut
+
+    use Data::Dumper;
+
+    print "$_[0]:\n",Dumper($_[1]),"\n";    
+}
+
+sub print_data_struct {
+=head1 dump_data_struct
+    (str,ref) -> None
+    
+    receives a title and a reference to a data structure
+    prints the data structure and returns nothing
+=cut
+
+my $data_title = shift;
+my $data_struct = shift;
+
+print $data_title,"\n";
+for my $a_shape (@shapes) {
+    print "$a_shape:\n";
+    for my $an_angle (@angles) {
+	last if ($a_shape eq 'H' and $an_angle eq '180');
+	print "\t$an_angle:\n";
+	for my $a_square (@squares) {
+	    print "\t\t$squares{$a_square}:\n";
+	    for my $an_animal (@animals) {
+		print "\t\t\t$animals{$an_animal}: ",$data_struct->{$a_shape}->{$an_angle}->{$a_square}->{$an_animal},"\n"
+		    if $data_struct->{$a_shape}->{$an_angle}->{$a_square}->{$an_animal} > 0;
+	    }			# for
+	}			# for
+    }				# for
+}				# for
+}				# sub
+
+sub transform_data_struct {
+=head1 transform_data
+    (ref) -> ref
+
+    receives a reference to the data structure (processed file)
+    returns a reference to a rearranged data structure
+    rearrangement: 
+    input is shape => degree => square
+    output is shape => square => degree
+=cut
+
+my $data_struct = shift;
+my $new_struct = {};
+
+foreach my $a_shape (keys %$data_struct) {
+    #print "$a_shape\n";
+    foreach my $a_degree (sort {$a<=>$b} keys %{$data_struct->{$a_shape}}) {
+	#print "\t$a_degree\n";
+	foreach my $a_square (sort keys %{$data_struct->{$a_shape}->{$a_degree}}) {
+	    #print "\t\t$a_square\n";
+	    $new_struct->{$a_square}->{$a_shape}->{$a_degree} = $data_struct->{$a_shape}->{$a_degree}->{$a_square};
+	}			# foreach
+    }				# foreach
+}				# foreach
+return $new_struct;
+}				# sub
+
+sub make_combinations {
+=head1 make_combinations
+    (ref) -> ref
+    
+    receives a reference to the data structure hash
+
+    returns a reference to the possible combinations hash,
+    where the keys are the puzzle tasks
+=cut
+
+my $data_struct = shift;
+my @copy_shapes = @shapes;
+my @copy_angles = @angles;
+my @shape_permutations = get_permutations(@copy_shapes);
+my @angle_permutations = get_permutations(@copy_angles);
+my $the_results = {};
+
+my $counter = 0;
+foreach my $shape_perm_counter (0..$#shape_permutations) {
+    #print("@{$shape_permutations[$shape_perm_counter]}\n") if $DEBUG == 1;
+    foreach my $angle_perm_counter (0..$#angle_permutations) {
+	my $printit = 1;
+	my $the_solution = [];
+	#foreach my $shape_counter (0..$#shapes) {
+	#    $printit = 0 if ($shape_permutations[$shape_perm_counter][$shape_counter] eq 'H' and ($angle_permutations[$angle_perm_counter]->[$shape_counter] eq '180' or $angle_permutations[$angle_perm_counter]->[$shape_counter] eq '270'));
+	#}			# foreach
+
+	if ($printit) {
+	    my $summed_animals = &make_empty_item();
+	    foreach my $shape_counter (0..$#shapes) {
+		my $a_temp = [];
+		print "\t$shape_permutations[$shape_perm_counter][$shape_counter]" if $DEBUG == 1;
+		push @$a_temp, $shape_permutations[$shape_perm_counter][$shape_counter];
+		print " -> $squares[$shape_counter]" if $DEBUG == 1;
+		push @$a_temp, $squares[$shape_counter];
+		print " -> $angle_permutations[$angle_perm_counter][$shape_counter]" if $DEBUG == 1;
+		push @$a_temp, $angle_permutations[$angle_perm_counter][$shape_counter];
+		print " (",&hash_to_string($data_struct->{$squares[$shape_counter]}->{$shape_permutations[$shape_perm_counter][$shape_counter]}->{$angle_permutations[$angle_perm_counter][$shape_counter]}),")" if $DEBUG == 1;
+		push @$a_temp, &hash_to_string($data_struct->{$squares[$shape_counter]}->{$shape_permutations[$shape_perm_counter][$shape_counter]}->{$angle_permutations[$angle_perm_counter][$shape_counter]});
+		print "\t" if $DEBUG == 1;
+
+		#works as a += for hashes:
+		$summed_animals = &add_animal_hashes($summed_animals,$data_struct->{$squares[$shape_counter]}->{$shape_permutations[$shape_perm_counter][$shape_counter]}->{$angle_permutations[$angle_perm_counter][$shape_counter]});
+		push @$the_solution,$a_temp;
+	    }			# foreach
+	    #print "\nthe solution: @$the_solution\n" if $DEBUG == 1;
+	    #&print_solution($the_solution);
+	    unless (exists($the_combinations->{$summed_animals})) {
+		$the_results->{&hash_to_string($summed_animals)} = $the_solution;
+	    }# else {
+	#	die ">>>Dublicate!!!<<< ($summed_animals)\n";
+	#    }
+	    print "\t ==>\t" if $DEBUG == 1;
+	    print "[",&hash_to_string($summed_animals),"]\n" if $DEBUG == 1;
+	}			# if
+    }				# foreach
+}				# foreach
+
+return $the_results;
+}				# sub
+
+sub get_permutations {
+=head1 get_permutations()
+    (array) -> array
+
+    receives an array of elements to find the permutations of and 
+    returns an array of the permutations
+=cut
+
+use Algorithm::Permute; 
+
+my @input_array = @_;
+my @output_array = ();
+
+my $p_iterator = Algorithm::Permute->new(\@input_array);
+while (my @perm = $p_iterator->next) {
+    push @output_array, \@perm;
+}
+return @output_array;
+}
+
+sub stringify_animal_hash {
+=head1 stringify_animal_hash()
+    (ref to hash) -> str
+    
+    receives the animal hash and returns the key value pairs stringified 
+    where the value is not zero
+    the animal hash has the keys of @animals and the values are integers
+
+=cut
+
+my $ref_to_hash = shift;
+my $return_str = "";
+for (sort keys %$ref_to_hash) {
+    $return_str .= "$_: $$ref_to_hash{$_}, " unless $ref_to_hash->{$_} == 0;
+}
+$return_str =~ s/\s+$//;
+
+return $return_str;
+}
+
+sub hash_to_string {
+=head1 stringify_animal_hash()
+    (ref to hash) -> str
+    
+    receives the animal hash and returns the key value pairs stringified 
+    where the value is not zero
+    the animal hash has the keys of @animals and the values are integers
+
+=cut
+
+my $ref_to_hash = shift;
+my $return_str = "";
+for (sort keys %$ref_to_hash) {
+    unless ($ref_to_hash->{$_} == 0) {
+	$return_str .= "$_"."$$ref_to_hash{$_}";
+	$return_str .= " " unless ((keys %$ref_to_hash)[-1] eq $_);
+    }
+}
+substr($return_str,-1,1,'') if substr($return_str,-1) eq ' ';
+
+return $return_str;
+}
+
+sub add_animal_hashes {
+=head1 add_animal_hashes()
+    (ref to hash, ref to hash) -> ref to hash
+
+    receives references to two animal hashes and returns reference to one
+    values of matching keys are added
+    keys are those in @animals
+
+=cut
+
+my $first = shift;
+my $second = shift;
+my $result = {};
+
+foreach (@animals) {
+    $result->{$_} = $first->{$_} + $second->{$_};
+}
+
+return $result;
+}
+
+sub print_solution {
+=head1 print_solution()
+    {ref to array of arrays} -> None
+
+    receives a reference to an array of arrays
+    each array line has the directions how to put a shape and the result to be seen
+
+    returns nothing
+=cut
+
+my $input_array = shift;
+
+foreach my $a_shape (@$input_array) {
+    print "\tput shape '$$a_shape[0]' into '$squares{$$a_shape[1]}' square in angle '$$a_shape[2]' and you will see ";
+    my @animal_array = split / /,$$a_shape[3];
+    # print "animal_array: @animal_array ($$a_shape[3])\n";
+    if (scalar(@animal_array) == 0) {
+	print "no animal";
+    } else {
+	foreach(@animal_array) {
+	    print substr($_,1,1);
+	    print " ";
+	    print $animals{substr($_,0,1)};
+	    if (substr($_,1,1) > 1) {
+		print((substr($_,0,1) eq 'r') ? "es" : "s");
+	    }
+	    print " ";
+	}
+    }
+    print "\n";
+}
+
+}				# sub
+
+sub print_all_solutions {
+=head1 print_all_solutions()
+    (ref to hash of arrays) -> None
+
+    receives the solutions structure where the solution searched for are the keys
+    and the values are the information (as array of arrays) how to get to that result
+
+    returns nothing
+=cut
+
+my $input_struct = shift;
+
+foreach my $a_solution (sort keys %$input_struct) {
+    print $a_solution,"\n";
+    &print_solution($input_struct->{$a_solution});
+    print "\n";
+}
+
+}				# sub
+
+sub ask_for_input {
+=head1 ask_for_input()
+    (None) -> str
+
+    receives no input
+    returns a search string (which can be used as a key in the solutions structure
+    user input is only an integer
+
+=cut
+
+my $animal_hash = &make_empty_item();
+my %possible_values = qw(0 1 1 1 2 1 3 1 4 1 5 1);
+
+print "How many animals?\n";
+foreach (sort keys %$animal_hash) {
+    print "$animals{$_}: ";
+    chomp(my $value = <>);
+    $$animal_hash{$_} = (exists($possible_values{$value})) ? $value : 0;
+}
+my $return_value = &hash_to_string($animal_hash);
+print "input key: '$return_value'\n";
+
+return $return_value;
+}

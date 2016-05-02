@@ -1,0 +1,72 @@
+#!/usr/bin/perl -w
+
+use Tk;
+use utf8;
+use encoding 'utf8';
+require Tk::Font;
+
+&come_window;
+
+sub come_window {
+    my $mw = MainWindow->new;
+    my $bgCol = "SlateBlue1";
+    my $actBgCol = "Cyan";
+    my $fgCol = "White";
+    my $kanjiFont = "Helvetica -18";
+
+    $mw->configure(
+	-title => "Positioning", 
+	-background => $bgCol, 
+	-width => "300", 
+	-height => "100",
+	);
+    $mw->geometry("+100+300");
+
+    my $north = $mw->Button(
+	-text => "北", 
+	-width => 10,
+	-font => $kanjiFont,
+	-command => sub{
+	    print "北 （きた）\n"; 
+	}
+	)->pack;
+    my $south = $mw->Button(
+	-text => "南", 
+	-width => 10,
+	-font => $kanjiFont,
+	-command => sub{
+	    print "南 （みなみ）\n"; 
+	}
+	)->pack(-side => "bottom");
+    my $west = $mw->Button(
+	-text => "西", 
+	-width => 10,
+	-font => $kanjiFont,
+	-command => sub{
+	    print "西 （にし)）\n"; 
+	}
+	)->pack(-side => "left");
+    my $exit_btn = $mw->Button(
+	-background => $bgCol,
+	-activebackground => $actBgCol,
+	-foreground => $fgCol,
+	-font => $kanjiFont,
+	-text => "終了", 
+	-command => sub{
+	    print "終了為る（しゅうりょうする）\n";
+	    $mw->destroy;
+	}
+	)->pack(
+	-side => "left",
+	-expand => "1",
+	    );
+    my $east = $mw->Button(
+	-text => "東", 
+	-width => 10,
+	-font => $kanjiFont,
+	-command => sub{
+	    print "東 （ひがし）\n"; 
+	}
+	)->pack(-side => "right");
+    MainLoop;
+}

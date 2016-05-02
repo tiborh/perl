@@ -1,0 +1,15 @@
+<headA><14-point>emph</14-point></headA>
+<par>This tag is used to highlight a piece of text in three different ways.</par>
+<par></par>
+<headB>Attributes</headB>
+<list><?Pub Lcl MarkerStyle="none"><bold>type</bold> The default value of type is medium.
+<list><?Pub Lcl MarkerStyle="bulleted">
+<item><sans-serif>high</sans-serif>  for bold italic</item>
+<item><sans-serif>low</sans-serif>  for italic</item>
+<item><sans-serif>medium</sans-serif>  for bold</item>
+</list></list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>role</bold>  This attribute is only to be used when converting to SEIF-documents from other types. Insert valuable conversion information.</list>
+
+
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold> An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>

@@ -1,0 +1,32 @@
+<headA><14-point>graphics</14-point></headA>
+<par>This is a graphics definitions tag. Inserting this tag will start the graphics function in which you can create or insert graphics to your document.</par>
+<par></par>
+
+<headB>Attributes</headB>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>scalepct</bold> The scaling factor of the picture height and width, given as a percentage. The default value is 100.</list>
+<list><?Pub Lcl MarkerStyle="none"><bold>vertadjamt</bold> The value of this attribute is the vertical offset for the graphic. Values are a numeral
+followed by a unit of measure, e.g., 3em, 1pi, 2pt, 2.5mm, 0.45cm. If
+no entry, then the value will be 0.</list>
+<list><?Pub Lcl MarkerStyle="none"><bold>scalefit</bold> This attribute controls the scaling of the graphic. Rescales the picture automatically to fit within a page if <sans-serif>yes</sans-serif> is given. The default is<sans-serif> no</sans-serif>.</list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>scaleheight</bold> The size to which the graphic height should be scaled if scalefit=yes. The values of the scale fit height are numerals followed by a unit of measure, e.g., 3em, 1pi, 2pt, 2.5mm, 0.45cm. If no entry, then the value will be 0.</list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>scalewidth</bold> The size to which the graphic width should be scaled if scalefit=yes. The values of the scale fit width are numerals followed by a unit of measure, e.g., 3em, 1pi, 2pt, 2.5mm, 0.45cm. If no entry, then the
+value will be 0.</list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>margin</bold> Determines the picture's positioning with respect to the margin.
+<list><?Pub Lcl MarkerStyle="bulleted">
+<item>left</item>
+<item>center </item>
+<item>right</item></list></list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>boxed</bold> If this attribute is set to <sans-serif>yes</sans-serif>, a box is placed around the graphics. The default value is <sans-serif>no</sans-serif>.</list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>name</bold> If you want to use an entity instead of putting
+a graphics directly in the document, you set this attribute to the name of
+that entity.</list>
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold> An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>
+
+
+

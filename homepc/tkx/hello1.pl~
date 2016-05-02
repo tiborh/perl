@@ -1,0 +1,11 @@
+#!/usr/bin/env perl
+use Tkx;
+    
+my $mw = Tkx::widget->new(".");
+my $b = $mw->new_button(
+    -text => "Hello, world",
+    -command => sub { $mw->g_destroy; },
+    );
+$b->g_pack;
+
+Tkx::MainLoop()

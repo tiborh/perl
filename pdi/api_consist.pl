@@ -1,0 +1,143 @@
+#!/opt/ActivePerl-5.18/bin/perl
+use strict; use warnings;
+
+use lib '/home/etibhar/opt/pdi/current/utils/pdi/lib';
+use lib '/home/etibhar/opt/pdi/current/utils/eriutl';
+
+use pdi_consist;
+use Text::Flowchart;
+
+my $DEBUG = 0;
+
+if(scalar(@ARGV) < 2)
+{
+    print("Two args are needed: product number and r-state.\n"); 
+    print("optional third is depth, fourth is whether to find preliminary (FP).\n");
+    exit(1);
+}
+
+my $levels = (scalar(@ARGV) > 2) ? $ARGV[2] : 11;
+my $application = (scalar(@ARGV) > 3) ? $ARGV[3] : "R";
+
+my $data_out = &GetTheData($ARGV[0],$ARGV[1],$levels,$application);
+if (!defined($data_out))
+{
+    print("No data has been returned. Exiting...\n");
+    exit(1);
+}
+#print("Data out: '$data_out'\n");
+
+my $flowchart = Text::Flowchart->new(
+    "width" => 220,
+    "directed" => 0);
+
+my $topBoxStr = "$ARGV[0]\n$ARGV[1]";
+my $topBox = $flowchart->box(
+    "string" => $topBoxStr,
+    "x_coord" => 0,
+    "y_coord" => 0,
+    "width"   => 20,
+    "y_pad"   => 0
+    );
+
+my %box_hash;
+
+&draw_the_boxes(\%box_hash,$data_out);
+
+$flowchart->draw();
+
+if ($DEBUG)
+{
+    print("The keys:\n");
+    foreach my $a_key (keys %box_hash)
+    {
+	print("$a_key\n");
+    }
+}
+
+
+BEGIN {
+    foreach my $CCA_PDM_PKG_DIR ( $ENV{CCA_PDM_PKG_DIR},
+				  '{[CCA_PDM_PKG_DIR_UX]}', '{[CCA_PDM_PKG_DIR_NT]}',
+				  '/pub/is_tools/share/lib/CCA-pdm/latest',
+				  'T:/share/lib/CCA-pdm/latest', 
+				  '//erinas2-fan/is_tools/share/lib/CCA-pdm/latest',
+				  '/view/cca_pdm_view/vobs/cc/CCA-pdm' )
+    { if( defined($CCA_PDM_PKG_DIR) && -d "$CCA_PDM_PKG_DIR/utils/eriutl" )
+      { unshift(@INC, "$CCA_PDM_PKG_DIR/utils/pdi/lib",
+		"$CCA_PDM_PKG_DIR/utils/eriutl"); last; }
+    }
+};  
+
+sub GetTheData
+{ 
+    my($errflg);
+    my $product_number = shift; print("product number: '$product_number'\n");
+    my $rstate = shift; print("r-state: '$rstate'\n");
+    my $levels = shift;
+    my $application = shift;
+    my $pst1 = "PSD3";
+    my $pst2 = "PSD1";
+    my $sorting = "P";
+    if($errflg= consist( '-pno', "$product_number",
+			 '-rst', "$rstate",
+			 '-lev', "$levels",
+			 '-appl', "$application",
+			 '-pst1', "$pst1", 
+			 '-pst2', "$pst2", 
+			 '-sorting', "$sorting",
+			 '-csv_hd_flds', 'PrNoESub,PrRevESub,PrRevEChSub,ArtFBet200,ReleaseCodeSub,DesignCodeSub,LevelNo,PStrTypeSub1,PStrRevESub1,VERSIONDESIGNTXT,DESRESPO,RELRESPO',
+			 '-ofmt','Tout',
+			# '-csv_hd_flds', 'PrNoESub,PrRevESub,PrRevEChSub,ReleaseCodeSub,DesignCodeSub,LevelNo,PStrTypeSub1,PStrRevESub1,VERSIONDESIGNTXT,DESRESPO,RELRESPO',
+		    qw(-outf NUL -env Prod),
+		    ### '-outf', 'NUL', '-env', 'Prod', '-csv_quote_ifreq', '-csv_noheader',
+     ) )
+  { die("Command 'pdi consist()' failed with rc:$errflg\n"); }
+    my($dat_out)= pdi_consist::get('Tout');
+
+  return($dat_out)
+}
+
+sub draw_the_boxes
+{
+    my $box_hash = shift;
+    my $input_data = shift;
+    my $y = 0;
+    my $pnum_col = 0;
+    my $prev_rev_col = 1;
+    my $func_des_col = 3;
+    my $level_col = 6;
+    my $psd_col = 7;
+    my $y_shift = 5;
+    my $x_shift = 21;
+    my $box_width = 22;
+    my $box_space = 5;
+
+    use Data::Dumper;
+    print(Dumper($input_data));
+
+    my @data_lines = split(/\n/,$input_data);
+    print(shift(@data_lines),"\n");
+
+    foreach my $a_line (@data_lines)
+    {
+	my @ar_line = split(/\t/,$a_line);
+	my $pnum = substr($ar_line[$pnum_col],1,length($ar_line[$pnum_col])-2);
+	$y+=$y_shift;
+	my $x = $ar_line[$level_col] * $x_shift;
+	my $func_des_length = (length($ar_line[$func_des_col])-2 > $box_width-$box_space) ? $box_width-$box_space : length($ar_line[$func_des_col])-2;
+	my $func_des = (substr($ar_line[$func_des_col],0,1) eq '"') ? substr($ar_line[$func_des_col],1,$func_des_length) : $ar_line[$func_des_col];
+
+	$box_hash->{$pnum} = $flowchart->box(
+	    "string" => "$func_des\n$pnum $ar_line[$prev_rev_col]",
+	    "x_coord" => $x,
+	    "y_coord" => $y,
+	    "width"   => $box_width,
+	    "y_pad"   => 0
+	    );
+    }
+
+    # $flowchart->relate(
+    # 	[$topBox, "bottom",1] => [$box_hash->{$ar_line[0]}, "left", 1]
+    # 	);
+}

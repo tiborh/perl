@@ -1,0 +1,10 @@
+#!/opt/ActivePerl-5.18/bin
+
+use warnings;
+use 5.014;
+use utf8;
+use autodie;
+
+use lib '/home/etibhar/opt/pdi/current/utils/pdi/lib';
+
+use pdi_user;

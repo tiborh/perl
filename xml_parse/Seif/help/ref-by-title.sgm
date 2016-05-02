@@ -1,0 +1,10 @@
+<headA><14-point>ref-by-title</14-point></headA>
+<par>This tag is to be used for hytime applications when they are added to SEIF and is currently not implemented.
+It is however not intended to be used in direct editing by the user</par>
+<par></par>
+
+<headB>Attributes</headB>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>decimal-class</bold> This attribute is currently not implemented.</list>
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold>  An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>
+

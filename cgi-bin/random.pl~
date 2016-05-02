@@ -1,0 +1,42 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+sub main {
+    {
+	print "<h1>Creating random numbers</h1>\n";
+	my @an_array = qw(月曜日 火曜日 水曜日 木曜日 金曜日 土曜日 日曜日);
+	{
+	    print "<h2>Selecting a weekday based on random numbers.</h2>\n";
+	    print "<ol>\n";
+	    print "\t<li>",$an_array[int rand(@an_array)],"</li>\n" foreach (1..10);
+	    print "</ol>\n";
+	}
+    }
+}
+
+&cgi_head("Functions: rand");
+&main();
+&cgi_foot();
+exit;
+
+sub cgi_head {
+print <<"EOT";
+Content-type: text/html\n
+<!doctype html>
+<html lang="en">
+<head>
+\t<meta charset="utf-8">
+\t<title>$_[0]</title>
+</head>
+<body>
+EOT
+}
+
+sub cgi_foot {
+print <<"EOT";
+</body>
+</html>
+EOT
+}

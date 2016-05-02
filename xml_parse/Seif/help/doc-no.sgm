@@ -1,0 +1,12 @@
+<headA><14-point>doc-no</14-point></headA>
+<par>This is the document number tag.</par>
+<par></par>
+<headB>Attributes</headB>
+<list><?Pub Lcl MarkerStyle="none"><bold>type</bold> The different types are:
+<list><?Pub Lcl MarkerStyle="bulleted">
+<item><sans-serif>reference</sans-serif>   for referenced documents</item>
+<item><sans-serif>registration</sans-serif>   for registered documents</item>
+<item><sans-serif>other</sans-serif>   for documents that do not fit into any of the other categories of document numbers</item></list></list>
+
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold>  An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>
+

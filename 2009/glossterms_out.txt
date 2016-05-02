@@ -1,0 +1,54 @@
+<glossary>
+<glossary-list>
+<gl-item>
+<term>AMS user</term>
+<expansion><p>An AMS user is a person who can perform management operations on AXD 301 network elements via AMS.</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>AMS</term>
+<expansion><p>AXD Management System. AMS is the built-in web server in AXD 301. It enables an operator or administrator to manage an AXD 301 network element and its services by means of a web browser running in a locally or remotely connected management terminal.</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>AOS user</term>
+<expansion><p>An AOS user is a person who can use AOS functions for configuring AXD nodes. To use ACT the person has to be defined as an AOS user.</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>Full-fledged RTP</term>
+<expansion><p>RTP processing with adaptive jitter buffers. Voice compression, silence suppression, packet reordering, G.711/G.726/G.729 codecs. Associated with VPB in EIN 3.1.</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>Logrotate</term>
+<expansion><p>Logrotate is designed to simplify the administration of log files on a system which generates a lot of log files. It allows for the automatic rotation, compression, and removal of log files.</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>Low Cost RTP</term>
+<expansion><p>RTP processing with static jitter buffers. Used for uncompressed voice with G.711 codec without silence suppression. Associated with PTB solution in EIN 3.0.</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>MD5</term>
+<expansion><p>MD5 is an algorithm that is used to verify data integrity through the creation of a 128-bit message digest from data input.</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>NPG</term>
+<expansion><p>The Network Path Group (NPG) is an operator-configurable group determined by the destination and source voice application IP address. Any channel that has common local and remote voice interface IP addresses will be measured after masking in the same NPG. Masking means that the IP address prefix is combined with the mask to define a local prefix or a remote prefix.</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>SNMP</term>
+<expansion><p>Simple Network Management Protocol. The SNMP service provides SNMP v1, v2, and v3 network management capability to applications and end-users.</p>
+</expansion>
+</gl-item>
+<gl-item>
+<term>rsh</term>
+<expansion><p>Remote shell. It is a UNIX service with which a command can be executed on a remote host.</p>
+</expansion>
+</gl-item>
+</glossary-list>
+</glossary>

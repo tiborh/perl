@@ -1,0 +1,24 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+my $title = "Hash of Arrays";
+
+sub main {
+    print <<EOT;
+<h1>$title</h1>
+<p>For storage of a number of records to a hash key.</p>
+EOT
+
+
+
+} # main
+
+require "html.cgi";
+
+&cgi_head("$title");
+&main();
+&printcode($0);
+&cgi_foot();
+exit;

@@ -1,0 +1,2 @@
+(C) Carlos A. R. de Souza. Distributable under the terms of GNU GPL, version 2.
+Thanks Schelte, Emiliano, kbk, xat0 and last, but not least, everyone from #tcl at Freenode.

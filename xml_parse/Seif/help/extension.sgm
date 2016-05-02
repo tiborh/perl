@@ -1,0 +1,11 @@
+<headA><14-point>extension
+</14-point></headA>
+<par>This tag is used for the extension part of a telephon number.</par>
+<par></par>
+
+<headB>Attributes</headB>
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold> An id can be used to give the particular tag a unique identification to be used for references. </list>
+
+<par>Example : 92777</par>
+
+

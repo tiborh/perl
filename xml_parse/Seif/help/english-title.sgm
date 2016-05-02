@@ -1,0 +1,12 @@
+<headA><14-point>english-title</14-point></headA>
+<par>If a document is written in a language other than English, then an English
+title which is used in the English version of the abstract of the document,
+must be specified in this tag.</par>
+<par></par>
+
+<headB>Attributes</headB>
+<list><?Pub Lcl MarkerStyle="none"><bold>id</bold> An id is used to give the particular tag a unique identification to be used for references. Insert a unique name as id and create the actual cross reference by using the xref tag.</list>
+
+
+
+

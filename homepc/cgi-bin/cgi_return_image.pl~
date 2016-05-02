@@ -1,0 +1,35 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+use CGI;
+
+my $cgi = new CGI;
+
+open (IMAGE, "flag.gif");
+my $size = -s "flag.gif";
+my $data = "";
+read IMAGE, $data, $size;
+close (IMAGE);
+
+print $cgi->header,
+    $cgi->start_html(-type=>'image/gif'), $data;
+
+#site logger
+my %logger = ();
+$logger{Time}=time;
+$logger{Query} = $ENV{QUERY_STRING};
+$logger{Referer} = $ENV{HTTP_REFERER};
+$logger{IP} = $ENV{REMOTE_ADDR};
+$logger{Host} = $ENV{REMOTE_HOST};
+$logger{UserAgent} = $ENV{HTTP_USER_AGENT};
+
+open(FILE,">>","log.txt");
+flock(FILE,2);
+my $line = "";
+$line .= "$_|" foreach (sort keys %logger);
+$line =~ s/\|$/\n/;
+close(FILE);
+
+exit;

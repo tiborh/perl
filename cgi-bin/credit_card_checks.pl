@@ -1,0 +1,41 @@
+#!/usr/bin/perl -w
+use strict;
+use utf8;
+binmode STDOUT, ":utf8";
+
+my $title = "Check Credit Cards";
+
+sub main {
+    print <<EOT;
+<h1>$title</h1>
+<p>A number of credit card checks can be performed with the <code>Business::CreditCard</code> module.</p>
+EOT
+    {
+	use Business::CreditCard;
+	
+	$Business::OnlinePayment::Country = "nz";
+
+	my $cc_nu = "5276 4400 6542 1319";
+	my $cc_nu2 = "5276 4400 6542 131";
+	my $cc_nu3 = "5276 **** **** ****";
+
+	print "<p>The credit card number: <code>$cc_nu</code>:<br />\n";
+	print "is ", validate($cc_nu) ? "valid" : "invalid", "<br />\n";
+	print "its type:",cardtype($cc_nu),"</p>\n";
+
+	print "<p>The last digit can be generated from this: $cc_nu2<br />\n";
+	print "which is: ", generate_last_digit($cc_nu2),"</p>\n";
+
+	print "<p>The card type can be determined from this: $cc_nu3<br />\n";
+	print "which is: ", cardtype($cc_nu3),"</p>\n";
+    }
+
+}
+
+require "html.cgi";
+
+&cgi_head("$title");
+&main();
+&printcode($0);
+&cgi_foot();
+exit;
