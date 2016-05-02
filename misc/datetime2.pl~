@@ -1,0 +1,8 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+
+my $seconds = time();
+print("Time now: ",localtime($seconds),"\n");
+print("Time in an hour: ",localtime($seconds+3600),"\n");

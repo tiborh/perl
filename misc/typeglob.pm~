@@ -1,0 +1,16 @@
+package MyGlob v0.0.1{
+    local *myGlob;
+    my $myScal = 1;
+    my $myArr = (1,2,3);
+    my %myHash = (一 => 1, 
+		  二 => 2, 
+		  三 => 3);
+    sub myCode {
+	return scalar @_;
+    }
+    *myGlob = \$myScal;
+    *myGlob = \@myArr;
+    *myGlob = \%myHash;
+    *myGlob = \&myCode;
+}
+1;

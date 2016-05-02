@@ -1,0 +1,130 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>POD Test</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body style="background-color: white">
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#test_heading">Test Heading</a></li>
+	<ul>
+
+		<li><a href="#lorem_ipsum">Lorem Ipsum</a></li>
+		<li><a href="#verbatim">Verbatim</a></li>
+		<li><a href="#lists">Lists</a></li>
+		<ul>
+
+			<li><a href="#third_level">Third level</a></li>
+		</ul>
+
+	</ul>
+
+	<li><a href="#pod_sequences">Pod Sequences</a></li>
+	<ul>
+
+		<li><a href="#escape_sequences">Escape Sequences</a></li>
+	</ul>
+
+	<li><a href="#html_table">HTML Table</a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<hr />
+<h1><a name="test_heading">Test Heading</a></h1>
+<p>Normal text, that is, a prose paragraph. The default paragraph, when no modification is done.</p>
+<p>This file has been converted from <em class="file">pod.pl</em>.</p>
+<p>
+</p>
+<h2><a name="lorem_ipsum">Lorem Ipsum</a></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rhoncus molestie vehicula. Sed in pharetra libero. Praesent porta, felis posuere tempus fringilla, neque arcu porttitor lectus, in rhoncus neque neque eu sem. Etiam lacinia consectetur ipsum, quis pretium erat convallis id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor libero, gravida vitae luctus et, feugiat sed ante. In hac habitasse platea dictumst. Quisque fringilla urna sit amet urna egestas fringilla. Donec vestibulum diam ac lacus scelerisque et rutrum mauris vehicula. Vestibulum eget sem eget felis molestie venenatis quis in sem. Donec faucibus congue justo et lobortis. Sed id malesuada lorem. Praesent tristique urna et elit convallis rhoncus.</p>
+<p>
+</p>
+<h2><a name="verbatim">Verbatim</a></h2>
+<pre>
+    Verbatim paragraph starts with an indent.
+    
+    print &quot;This file has been created to see how pod documentation feature works.\n&quot;;</pre>
+<p>
+</p>
+<h2><a name="lists">Lists</a></h2>
+<p>The list environment is studied here.</p>
+<ol>
+<li>
+<p>The first item</p>
+</li>
+<li>
+<p>The second item</p>
+<ul>
+<li>
+<p>first sublist item</p>
+</li>
+<li>
+<p>second sublist item</p>
+</li>
+</ul>
+</li>
+</ol>
+<dl>
+<dt><strong><a name="first" class="item">first</a></strong></dt>
+
+<dd>
+<p>The first definition list item</p>
+</dd>
+<dt><strong><a name="second" class="item">second</a></strong></dt>
+
+<dd>
+<p>The second definition list item</p>
+</dd>
+</dl>
+<p>
+</p>
+<h3><a name="third_level">Third level</a></h3>
+<p>Third level heading also needed some testing.</p>
+<p>
+</p>
+<hr />
+<h1><a name="pod_sequences">Pod Sequences</a></h1>
+<p>Before reading the paragraph below, check <a href="#lorem_ipsum">Lorem Ipsum</a>. Another way of referencing: <a href="#lorem_ipsum">Lorem</a>.
+And <em>crontab(5)</em>, which only works for <code>pod2man</code>.</p>
+<p><em>Mauris</em> eu <strong>lorem orci</strong>, et <code>vestibulum</code> nisl. <em><strong>Mauris</strong> at <code>diam</code> massa</em>. Vestibulum consequat, libero quis sagittis pharetra, elit sem interdum urna, sed aliquet dui nulla quis urna. Nunc massa nisl, posuere in rhoncus eu, molestie vel mauris. Quisque tristique, sapien vitae adipiscing ultricies, nulla lectus gravida quam, in facilisis arcu eros vel quam. Sed nec venenatis sapien. In ut augue pellentesque est placerat placerat nec sit amet ligula. Proin luctus dolor eget arcu tincidunt in tincidunt augue viverra. Nulla facilisi. Praesent vitae gravida purus. Nunc sit amet ligula ligula. Aenean at orci sit amet nisl dictum placerat. Morbi nisl odio, tincidunt quis ornare sed, rutrum non nulla. Donec id ornare enim. Proin ac nulla a erat pellentesque tristique id quis sapien. Suspendisse augue felis, eleifend et dictum sed, tempor eget augue. Mauris odio diam, tristique vel bibendum consectetur, aliquet et orci. Nullam eget mi at nisl pellentesque vulputate eu in sapien.</p>
+<p>This&nbsp;text&nbsp;was&nbsp;written&nbsp;with&nbsp;nonbreaking&nbsp;spaces.&nbsp;No&nbsp;matter&nbsp;how&nbsp;long&nbsp;the&nbsp;line&nbsp;is,&nbsp;it&nbsp;won't&nbsp;break.&nbsp;Wonderful,&nbsp;isn't&nbsp;it?&nbsp;Some&nbsp;more&nbsp;words&nbsp;to&nbsp;make&nbsp;it&nbsp;long&nbsp;enough&nbsp;for&nbsp;my&nbsp;screen&nbsp;to&nbsp;show&nbsp;the&nbsp;very&nbsp;long&nbsp;line.&nbsp;It&nbsp;will&nbsp;break,&nbsp;however,&nbsp;if&nbsp;you&nbsp;use&nbsp;a&nbsp;hyphen.&nbsp;only&nbsp;the&nbsp;space&nbsp;characters&nbsp;are&nbsp;non-breaking.</p>
+<p>
+</p>
+<h2><a name="escape_sequences">Escape Sequences</a></h2>
+<p>The following can be escaped:</p>
+<p>&lt;</p>
+<p>&gt;</p>
+<p>&sol;</p>
+<p>&verbar;</p>
+<p>iso8859-1 character codes e.g. &#169;</p>
+<p>html character e.g. &ntilde;</p>
+<p>zero-width character e.g. in writing</p>
+<p>=head1 at the start of a line</p>
+<p><code>$a &lt;=&gt; $b</code> not an escape sequence, but uses &lt; and &gt; inside a C.</p>
+<p>
+</p>
+<hr />
+<h1><a name="html_table">HTML Table</a></h1>
+<table border="1">
+<tr><th>head 1</th><th>head 2</th></tr>
+<tr><td>cell 1</td><td>cell 2</td></tr>
+<tr><td>cell 3</td><td>cell 4</td></tr>
+</table>
+</body>
+
+</html>

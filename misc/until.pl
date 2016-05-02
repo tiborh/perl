@@ -1,0 +1,10 @@
+#!/usr/bin/perl -w
+use strict;
+
+{
+    my @an_array = qw(一つ 二つ 四つ 五つ 六つ 七つ 八つ 九つ 十);
+
+    until ($#an_array == -1) {
+	print shift(@an_array),"\n";
+    }
+}

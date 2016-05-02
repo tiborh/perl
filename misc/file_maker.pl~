@@ -1,0 +1,14 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+my $file_root = $ARGV[0] ? $ARGV[0] : "default";
+
+foreach (1..12) {
+     my $fn = sprintf("%s%02d.tar",$file_root,$_);
+     printf("%2d: ",$_);
+     printf("%s\n",$fn);
+     open FH,">",$fn or die $!;
+     print FH "0" x int(rand(100));
+     close FH;
+}

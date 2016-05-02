@@ -1,0 +1,21 @@
+#!/usr/bin/env perl
+
+use warnings;
+use v5.14; 			# implies strict
+use Carp;
+use utf8;
+use autodie;
+#the following two needs installation:
+#use Modern::Perl;
+#use Test::More;
+
+binmode(STDOUT, ":utf8");
+
+print ("upcase in list context: ",upcase(split /,/, "fred,vilma,barney,betty");
+
+
+sub upcase {
+    my @params = map { uc } @_;
+    # context dependent output:
+    return wantarray ? @params : $params[0];
+}

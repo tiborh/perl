@@ -1,0 +1,6 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+my $gchar = 97+int(rand(26));
+printf("%d: %c\n",$gchar,$gchar);

@@ -1,0 +1,8 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+my @table_head = qw(column0 column1 column2 column3 column4);
+my @table_body = ();
+
+printf("%9s" x @table_head, "\n");

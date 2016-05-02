@@ -1,0 +1,8 @@
+#!/usr/bin/perl -w
+use strict;
+
+{
+    my ($num1,$num2) = (10,7);
+    print("$num1,$num2\n");
+    printf("divident: %d\ndivisor: %d\nremainder: %d\n",$num1,$num2,$num1%$num2);
+}

@@ -1,0 +1,9 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+#diamond (<>) reads file names, 
+#<STDIN> reads standard input, redirections to stdinput (<filename), or pipelines (|)
+while(<>) {
+    print;
+}
