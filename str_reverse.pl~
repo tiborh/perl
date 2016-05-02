@@ -1,5 +1,0 @@
-#!/usr/bin/perl -w
-
-$str_sample = "something";
-
-print reverse $str_sample, "\n";

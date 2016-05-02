@@ -1,5 +1,0 @@
-#!/usr/bin/perl -w
-
-$vString = v102.111.111;
-
-print $vString,"\n";

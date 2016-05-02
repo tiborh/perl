@@ -1,8 +1,0 @@
-#!/usr/bin/perl
-
-printf("Number of args: %d\n",$#ARGV+1);
-
-while (@ARGV) {
-    $currArg = shift(@ARGV);
-    printf("%s\n",$currArg);
-}

@@ -1,7 +1,0 @@
-#!/usr/bin/perl -w
-
-my $sthEntered;
-
-print "Give me something to read: ";
-$sthEntered = <stdin>;
-print $sthEntered;
