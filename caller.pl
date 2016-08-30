@@ -9,18 +9,26 @@ use autodie;
 #use Modern::Perl;
 #use Test::More;
 
+use TestTools;
+
 binmode(STDOUT, ":utf8");
 
+&TestTools::print_head("test_caller");
 &test_caller();
+&TestTools::print_head("test_caller_extended");
 &test_caller_extended();
 eval {
+    &TestTools::print_head("test_caller_extended in eval block");
     my @testarr = &test_caller_extended;
 };
 carp $@ if $@;
 my $result;
 my $sub_ref = \&test_caller_extended;
+&TestTools::print_head("eval called with sub reference");
 eval '$result = $sub_ref->(1, 2, 3)';
 carp $@ if $@;
+&caller_of_test_caller;
+&caller_of_caller_of_test_caller;
 
 sub test_caller {
     my @info = caller();
@@ -31,13 +39,25 @@ sub test_caller {
     say "\tline: $info[2]";
 }
 
+sub caller_of_caller_of_test_caller {
+    &TestTools::print_head("caller of caller of test caller");
+    &caller_of_test_caller;
+}
+
+sub caller_of_test_caller {
+    &TestTools::print_head("caller(0)");
+    &test_caller_extended(caller(0));
+    &TestTools::print_head("caller(1)");
+    &test_caller_extended(caller(1));
+}
+
 sub test_caller_extended {
-    my @info = caller(0);
+    my @info = @_ || caller(0);
     say "Caller with number argument:";
-    say "\t 0. package:    ",$info[0];
-    say "\t 1. filename:   ",$info[1];
-    say "\t 2. line:       ",$info[2];
-    say "\t 3. subroutine: ",$info[3];
+    say "\t 0. package:    ",$info[0] || "under";
+    say "\t 1. filename:   ",$info[1] || "undef";
+    say "\t 2. line:       ",$info[2] || "under";
+    say "\t 3. subroutine: ",$info[3] || "under";
     say "\t 4. has args:   ",$info[4] ? "yes (1)" : "no (\"\")";
     my $wantxt;
     if ($info[5]) {
@@ -65,8 +85,8 @@ sub test_caller_extended {
     } else {
 	$is_require = "undef";
     }
-    say "\t 7. is require: ",$is_require;
-    say "\t 8. hints:      ",$info[8];
-    say "\t 9. bitmask:    ",$info[9];
-    say "\t10. hinthash:   ",$info[10];
+    say "\t 7. is require: ",$is_require || "under";
+    say "\t 8. hints:      ",$info[8] || "under";
+    say "\t 9. bitmask:    ",$info[9] || "under";
+    say "\t10. hinthash:   ",$info[10] || "under";
 }
