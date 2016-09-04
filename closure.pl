@@ -11,17 +11,18 @@ use autodie;
 
 binmode(STDOUT, ":utf8");
 
-my $testSampleClusure = &sampleClosure("one","two");
-$testSampleClusure->("one","two");
-$testSampleClusure->();
-$testSampleClusure->("three","four");
+my $testSampleClusure = &sampleClosure("Name","Hobby");
+$testSampleClusure->("Joe","Golf");
+$testSampleClusure->("Jane","Game");
+$testSampleClusure->("Fred","Dread");
 
 sub sampleClosure {
-    my $name = shift;
-    my $hobby = shift;
+    my $var1 = shift;
+    my $var2 = shift;
     
     return(sub {
-	say "input: '@_'";
-	say "My name: $name";
-	say "My hobby: $hobby";})
+	my $val1 = shift;
+	my $val2 = shift;
+	say "$var1: $val1";
+	say "$var2: $val2";})
 }
