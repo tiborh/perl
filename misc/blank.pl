@@ -5,6 +5,7 @@ use v5.14; 			# implies strict
 use Carp;
 use utf8;
 use autodie;
+use diagnostics;
 #the following two needs installation:
 #use Modern::Perl;
 #use Test::More;
