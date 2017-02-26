@@ -4,6 +4,7 @@ use warnings;
 use v5.14; 			# implies strict
 use Carp;
 use utf8;
+use diagnostics;
 
 binmode(STDOUT, ":utf8");
 
