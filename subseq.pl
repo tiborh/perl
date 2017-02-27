@@ -12,15 +12,19 @@ use diagnostics;
 
 binmode(STDOUT, ":utf8");
 
+my $recurs_depth = 0;
+
 my $subseqs = &subsequences($ARGV[0]);
-if ($subseqs) {
+if (defined $subseqs) {
     say "subsequences:";
     say $subseqs;
+    say "depth of recursion: $recurs_depth";
 } else {
     say "no output";
 }
 
 sub subsequences() {
+    ++$recurs_depth;
     my $word = shift // croak "invalid input for subsequences()";
     if ($word eq "") {
 	say "empty string branch";
@@ -28,11 +32,8 @@ sub subsequences() {
     } else {
 	say "the other branch: subsequences('$word')";
 	my $firstLetter = substr($word,0,1);
-	#say "first letter: '$firstLetter'";
 	my $restOfWord = substr($word,1);
-	#say "rest of the word: '$restOfWord'";
 	my $subsequencesOfRest = &subsequences($restOfWord);
-	#say "subseqs of rest: '$subsequencesOfRest'";
 	my $result = "," . $firstLetter if $firstLetter;
 	foreach my $subsequence  (split(/,/,$subsequencesOfRest)) {
 	    #say "in foreach, subsequence == '$subsequence'";

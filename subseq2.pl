@@ -22,7 +22,7 @@ if ($subseqs) {
 
 sub subsequences() {
     my $word = shift // croak "no valid input for subsequences()";
-    return join(',',reverse(split(/,/,&subsequencesAfter("", $word))));
+    return join(',',reverse(sort {length($a) <=> length($b)} (split(/,/,&subsequencesAfter("", $word)))));
 }
 
 sub subsequencesAfter() {
