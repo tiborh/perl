@@ -21,7 +21,7 @@ if ($subseqs) {
 }
 
 sub subsequences() {
-    my $word = shift // croak "null input for subsequences()";
+    my $word = shift // croak "invalid input for subsequences()";
     if ($word eq "") {
 	say "empty string branch";
 	return ""; # base case

@@ -3,9 +3,10 @@
 use warnings;
 use v5.14; 			# implies strict
 use Carp;
+#use Carp::Assert; # get from cpan
 use utf8;
 use autodie;
-use diagnostics;
+#use diagnostics;
 #the following two needs installation:
 #use Modern::Perl;
 #use Test::More;
